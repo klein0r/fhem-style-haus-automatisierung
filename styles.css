@@ -1,0 +1,120 @@
+body {
+    color: #fff;
+}
+
+a {
+    color: #e56524;
+    text-decoration: none;
+}
+
+#logo {
+    background: url(./images/haus_automatisierung.png) no-repeat;
+    width: 220px;
+    height: 120px;
+    margin-left: 50px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-image: url("./images/bg_wrapper.jpg");
+    background-color: #354d69;
+    background-attachment: fixed;
+}
+
+#content, #hdr {
+    left: 320px;
+}
+
+#menuScrollArea {
+    width: 300px;
+}
+
+#hdr {
+    width: 500px;
+}
+
+#menu {
+    width: 280px;
+}
+
+#menu td {
+    padding: 0;
+}
+
+#menu a {
+    color: #555;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#menu table.room {
+    border: none;
+    margin-bottom: 10px;    
+    background: none;
+    border-spacing: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table.block {
+    color: #676f7a;
+    background: #fff;
+    border-radius: 0;
+}
+
+table.block td {
+    padding: 5px;
+}
+
+table.block tr.odd {
+    background: #f5f6f9;
+}
+
+input.maininput {
+    width: 600px;
+}
+
+#hdr {
+    width: 500px;
+}
+
+#fpmenu select {
+    margin: 5px 10px;
+    width: 500px;
+}
+
+#fpmenu select:last-child {
+    margin-bottom: 0;
+}
+
+#fpmenu input[type="submit"] {
+    width: 80px;
+}
+
+.detLink {
+    padding: 2px 13px;
+    border: 2px #e56524 solid;
+    border-radius: 5px;
+}
+
+div.ui-dialog {
+    border: 2px solid #e56524;
+    background: #fff;
+}
+
+div.ui-dialog-buttonpane {
+    background: #f5f6f9;
+}
+
+pre.log {
+    color: #000;
+    background: #fff;
+    padding: 10px;
+}
