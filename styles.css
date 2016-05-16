@@ -118,3 +118,26 @@ pre.log {
     background: #fff;
     padding: 10px;
 }
+
+div#errmsg {
+    position: fixed;
+    color: #fff;
+    font-weight:bold;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #e56524;
+    padding: 20px;
+    font-size: 20px;
+    border-top: 3px #fff solid;
+    border-bottom: 3px #fff solid;
+    z-index: 99999;
+}
+
+div#errmsg:before {
+    content: '!!!! ';
+}
+
+div#errmsg:after {
+    content: '!!!!';
+}
