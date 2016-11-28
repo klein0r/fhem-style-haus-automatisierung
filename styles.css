@@ -1,5 +1,6 @@
 body {
     color: #fff;
+    tab-size: 4;
 }
 
 a {
@@ -61,12 +62,14 @@ body {
 
 table {
     width: 100%;
+    max-width: 1000px;
 }
 
 table.block {
     color: #676f7a;
     background: #fff;
     border-radius: 0;
+    border: none;
 }
 
 table.block td {
@@ -139,5 +142,103 @@ div#errmsg:before {
 }
 
 div#errmsg:after {
-    content: '!!!!';
+    content: ' !!!!';
+}
+
+#dashboard .dashboard_tabnav {
+    background: #fff !important;
+    border-radius: 0;
+}
+
+#dashboard .dashboard-button {
+    border-radius: 0 !important;
+    border: 1px solid #ddd;
+}
+
+.ui-corner-bottom, .ui-corner-top, .ui-corner-left, .ui-corner-right, .ui-corner-all {
+    border-radius: 0 !important;
+}
+
+div.ui-widget-content a {
+    color: #555 !important;
+}
+
+#dashboard .ui-widget-header .ui-state-default {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #555;
+}
+
+.ui-state-hover {
+    border: 1px solid #e56524 !important;
+    background: #fff !important;
+    cursor: pointer;
+}
+
+#dashboard .ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    margin-right: 0.2em;
+}
+
+#dashboard .ui-tabs .ui-tabs-nav {
+    padding: 0.2em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#dashboard .block.wide {
+    border-radius: 0 !important;
+}
+
+#dashboard .ui-widget-header {
+    background: #e56524;
+    color: #fff;
+    margin: 0px;
+    border: none;
+}
+
+#dashboard .dashboard_widgetinner {
+    padding: 0.2em;
+}
+
+#dashboard .dashboard_content tr {
+    height: 50px;
+}
+
+#dashboard .dashboard_content {
+    padding: 0;
+}
+
+#dashboard-dialog .ui-tabs .ui-tabs-nav {
+    padding: 0.2em;
+}
+
+#dashboard-dialog .ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    margin-right: 0.2em;
+}
+
+#dashboard-dialog .ui-widget-header {
+    color: #555;
+}
+
+#dashboard-dialog {
+    border: 2px solid #e56524;
+}
+
+#dashboard-dialog .ui-widget-header {
+    background: #fff;
+}
+
+#dashboard-dialog .ui-state-default {
+    border: 1px solid #ddd;
+    background: #f5f6f9;
+}
+
+#dashboard-dialog .ui-dialog-buttonpane {
+    background-color: #f5f6f9;
+}
+
+div.ui-widget-content {
+    background: #fff;
 }
