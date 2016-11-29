@@ -5,6 +5,8 @@ body {
     tab-size: 4;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    padding: 0;
+    margin: 0px auto;
 }
 
 a {
@@ -16,7 +18,8 @@ a {
     background: url(./images/haus_automatisierung.png) no-repeat;
     width: 220px;
     height: 120px;
-    margin-left: 50px;
+    margin-left: 40px;
+    position: fixed;
 }
 
 body {
@@ -33,6 +36,8 @@ body {
 
 #menuScrollArea {
     width: 300px;
+    position: relative;
+    overflow: auto;
 }
 
 #hdr {
@@ -40,7 +45,9 @@ body {
 }
 
 #menu {
-    width: 280px;
+    width: 260px;
+    margin-top: 140px;
+    z-index: 9999;
 }
 
 #menu td {
@@ -82,11 +89,12 @@ table.block td:nth-child(1) {
     white-space: nowrap
 }
 
-table.block td:nth-child(2) {
+.makeTable table.block td:nth-child(2) {
     width: 60%;
 }
 
-table.block td {
+table.block td > div,
+table.block td > a {
     padding: 5px;
 }
 
