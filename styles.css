@@ -10,6 +10,11 @@ body {
     margin: 0px auto;
 }
 
+h2, h3, h4 {
+	color: #e56524;
+	margin-top: 0;
+}
+
 a {
     color: #e56524;
     text-decoration: none;
@@ -137,8 +142,18 @@ input.maininput {
 
 #console,
 .fhemlog {
-	font-family: 'Source Code Pro', monospace;
     color: #fff;
+	font-family: 'Source Code Pro', monospace;
+}
+
+#devSpecHelp {
+	font-family: 'Source Code Pro', monospace;
+    width: 100%;
+    max-width: 985px;
+    color: #676f7a;
+    background: #fff;
+    padding: 5px;
+    border-left: 5px #e56524 solid;
 }
 
 input[type="submit"] {
