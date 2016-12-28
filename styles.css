@@ -29,7 +29,7 @@ a {
 }
 
 #logo:after {
-	content: '1.1';
+	content: '1.2';
 	opacity: 0.7;
 }
 
@@ -72,7 +72,6 @@ body {
     padding: 10px 15px;
     margin-bottom: -1px;
     background-color: #fff;
-    border: 1px solid #ddd;
 }
 
 #menu table.room {
@@ -80,6 +79,36 @@ body {
     margin-bottom: 10px;    
     background: none;
     border-spacing: 0;
+}
+
+#menu table.room svg.icon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 15px;
+    margin: 0;
+}
+
+#menu table.room tr.sel svg.icon {
+	fill: #fff;
+}
+
+#menu table.room tr.sel a {
+    color: #fff;
+    background-color: #e56524;
+}
+
+#menu table.room tr.sel td a:after {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #e56524;
+    content: " ";
+    height: 0;
+    margin-top: -20px;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    width: 0;
 }
 
 table {
@@ -134,6 +163,10 @@ input.maininput {
     width: 80px;
 }
 
+.handle {
+    color: #676f7a;
+}
+
 .detLink {
     padding: 2px 10px;
     border: 2px #e56524 solid;
@@ -143,6 +176,10 @@ input.maininput {
 
 .downText {
     margin-top: 2px;
+}
+
+svg:not([fill]):not(.jssvg) {
+	fill: #676f7a;
 }
 
 #console,
