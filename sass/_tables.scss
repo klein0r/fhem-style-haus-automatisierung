@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+    border-radius: 0;
+    max-width: 1000px;
+    width: 100%;
+}
+
+table#atWizard td:first-child {
+    width: 240px;
+}
+
+table.block {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    color: #676f7a;
+}
+
+table.block td:nth-child(1) {
+    white-space: nowrap;
+}
+
+table.block tr.odd, div.ui-dialog-buttonpane {
+    background: #f5f6f9;
+}
+
+table.block tr.sel, .ui-button-text-only.ui-state-active {
+    background: #F0F0D8;
+}
+
+table.readings td:nth-child(2) {
+    word-break: break-all;
+}
+
+table.room {
+    width: 100%;
+}
+
+table.room tr.sel {
+    background: #A0FFFF;
+}
+
+tr.column > td {
+    padding: 0;
+    vertical-align: top;
+}

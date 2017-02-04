@@ -1,0 +1,12 @@
+#console {
+    bottom: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 2em;
+    width: 100%;
+}
+
+#console, .fhemlog {
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+}
