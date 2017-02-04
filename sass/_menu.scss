@@ -3,21 +3,21 @@
     margin-top: 140px;
     width: 260px;
     z-index: 9999;
-    
+
     a {
         background: #fff;
         color: $secondary-color;
         display: block;
-        margin-bottom: -1px;
         padding: 10px 15px;
         position: relative;
+        line-height: 15px;
     }
 
     table.room {
         border: none;
         border-spacing: 0;
         margin-bottom: 10px;
-        
+
         img.icon,
         svg.icon {
             width: 20px;
@@ -26,6 +26,15 @@
             position: absolute;
             right: 10px;
             top: 7px;
+        }
+
+        #saveCheck {
+            margin-top: -35px;
+            background: transparent;
+            color: red;
+            border-right: 5px $primary-color solid;
+            border-left: 5px $primary-color solid;
+            text-indent: -9999px;
         }
 
         tr.sel {
