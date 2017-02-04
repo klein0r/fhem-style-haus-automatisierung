@@ -1,4 +1,4 @@
-# FHEM Style: haus-automatisierung.com
+# FHEM Style: haus-automatisierung.com (v2)
 
 Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - look and feel sind dabei an das Webdesign der Seite [haus-automatisierung.com](https://haus-automatisierung.com/) angelehnt.
 
@@ -11,15 +11,7 @@ cd /opt/fhem/www
 git clone https://github.com/klein0r/fhem-style-haus-automatisierung.git hausautomatisierung-com
 ```
 
-2. Default style aktivieren
-
-3. Design aktivieren
-
-Danach muss auf dem WEB-Device das entsprechende Attribut gesetzt werden. In diesem Fall
-
-```
-attr CssFiles hausautomatisierung-com/styles.css
-```
+2. Select Style -> hausautomatisierung_com
 
 Einmal speichern und neu laden - fertig.
 
