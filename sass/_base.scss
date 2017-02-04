@@ -1,3 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+body {
+    background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+    tab-size: 4;
+}
+
+body.dashboard_fullsize #content {
+    border: none !important;
+    float: none !important;
+    height: 100% !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    position: inherit !important;
+    width: 100% !important;
+}
+
+body.dashboard_fullsize #menuScrollArea,
+body.dashboard_fullsize #hdr,
+div.ui-dialog div.ui-dialog-titlebar {
+    display: none;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+button.dist {
+    border: 0;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#logo {
+    background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat;
+    height: 120px;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: fixed;
+    width: 220px;
+}
+
+#logo:after {
+    content: $version;
+    opacity: 0.7;
+}
+
 #content {
     bottom: 20px;
     left: 180px;
@@ -10,13 +64,19 @@
     left: 320px;
 }
 
+input[type="text"] {
+    border: 2px #e56524 solid;
+    background: none;
+}
+
 #hdr {
-    left: 180px;
+    left: 320px;
     position: absolute;
     top: 10px;
     width: 500px;
 
-    input[type="text"] {
-        color: #000;
+    input.maininput {
+        color: #fff;
+        width: 600px;
     }
 }

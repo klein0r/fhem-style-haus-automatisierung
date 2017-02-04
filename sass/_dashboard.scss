@@ -313,7 +313,7 @@
 #dashboard .ui-widget-header .ui-state-default {
     background: #fff;
     border: 1px solid #ddd;
-    color: #555;
+    color: $secondary-color;
     font-weight: 400;
 }
 
@@ -386,6 +386,6 @@
 
 #dashboard-dialog .ui-widget-header {
     background: #fff;
-    color: #555;
+    color: $secondary-color;
     padding: 5px;
 }

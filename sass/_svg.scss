@@ -1,0 +1,48 @@
+svg {
+    height: 32px;
+    margin: 2px 0;
+    vertical-align: middle;
+    width: 32px;
+}
+
+svg.on, svg.FS20_on {
+    fill: orange !important;
+}
+
+svg.zw_nr {
+    height: auto;
+    margin: 0;
+    width: auto;
+}
+
+svg.zw_nr .zwArrowHead {
+    fill: #278727;
+    stroke-width: 1px;
+}
+
+svg.zw_nr .zwBox {
+    fill: #F0F0D8;
+    stroke: #278727;
+    stroke-width: 2px;
+}
+
+svg.zw_nr .zwDongle {
+    fill: #F0F0D8;
+    stroke: red;
+    stroke-width: 2px;
+}
+
+svg.zw_nr .zwLine {
+    stroke: #278727;
+    stroke-width: 1px;
+}
+
+svg.zw_nr .zwMargin {
+    fill: none;
+    stroke: #278727;
+    stroke-width: 1px;
+}
+
+svg:not([fill]):not(.jssvg) {
+    fill: $secondary-color;
+}
