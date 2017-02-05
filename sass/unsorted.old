@@ -311,38 +311,6 @@ a.evo-hist {
     margin-left: 6px;
 }
 
-#errmsg {
-    background: #000;
-    color: #FFF;
-    left: 40px;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-}
-
-div#errmsg {
-    background: $primary-color;
-    border-bottom: 3px #fff solid;
-    border-top: 3px #fff solid;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    left: 0;
-    padding: 20px;
-    position: fixed;
-    top: 10px;
-    width: 100%;
-    z-index: 99999;
-}
-
-div#errmsg:after {
-    content: ' !!!!';
-}
-
-div#errmsg:before {
-    content: '!!!! ';
-}
-
 div#svgmarker {
     background: #FFFFE7;
     border: 2px solid #278727;

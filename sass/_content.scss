@@ -79,11 +79,11 @@
         }
 
         & + .makeSelect {
-            margin-top: 5px;
+            margin-top: 10px;
         }
         
         & + .makeTable {
-            margin-top: 5px;
+            margin-top: 10px;
         }
     }
 
@@ -115,11 +115,32 @@
             padding: 5px;
         }
     }
+    
+    .devType {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-top: 10px;
+        
+        a {
+            color: #fff;
+        }
+    }
 
     .detLink {
         border: 2px $primary-color solid;
         padding: 2px 10px;
         display: inline-block;
         margin-top: 10px;
+    }
+
+    #devSpecHelp {
+        background: #fff;
+        border-left: 5px $primary-color solid;
+        color: $secondary-color;
+        font-family: 'Source Code Pro', monospace !important;
+        max-width: 985px;
+        padding: 5px;
+        width: 100%;
     }
 }

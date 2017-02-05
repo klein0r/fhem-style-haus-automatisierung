@@ -77,3 +77,26 @@ input[type="text"] {
         width: 600px;
     }
 }
+
+#errmsg {
+    background: $primary-color;
+    border-bottom: 3px #fff solid;
+    border-top: 3px #fff solid;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    left: 0;
+    padding: 20px;
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 99999;
+    
+    &:after {
+        content: ' !!!!';
+    }
+
+    &:before {
+        content: '!!!! ';
+    }
+}
