@@ -1,13 +1,4 @@
 
-#devSpecHelp {
-    background: #fff;
-    border-left: 5px $primary-color solid;
-    color: $secondary-color;
-    font-family: 'Source Code Pro', monospace;
-    max-width: 985px;
-    padding: 5px;
-    width: 100%;
-}
 
 #fpmenu input[type="submit"] {
     width: 80px;
@@ -63,13 +54,6 @@
 
 .dashboard_widgetheader svg {
     margin-right: 5px;
-}
-
-.detLink {
-    border: 2px $primary-color solid;
-    border-radius: 0;
-    margin-right: 0 !important;
-    padding: 2px 10px;
 }
 
 .devType {
@@ -241,11 +225,6 @@
     height: 10px;
 }
 
-.get, .set, .attr {
-    float: left;
-    margin-bottom: 5px;
-}
-
 .handle {
     -moz-user-select: none;
     -user-select: none;
@@ -258,37 +237,6 @@
     position: relative;
     text-align: center;
     width: 50px;
-}
-
-.makeSelect {
-    background: #fff;
-    border-left: 5px $primary-color solid;
-    border-right: 5px $primary-color solid;
-    box-sizing: border-box;
-    clear: left;
-    color: $secondary-color;
-    display: inline;
-    float: left;
-    margin-top: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    width: 100%;
-}
-
-.makeSelect input[type="text"] {
-    color: #555;
-}
-
-.makeTable {
-    clear: left;
-    display: inline;
-    float: left;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-.makeTable table.block td:nth-child(2) {
-    width: 60%;
 }
 
 .rc_body {
@@ -413,19 +361,8 @@ div.block {
     padding: .7em;
 }
 
-div.detLink {
-    display: inline-block;
-    margin-right: .5em;
-}
-
 div.dist {
     padding-top: .3em;
-}
-
-div.ui-dialog {
-    background: #fff;
-    border: 2px solid $primary-color;
-    padding: .2em;
 }
 
 div.ui-widget-content {
@@ -452,18 +389,6 @@ input {
     font-size: 16px;
 }
 
-input[type="submit"] {
-    border: 2px $primary-color solid;
-    border-radius: 0;
-    color: $primary-color;
-    padding: 1px 10px;
-}
-
-input[type="text"] {
-    border: 2px $primary-color solid;
-    color: #555;
-}
-
 pre {
     white-space: pre-wrap;
 }
@@ -472,17 +397,6 @@ pre.log {
     background: #fff;
     color: #000;
     padding: 10px;
-}
-
-select {
-    border: 2px $primary-color solid;
-    border-radius: 0;
-    color: $primary-color;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 0 10px;
 }
 
 select [value^=l1] {

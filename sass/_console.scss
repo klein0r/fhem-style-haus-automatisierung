@@ -10,3 +10,13 @@
     color: #fff;
     font-family: 'Source Code Pro', monospace;
 }
+
+#devSpecHelp {
+    background: #fff;
+    border-left: 5px $primary-color solid;
+    color: $secondary-color;
+    font-family: 'Source Code Pro', monospace;
+    max-width: 985px;
+    padding: 5px;
+    width: 100%;
+}
