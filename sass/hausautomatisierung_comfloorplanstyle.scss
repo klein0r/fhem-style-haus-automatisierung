@@ -1,3 +1,8 @@
+@import "compass/reset";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
 @import 'vars';
 
 #logo {
@@ -41,45 +46,21 @@ body[id~=Media] {
     width: 260px;
     z-index: 9999;
     height: 100%;
-    
+
+    table {
+        border-collapse: collapse;
+        border-radius: 0;
+        width: 100%;
+    }
+
     a {
         background: #fff;
         color: $secondary-color;
         display: block;
-        margin-bottom: -1px;
         padding: 10px 15px;
         position: relative;
         z-index: 9999;
-    }
-
-    table.start {
-        border: none;
-        border-spacing: 0;
-        margin-bottom: 10px;
-
-        tr.sel {
-            a {
-                background: $primary-color;
-                color: #fff;
-            }
-
-            svg.icon {
-                fill: #fff;
-            }
-
-            td a:after {
-                border-bottom: 17px solid transparent;
-                border-left: 13px solid #e56524;
-                border-top: 17px solid transparent;
-                content: " ";
-                height: 0;
-                margin-top: -17px;
-                position: absolute;
-                right: -13px;
-                top: 50%;
-                width: 0;
-            }
-        }
+        line-height: 15px;
     }
 }
 

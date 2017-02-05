@@ -3,6 +3,12 @@
     margin-top: 140px;
     width: 260px;
     z-index: 9999;
+    
+    table {
+        border-collapse: collapse;
+        border-radius: 0;
+        width: 100%;
+    }
 
     a {
         background: #fff;
