@@ -18,3 +18,7 @@ Einmal speichern und neu laden - fertig.
 ## Vorschau
 
 ![FHEM Style](https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/master/preview.png)
+
+## Smart-Home-Icons:
+
+Thanks @ https://dribbble.com/shots/2084609-Smart-House-Icon-Set-Free
