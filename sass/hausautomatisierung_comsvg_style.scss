@@ -295,8 +295,10 @@ svg {
         font-size: 11px;
 
         &.title {
-            fill: $primary-color;
+            fill: #fff;
             font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
         }
 
         &.legend {

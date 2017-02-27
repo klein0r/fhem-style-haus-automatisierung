@@ -6,6 +6,7 @@ jQuery(document).ready(function ($) {
     });
 
     $('#content > br').remove();
+    $('.makeSelect').parent().find('br').remove();
 
     // Add missing classes for elements
     $('.SVGplot').prevAll('a').addClass('plot-nav');

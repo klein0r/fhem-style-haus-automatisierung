@@ -16,12 +16,12 @@
         display: inline;
         float: left;
         width: 100%;
-        font-size: 20px;
+        font-size: $large-fontsize;
         text-transform: uppercase;
         letter-spacing: 10px;
-        
+
         table {
-            font-size: 13px;
+            font-size: $default-fontsize;
             text-transform: none;
             letter-spacing: normal;
         }
@@ -59,8 +59,7 @@
             border: 2px $primary-color solid;
             border-radius: 0;
             color: $primary-color;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
+            font-size: $large-fontsize;
             margin-left: 5px;
             margin-right: 5px;
             padding: 0 10px;
@@ -74,14 +73,14 @@
             color: $primary-color;
             padding: 1px 10px;
             background: transparent;
-            font-size: 16px;
+            font-size: $large-fontsize;
         }
 
         input[type="text"] {
             border: 2px $primary-color solid;
             color: #555;
             background: transparent;
-            font-size: 16px;
+            font-size: $large-fontsize;
         }
 
         & + .makeSelect {
@@ -120,8 +119,44 @@
         tr.even > td {
             padding: 5px;
         }
+
+        .ex {
+            max-width: 1000px;
+            white-space: normal;
+        }
+
+        input + select,
+        select + select {
+            margin-left: 10px;
+        }
     }
-    
+
+    #pedit {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: $large-fontsize;
+        letter-spacing: 10px;
+        
+        > * {
+            text-transform: none;
+            font-size: $default-fontsize;
+            letter-spacing: normal;
+        }
+
+        .plotEditor {
+            select.svgSrc, select.set {
+                border: 2px $primary-color solid;
+                border-radius: 0;
+                color: $primary-color;
+            }
+        }
+    }
+
+    .SVGlabel {
+        background: #f5f6f9;
+        padding: 5px;
+    }
+
     .devType {
         font-size: 20px;
         text-transform: uppercase;
@@ -138,6 +173,9 @@
         padding: 2px 10px;
         display: inline-block;
         margin-top: 10px;
+        line-height: 20px;
+        margin-right: 10px;
+        vertical-align: top;
     }
 
     #devSpecHelp {
@@ -148,5 +186,25 @@
         max-width: 985px;
         padding: 5px;
         width: 100%;
+    }
+
+    #ZWHelp {
+        font-size: $default-fontsize !important;
+        text-transform: none !important;
+        letter-spacing: normal !important;
+        background: #fff;
+        color: $secondary-color;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    
+    div.img {
+        width: 100%;
+        background: #fff;
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
