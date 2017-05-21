@@ -49,7 +49,7 @@ button.dist {
     }
 }
 
-#content {
+#content, #right {
     bottom: 20px;
     left: 180px;
     position: absolute;
@@ -57,7 +57,7 @@ button.dist {
     top: 50px;
 }
 
-#content, #hdr {
+#content, #hdr, #right {
     left: 320px;
 }
 

@@ -4,7 +4,7 @@
     .get, .set, .attr {
         float: left;
     }
-    
+
     .roomoverview {
         .icon {
             margin-right: 5px;
@@ -38,7 +38,7 @@
             margin-top: 10px;
         }
     }
-        
+
     .makeSelect {
         background: #fff;
         border-left: 5px $primary-color solid;
@@ -194,10 +194,22 @@
             text-transform: uppercase;
             font-weight: bold;
         }
+        
+        dd {
+            margin-left: 50px;
+        }
+        
+        dt {
+            margin-left: 25px;
+        }
 
-        b {
+        b, strong {
             font-weight: bold;
             text-transform: uppercase;
+        }
+        
+        p {
+            margin: 5px 0;
         }
 
         code {
@@ -210,6 +222,12 @@
             
             li {
                 margin: 10px 0;
+            }
+        }
+        
+        table {
+            td {
+                padding: 5px;
             }
         }
     }

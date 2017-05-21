@@ -1,0 +1,67 @@
+#right {
+    
+    max-width: 1000px;
+    width: 100%;
+    
+    > h3, > h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-top: 10px;
+    }
+    
+    > ul, > div, > div > ul, > p {
+        color: $secondary-color;
+        background: #fff;        
+        border-collapse: collapse;
+        border-left: 5px $primary-color solid;
+        font-family: 'Source Code Pro', monospace !important;
+        max-width: 995px;
+        padding: 5px;
+        width: 100%;
+
+        h3 {
+            font-size: 16px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        dd {
+            margin-left: 50px;
+        }
+        
+        dt {
+            margin-left: 25px;
+        }
+
+        b, strong {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        p {
+            margin: 5px 0;
+        }
+
+        code {
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            
+            li {
+                margin: 10px 0;
+            }
+        }
+        
+        table {
+            td {
+                padding: 5px;
+            }
+        }
+    }
+    
+}
