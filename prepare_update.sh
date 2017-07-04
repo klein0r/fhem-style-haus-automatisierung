@@ -1,6 +1,6 @@
 #!/bin/bash
 
-compass compile --force
+#compass compile --force
 
 rm controls_ha_theme.txt
 find ./www -type f \( ! -iname ".*" \) -print0 | while IFS= read -r -d '' f;

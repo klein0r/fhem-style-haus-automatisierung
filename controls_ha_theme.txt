@@ -1,6 +1,12 @@
-DEL ./www/hausautomatisierung-com/hausautomatisierung_comfloorplanstyle.css
-UPD www/hausautomatisierung-com/hausautomatisierung_comfloorplanstyle.css ae20c426525f8d6f 255 ef53 4096 4096 28445346 24349643 22898943 7233536 6840713 www/hausautomatisierung-com/hausautomatisierung_comfloorplanstyle.css
-DEL ./www/hausautomatisierung-com/hausautomatisierung_comsvg_style.css
-UPD www/hausautomatisierung-com/hausautomatisierung_comsvg_style.css ae20c426525f8d6f 255 ef53 4096 4096 28445346 24349643 22898943 7233536 6840713 www/hausautomatisierung-com/hausautomatisierung_comsvg_style.css
-DEL ./www/hausautomatisierung-com/hausautomatisierung_comstyle.css
-UPD www/hausautomatisierung-com/hausautomatisierung_comstyle.css ae20c426525f8d6f 255 ef53 4096 4096 28445346 24349643 22898943 7233536 6840713 www/hausautomatisierung-com/hausautomatisierung_comstyle.css
+DEL ./www/hausautomatisierung-com/custom.js
+UPD 2017-07-04_22:17:20 1027 www/hausautomatisierung-com/custom.js
+DEL ./www/hausautomatisierung-com/images/bg_wrapper.jpg
+UPD 2017-07-04_22:17:20 81828 www/hausautomatisierung-com/images/bg_wrapper.jpg
+DEL ./www/hausautomatisierung-com/images/haus_automatisierung.png
+UPD 2017-07-04_22:17:20 20144 www/hausautomatisierung-com/images/haus_automatisierung.png
+DEL ./www/pgm2/hausautomatisierung_comfloorplanstyle.css
+UPD 2017-07-04_22:17:20 4092 www/pgm2/hausautomatisierung_comfloorplanstyle.css
+DEL ./www/pgm2/hausautomatisierung_comstyle.css
+UPD 2017-07-04_22:17:20 18139 www/pgm2/hausautomatisierung_comstyle.css
+DEL ./www/pgm2/hausautomatisierung_comsvg_style.css
+UPD 2017-07-04_22:17:20 5278 www/pgm2/hausautomatisierung_comsvg_style.css
