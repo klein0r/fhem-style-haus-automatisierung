@@ -4,14 +4,22 @@ Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - look and feel s
 
 ## Installation
 
-1. Laden der Quellen
+1. Hinzufügen des neuen Themes in Version 2
 
 ```
-cd /opt/fhem/www
-git clone https://github.com/klein0r/fhem-style-haus-automatisierung.git hausautomatisierung-com
+update add https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-2/controls_ha_theme.txt
+update check ha_theme
+update all ha_theme
 ```
 
 2. Select Style -> hausautomatisierung_com
+
+3. Ein paar Anpassungen am Web-Device:
+
+```
+attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js
+attr WEB roomIcons Save config:message_attention
+```
 
 Einmal speichern und neu laden - fertig.
 
