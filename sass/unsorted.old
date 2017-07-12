@@ -32,10 +32,6 @@
     top: 20px;
 }
 
-.changed a, .changed, select [value^=l0] {
-    color: red;
-}
-
 .col2 {
     text-align: center;
 }
@@ -225,20 +221,6 @@
     height: 10px;
 }
 
-.handle {
-    -moz-user-select: none;
-    -user-select: none;
-    -webkit-user-select: none;
-    border: 3px solid;
-    color: $secondary-color;
-    cursor: pointer;
-    height: 20px;
-    line-height: 20px;
-    position: relative;
-    text-align: center;
-    width: 50px;
-}
-
 .rc_body {
     background: #C8C8B0;
     border-color: gray;
@@ -267,11 +249,7 @@
     margin-top: 3px;
 }
 
-.slider {
-    float: left;
-    height: 26px;
-    width: 250px;
-}
+
 
 .ui-button-text {
     color: #555 !important;

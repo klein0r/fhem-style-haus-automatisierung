@@ -110,3 +110,10 @@ input[type="text"] {
 embed {
     margin-bottom: 10px;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
