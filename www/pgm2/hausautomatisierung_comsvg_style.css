@@ -23,64 +23,130 @@ svg circle#svgmarker { color: #278727; opacity: 0.5; }
 svg path.SVGplot { stroke: black; fill: none; }
 svg rect.SVGplot { stroke: black; fill: none; }
 svg polyline.SVGplot { fill: none; }
-svg .border { stroke: #e56524; fill: #fff; }
+svg .border { stroke: #e56524; }
 svg .vgrid { stroke: gray; stroke-dasharray: 2, 6; }
 svg .hgrid { stroke: gray; stroke-dasharray: 2, 6; }
 svg .pasted { stroke: black; stroke-dasharray: 1, 1; }
-svg .SVGplot.l0, svg .SVGplot.l0fill, svg .SVGplot.l0dot, svg .SVGplot.l0fill_stripe, svg .SVGplot.l0fill_gyr { stroke: #215A94; }
-svg .SVGplot.l0fill { fill: #215A94; }
-svg .SVGplot.l0dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l0fill_stripe { fill: #215A94; }
-svg .SVGplot.l0fill_gyr { fill: #215A94; }
-svg .SVGplot.l1, svg .SVGplot.l1fill, svg .SVGplot.l1dot, svg .SVGplot.l1fill_stripe, svg .SVGplot.l1fill_gyr { stroke: #18986E; }
-svg .SVGplot.l1fill { fill: #18986E; }
-svg .SVGplot.l1dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l1fill_stripe { fill: #18986E; }
-svg .SVGplot.l1fill_gyr { fill: #18986E; }
-svg .SVGplot.l2, svg .SVGplot.l2fill, svg .SVGplot.l2dot, svg .SVGplot.l2fill_stripe, svg .SVGplot.l2fill_gyr { stroke: #913100; }
-svg .SVGplot.l2fill { fill: #913100; }
-svg .SVGplot.l2dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l2fill_stripe { fill: #913100; }
-svg .SVGplot.l2fill_gyr { fill: #913100; }
-svg .SVGplot.l3, svg .SVGplot.l3fill, svg .SVGplot.l3dot, svg .SVGplot.l3fill_stripe, svg .SVGplot.l3fill_gyr { stroke: #915700; }
-svg .SVGplot.l3fill { fill: #915700; }
-svg .SVGplot.l3dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l3fill_stripe { fill: #915700; }
-svg .SVGplot.l3fill_gyr { fill: #915700; }
-svg .SVGplot.l4, svg .SVGplot.l4fill, svg .SVGplot.l4dot, svg .SVGplot.l4fill_stripe, svg .SVGplot.l4fill_gyr { stroke: #07325E; }
-svg .SVGplot.l4fill { fill: #07325E; }
-svg .SVGplot.l4dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l4fill_stripe { fill: #07325E; }
-svg .SVGplot.l4fill_gyr { fill: #07325E; }
-svg .SVGplot.l5, svg .SVGplot.l5fill, svg .SVGplot.l5dot, svg .SVGplot.l5fill_stripe, svg .SVGplot.l5fill_gyr { stroke: #006141; }
-svg .SVGplot.l5fill { fill: #006141; }
-svg .SVGplot.l5dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l5fill_stripe { fill: #006141; }
-svg .SVGplot.l5fill_gyr { fill: #006141; }
-svg .SVGplot.l6, svg .SVGplot.l6fill, svg .SVGplot.l6dot, svg .SVGplot.l6fill_stripe, svg .SVGplot.l6fill_gyr { stroke: #FFA77A; }
-svg .SVGplot.l6fill { fill: #FFA77A; }
-svg .SVGplot.l6dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l6fill_stripe { fill: #FFA77A; }
-svg .SVGplot.l6fill_gyr { fill: #FFA77A; }
-svg .SVGplot.l7, svg .SVGplot.l7fill, svg .SVGplot.l7dot, svg .SVGplot.l7fill_stripe, svg .SVGplot.l7fill_gyr { stroke: #5F8AB6; }
-svg .SVGplot.l7fill { fill: #5F8AB6; }
-svg .SVGplot.l7dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l7fill_stripe { fill: #5F8AB6; }
-svg .SVGplot.l7fill_gyr { fill: #5F8AB6; }
-svg .SVGplot.l8, svg .SVGplot.l8fill, svg .SVGplot.l8dot, svg .SVGplot.l8fill_stripe, svg .SVGplot.l8fill_gyr { stroke: #59B99A; }
-svg .SVGplot.l8fill { fill: #59B99A; }
-svg .SVGplot.l8dot { stroke-dasharray: 2, 4; }
-svg .SVGplot.l8fill_stripe { fill: #59B99A; }
-svg .SVGplot.l8fill_gyr { fill: #59B99A; }
 svg text { stroke: none !important; fill: #fff; font-size: 11px; }
 svg text.title { fill: #fff; font-size: 16px; text-transform: uppercase; letter-spacing: 10px; }
 svg text.legend { cursor: pointer; }
-svg text.SVGplot.l0, svg text.SVGplot.l0fill, svg text.SVGplot.l0dot, svg text.SVGplot.l0fill_stripe, svg text.SVGplot.l0fill_gyr { fill: #215A94; }
-svg text.SVGplot.l1, svg text.SVGplot.l1fill, svg text.SVGplot.l1dot, svg text.SVGplot.l1fill_stripe, svg text.SVGplot.l1fill_gyr { fill: #18986E; }
-svg text.SVGplot.l2, svg text.SVGplot.l2fill, svg text.SVGplot.l2dot, svg text.SVGplot.l2fill_stripe, svg text.SVGplot.l2fill_gyr { fill: #913100; }
-svg text.SVGplot.l3, svg text.SVGplot.l3fill, svg text.SVGplot.l3dot, svg text.SVGplot.l3fill_stripe, svg text.SVGplot.l3fill_gyr { fill: #915700; }
-svg text.SVGplot.l4, svg text.SVGplot.l4fill, svg text.SVGplot.l4dot, svg text.SVGplot.l4fill_stripe, svg text.SVGplot.l4fill_gyr { fill: #07325E; }
-svg text.SVGplot.l5, svg text.SVGplot.l5fill, svg text.SVGplot.l5dot, svg text.SVGplot.l5fill_stripe, svg text.SVGplot.l5fill_gyr { fill: #006141; }
-svg text.SVGplot.l6, svg text.SVGplot.l6fill, svg text.SVGplot.l6dot, svg text.SVGplot.l6fill_stripe, svg text.SVGplot.l6fill_gyr { fill: #FFA77A; }
-svg text.SVGplot.l7, svg text.SVGplot.l7fill, svg text.SVGplot.l7dot, svg text.SVGplot.l7fill_stripe, svg text.SVGplot.l7fill_gyr { fill: #5F8AB6; }
-svg text.SVGplot.l8, svg text.SVGplot.l8fill, svg text.SVGplot.l8dot, svg text.SVGplot.l8fill_stripe, svg text.SVGplot.l8fill_gyr { fill: #59B99A; }
+
+.SVGplot.l0 { stroke: #215A94; }
+
+.SVGplot.l1 { stroke: #18986E; }
+
+.SVGplot.l2 { stroke: #913100; }
+
+.SVGplot.l3 { stroke: #915700; }
+
+.SVGplot.l4 { stroke: #07325E; }
+
+.SVGplot.l5 { stroke: #006141; }
+
+.SVGplot.l6 { stroke: #FFA77A; }
+
+.SVGplot.l7 { stroke: #5F8AB6; }
+
+.SVGplot.l8 { stroke: #59B99A; }
+
+.SVGplot.l0fill { stroke: #215A94; fill: url(#gr_0); }
+
+.SVGplot.l1fill { stroke: #18986E; fill: url(#gr_1); }
+
+.SVGplot.l2fill { stroke: #913100; fill: url(#gr_2); }
+
+.SVGplot.l3fill { stroke: #915700; fill: url(#gr_3); }
+
+.SVGplot.l4fill { stroke: #07325E; fill: url(#gr_4); }
+
+.SVGplot.l5fill { stroke: #006141; fill: url(#gr_5); }
+
+.SVGplot.l6fill { stroke: #FFA77A; fill: url(#gr_6); }
+
+.SVGplot.l7fill { stroke: #5F8AB6; fill: url(#gr_7); }
+
+.SVGplot.l8fill { stroke: #59B99A; fill: url(#gr_8); }
+
+.SVGplot.l0dot { stroke: #215A94; stroke-dasharray: 2,4; }
+
+.SVGplot.l1dot { stroke: #18986E; stroke-dasharray: 2,4; }
+
+.SVGplot.l2dot { stroke: #913100; stroke-dasharray: 2,4; }
+
+.SVGplot.l3dot { stroke: #915700; stroke-dasharray: 2,4; }
+
+.SVGplot.l4dot { stroke: #07325E; stroke-dasharray: 2,4; }
+
+.SVGplot.l5dot { stroke: #006141; stroke-dasharray: 2,4; }
+
+.SVGplot.l6dot { stroke: #FFA77A; stroke-dasharray: 2,4; }
+
+.SVGplot.l7dot { stroke: #5F8AB6; stroke-dasharray: 2,4; }
+
+.SVGplot.l8dot { stroke: #59B99A; stroke-dasharray: 2,4; }
+
+.SVGplot.l0fill_stripe { stroke: #215A94; fill: url(#gr0_stripe); }
+
+.SVGplot.l1fill_stripe { stroke: #18986E; fill: url(#gr1_stripe); }
+
+.SVGplot.l0fill_gyr { stroke: #215A94; fill: url(#gr0_gyr); }
+
+text.SVGplot.l0 { stroke: none; fill: #215A94; }
+
+text.SVGplot.l1 { stroke: none; fill: #18986E; }
+
+text.SVGplot.l2 { stroke: none; fill: #913100; }
+
+text.SVGplot.l3 { stroke: none; fill: #915700; }
+
+text.SVGplot.l4 { stroke: none; fill: #07325E; }
+
+text.SVGplot.l5 { stroke: none; fill: #006141; }
+
+text.SVGplot.l6 { stroke: none; fill: #FFA77A; }
+
+text.SVGplot.l7 { stroke: none; fill: #5F8AB6; }
+
+text.SVGplot.l8 { stroke: none; fill: #59B99A; }
+
+text.SVGplot.l0fill { stroke: none; fill: #215A94; }
+
+text.SVGplot.l1fill { stroke: none; fill: #18986E; }
+
+text.SVGplot.l2fill { stroke: none; fill: #913100; }
+
+text.SVGplot.l3fill { stroke: none; fill: #915700; }
+
+text.SVGplot.l4fill { stroke: none; fill: #07325E; }
+
+text.SVGplot.l5fill { stroke: none; fill: #006141; }
+
+text.SVGplot.l6fill { stroke: none; fill: #FFA77A; }
+
+text.SVGplot.l7fill { stroke: none; fill: #5F8AB6; }
+
+text.SVGplot.l8fill { stroke: none; fill: #59B99A; }
+
+text.SVGplot.l0dot { stroke: none; fill: #215A94; }
+
+text.SVGplot.l1dot { stroke: none; fill: #18986E; }
+
+text.SVGplot.l2dot { stroke: none; fill: #913100; }
+
+text.SVGplot.l3dot { stroke: none; fill: #915700; }
+
+text.SVGplot.l4dot { stroke: none; fill: #07325E; }
+
+text.SVGplot.l5dot { stroke: none; fill: #006141; }
+
+text.SVGplot.l6dot { stroke: none; fill: #FFA77A; }
+
+text.SVGplot.l7dot { stroke: none; fill: #5F8AB6; }
+
+text.SVGplot.l8dot { stroke: none; fill: #59B99A; }
+
+text.SVGplot.l0fill_stripe { stroke: none; fill: #215A94; }
+
+text.SVGplot.l1fill_stripe { stroke: none; fill: #18986E; }
+
+text.SVGplot.l0fill_gyr { stroke: none; fill: #215A94; }

@@ -19,7 +19,7 @@ $svg-color-9: #59B99A;
 
 svg {
     font-family: 'Open Sans', sans-serif;
-    
+
     .background {
         fill: #000;
     }
@@ -43,9 +43,9 @@ svg {
         fill: none;
     }
 
+    // Nicht füllen, ansonsten gehen keine durchsichtigen Plots mehr
     .border {
         stroke: $primary-color;
-        fill: #fff;
     }
 
     .vgrid {
@@ -63,232 +63,6 @@ svg {
         stroke-dasharray: 1, 1;
     }
 
-    .SVGplot {
-        &.l0,
-        &.l0fill,
-        &.l0dot,
-        &.l0fill_stripe,
-        &.l0fill_gyr {
-            stroke: $svg-color-1;
-        }
-        
-        &.l0fill {
-            fill: $svg-color-1;
-        }
-        
-        &.l0dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l0fill_stripe {
-            fill: $svg-color-1;
-        }
-
-        &.l0fill_gyr {
-            fill: $svg-color-1;
-        }
-
-
-        &.l1,
-        &.l1fill,
-        &.l1dot,
-        &.l1fill_stripe,
-        &.l1fill_gyr {
-            stroke: $svg-color-2;
-        }
-        
-        &.l1fill {
-            fill: $svg-color-2;
-        }
-        
-        &.l1dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l1fill_stripe {
-            fill: $svg-color-2;
-        }
-
-        &.l1fill_gyr {
-            fill: $svg-color-2;
-        }
-
-
-        &.l2,
-        &.l2fill,
-        &.l2dot,
-        &.l2fill_stripe,
-        &.l2fill_gyr {
-            stroke: $svg-color-3;
-        }
-        
-        &.l2fill {
-            fill: $svg-color-3;
-        }
-        
-        &.l2dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l2fill_stripe {
-            fill: $svg-color-3;
-        }
-
-        &.l2fill_gyr {
-            fill: $svg-color-3;
-        }
-
-
-        &.l3,
-        &.l3fill,
-        &.l3dot,
-        &.l3fill_stripe,
-        &.l3fill_gyr {
-            stroke: $svg-color-4;
-        }
-        
-        &.l3fill {
-            fill: $svg-color-4;
-        }
-        
-        &.l3dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l3fill_stripe {
-            fill: $svg-color-4;
-        }
-
-        &.l3fill_gyr {
-            fill: $svg-color-4;
-        }
-
-
-        &.l4,
-        &.l4fill,
-        &.l4dot,
-        &.l4fill_stripe,
-        &.l4fill_gyr {
-            stroke: $svg-color-5;
-        }
-        
-        &.l4fill {
-            fill: $svg-color-5;
-        }
-        
-        &.l4dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l4fill_stripe {
-            fill: $svg-color-5;
-        }
-
-        &.l4fill_gyr {
-            fill: $svg-color-5;
-        }
-
-
-        &.l5,
-        &.l5fill,
-        &.l5dot,
-        &.l5fill_stripe,
-        &.l5fill_gyr {
-            stroke: $svg-color-6;
-        }
-        
-        &.l5fill {
-            fill: $svg-color-6;
-        }
-        
-        &.l5dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l5fill_stripe {
-            fill: $svg-color-6;
-        }
-
-        &.l5fill_gyr {
-            fill: $svg-color-6;
-        }
-
-
-        &.l6,
-        &.l6fill,
-        &.l6dot,
-        &.l6fill_stripe,
-        &.l6fill_gyr {
-            stroke: $svg-color-7;
-        }
-        
-        &.l6fill {
-            fill: $svg-color-7;
-        }
-        
-        &.l6dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l6fill_stripe {
-            fill: $svg-color-7;
-        }
-
-        &.l6fill_gyr {
-            fill: $svg-color-7;
-        }
-
-
-        &.l7,
-        &.l7fill,
-        &.l7dot,
-        &.l7fill_stripe,
-        &.l7fill_gyr {
-            stroke: $svg-color-8;
-        }
-        
-        &.l7fill {
-            fill: $svg-color-8;
-        }
-        
-        &.l7dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l7fill_stripe {
-            fill: $svg-color-8;
-        }
-
-        &.l7fill_gyr {
-            fill: $svg-color-8;
-        }
-
-
-        &.l8,
-        &.l8fill,
-        &.l8dot,
-        &.l8fill_stripe,
-        &.l8fill_gyr {
-            stroke: $svg-color-9;
-        }
-        
-        &.l8fill {
-            fill: $svg-color-9;
-        }
-        
-        &.l8dot {
-            stroke-dasharray: 2, 4;
-        }
-
-        &.l8fill_stripe {
-            fill: $svg-color-9;
-        }
-
-        &.l8fill_gyr {
-            fill: $svg-color-9;
-        }
-    }
-
     text {
         stroke: none !important;
         fill: #fff;
@@ -304,79 +78,67 @@ svg {
         &.legend {
             cursor: pointer;
         }
-
-        &.SVGplot {
-            &.l0,
-            &.l0fill,
-            &.l0dot,
-            &.l0fill_stripe,
-            &.l0fill_gyr {
-                fill: $svg-color-1;
-            }
-
-            &.l1,
-            &.l1fill,
-            &.l1dot,
-            &.l1fill_stripe,
-            &.l1fill_gyr {
-                fill: $svg-color-2;
-            }
-
-            &.l2,
-            &.l2fill,
-            &.l2dot,
-            &.l2fill_stripe,
-            &.l2fill_gyr {
-                fill: $svg-color-3;
-            }
-
-            &.l3,
-            &.l3fill,
-            &.l3dot,
-            &.l3fill_stripe,
-            &.l3fill_gyr {
-                fill: $svg-color-4;
-            }
-
-            &.l4,
-            &.l4fill,
-            &.l4dot,
-            &.l4fill_stripe,
-            &.l4fill_gyr {
-                fill: $svg-color-5;
-            }
-
-            &.l5,
-            &.l5fill,
-            &.l5dot,
-            &.l5fill_stripe,
-            &.l5fill_gyr {
-                fill: $svg-color-6;
-            }
-
-            &.l6,
-            &.l6fill,
-            &.l6dot,
-            &.l6fill_stripe,
-            &.l6fill_gyr {
-                fill: $svg-color-7;
-            }
-
-            &.l7,
-            &.l7fill,
-            &.l7dot,
-            &.l7fill_stripe,
-            &.l7fill_gyr {
-                fill: $svg-color-8;
-            }
-
-            &.l8,
-            &.l8fill,
-            &.l8dot,
-            &.l8fill_stripe,
-            &.l8fill_gyr {
-                fill: $svg-color-9;
-            }
-        }
     }
 }
+
+.SVGplot.l0 { stroke: $svg-color-1; }
+.SVGplot.l1 { stroke: $svg-color-2; }
+.SVGplot.l2 { stroke: $svg-color-3; }
+.SVGplot.l3 { stroke: $svg-color-4; }
+.SVGplot.l4 { stroke: $svg-color-5; }
+.SVGplot.l5 { stroke: $svg-color-6; }
+.SVGplot.l6 { stroke: $svg-color-7; }
+.SVGplot.l7 { stroke: $svg-color-8; }
+.SVGplot.l8 { stroke: $svg-color-9; }
+.SVGplot.l0fill { stroke: $svg-color-1; fill: url(#gr_0); }
+.SVGplot.l1fill { stroke: $svg-color-2; fill: url(#gr_1); }
+.SVGplot.l2fill { stroke: $svg-color-3; fill: url(#gr_2); }
+.SVGplot.l3fill { stroke: $svg-color-4; fill: url(#gr_3); }
+.SVGplot.l4fill { stroke: $svg-color-5; fill: url(#gr_4); }
+.SVGplot.l5fill { stroke: $svg-color-6; fill: url(#gr_5); }
+.SVGplot.l6fill { stroke: $svg-color-7; fill: url(#gr_6); }
+.SVGplot.l7fill { stroke: $svg-color-8; fill: url(#gr_7); }
+.SVGplot.l8fill { stroke: $svg-color-9; fill: url(#gr_8); }
+.SVGplot.l0dot { stroke: $svg-color-1; stroke-dasharray: 2,4; }
+.SVGplot.l1dot { stroke: $svg-color-2; stroke-dasharray: 2,4; }
+.SVGplot.l2dot { stroke: $svg-color-3; stroke-dasharray: 2,4; }
+.SVGplot.l3dot { stroke: $svg-color-4; stroke-dasharray: 2,4; }
+.SVGplot.l4dot { stroke: $svg-color-5; stroke-dasharray: 2,4; }
+.SVGplot.l5dot { stroke: $svg-color-6; stroke-dasharray: 2,4; }
+.SVGplot.l6dot { stroke: $svg-color-7; stroke-dasharray: 2,4; }
+.SVGplot.l7dot { stroke: $svg-color-8; stroke-dasharray: 2,4; }
+.SVGplot.l8dot { stroke: $svg-color-9; stroke-dasharray: 2,4; }
+.SVGplot.l0fill_stripe { stroke: $svg-color-1; fill: url(#gr0_stripe); }
+.SVGplot.l1fill_stripe { stroke: $svg-color-2; fill: url(#gr1_stripe); }
+.SVGplot.l0fill_gyr { stroke: $svg-color-1; fill: url(#gr0_gyr); }
+
+text.SVGplot.l0 { stroke: none; fill: $svg-color-1; }
+text.SVGplot.l1 { stroke: none; fill: $svg-color-2; }
+text.SVGplot.l2 { stroke: none; fill: $svg-color-3; }
+text.SVGplot.l3 { stroke: none; fill: $svg-color-4; }
+text.SVGplot.l4 { stroke: none; fill: $svg-color-5; }
+text.SVGplot.l5 { stroke: none; fill: $svg-color-6; }
+text.SVGplot.l6 { stroke: none; fill: $svg-color-7; }
+text.SVGplot.l7 { stroke: none; fill: $svg-color-8; }
+text.SVGplot.l8 { stroke: none; fill: $svg-color-9; }
+text.SVGplot.l0fill { stroke: none; fill: $svg-color-1; }
+text.SVGplot.l1fill { stroke: none; fill: $svg-color-2; }
+text.SVGplot.l2fill { stroke: none; fill: $svg-color-3; }
+text.SVGplot.l3fill { stroke: none; fill: $svg-color-4; }
+text.SVGplot.l4fill { stroke: none; fill: $svg-color-5; }
+text.SVGplot.l5fill { stroke: none; fill: $svg-color-6; }
+text.SVGplot.l6fill { stroke: none; fill: $svg-color-7; }
+text.SVGplot.l7fill { stroke: none; fill: $svg-color-8; }
+text.SVGplot.l8fill { stroke: none; fill: $svg-color-9; }
+text.SVGplot.l0dot { stroke: none; fill: $svg-color-1; }
+text.SVGplot.l1dot { stroke: none; fill: $svg-color-2; }
+text.SVGplot.l2dot { stroke: none; fill: $svg-color-3; }
+text.SVGplot.l3dot { stroke: none; fill: $svg-color-4; }
+text.SVGplot.l4dot { stroke: none; fill: $svg-color-5; }
+text.SVGplot.l5dot { stroke: none; fill: $svg-color-6; }
+text.SVGplot.l6dot { stroke: none; fill: $svg-color-7; }
+text.SVGplot.l7dot { stroke: none; fill: $svg-color-8; }
+text.SVGplot.l8dot { stroke: none; fill: $svg-color-9; }
+text.SVGplot.l0fill_stripe {stroke: none; fill: $svg-color-1; }
+text.SVGplot.l1fill_stripe {stroke: none; fill: $svg-color-2; }
+text.SVGplot.l0fill_gyr {stroke: none; fill: $svg-color-1; }

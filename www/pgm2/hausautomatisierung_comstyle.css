@@ -78,6 +78,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table .slider { width: 150px; }
 #content table.block { background: #fff; border: none; color: #676f7a; }
 #content table.block.readings .changed { color: #e56524; }
+#content table#TYPE_Plots { background: none; }
 #content table.block td:nth-child(1) { white-space: nowrap; }
 #content table.block tr.odd { background: #f5f6f9; }
 #content table.readings td:nth-child(2) { word-break: break-all; }
