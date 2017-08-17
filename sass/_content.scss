@@ -152,8 +152,9 @@
             line-height: 20px;
             padding: 0 0px 0 10px;
             min-width: 90px;
+            max-width: 300px;
         }
-        
+
         .slider {
             width: 150px;
         }
@@ -261,11 +262,11 @@
             text-transform: uppercase;
             font-weight: bold;
         }
-        
+
         dd {
             margin-left: 50px;
         }
-        
+
         dt {
             margin-left: 25px;
         }
@@ -274,7 +275,7 @@
             font-weight: bold;
             text-transform: uppercase;
         }
-        
+
         p {
             margin: 5px 0;
         }
@@ -291,7 +292,7 @@
                 margin: 10px 0;
             }
         }
-        
+
         table {
             td {
                 padding: 5px;
@@ -308,7 +309,7 @@
         padding: 5px;
         box-sizing: border-box;
     }
-    
+
     div.img {
         width: 100%;
         background: #fff;

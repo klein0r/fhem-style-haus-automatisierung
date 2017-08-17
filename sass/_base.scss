@@ -70,7 +70,6 @@ input[type="text"] {
     left: 320px;
     position: absolute;
     top: 10px;
-    width: 500px;
 
     input.maininput {
         color: #fff;
@@ -81,6 +80,21 @@ input[type="text"] {
         &:focus {
             outline: none;
         }
+    }
+
+    &:after {
+        color: $primary-color;
+        content: '!!! Bitte Theme-JS aktivieren für vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js';
+        margin-top: 5px;
+        display: block;
+        background: #fff;
+        padding: 5px;
+        opacity: 0.9;
+    }
+
+    // Wird vom Javascript hinzugefügt
+    &.js-installed:after{
+        content: none;
     }
 }
 
@@ -97,7 +111,7 @@ input[type="text"] {
     top: 10px;
     width: 100%;
     z-index: 99999;
-    
+
     &:after {
         content: ' !!!!';
     }

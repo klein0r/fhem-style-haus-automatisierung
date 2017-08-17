@@ -1,5 +1,8 @@
 jQuery(document).ready(function ($) {
-	
+    
+    // Check für JS-Installation entfernen
+    $('#hdr').addClass('js-installed');
+
 	// Clear spaces
     $('#content .devType, #menu .room a').each(function() {
     	$(this).html($(this).html().replace(/&nbsp;/g, ''));
@@ -27,4 +30,21 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // Links in der Navigation hinzufügen
+    var $navElement = jQuery('#menu .room').last().find('tbody');
+
+    $navElement.append(
+        $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/klein0r/fhem-style-haus-automatisierung/issues/">Theme-Fehler melden</a></div></td></tr>')
+    );
+
+    // Automatische Breite für HDR Input
+    $('#hdr input.maininput').css({width: $('#content').width() + 'px'});
+    $( window ).resize(function() {
+        $('#hdr input.maininput').css({width: $('#content').width() + 'px'});
+    });
+
+    // Klick auf Error-Message blendet diese aus
+    $('body').on('click', '#errmsg', function() {
+        $(this).hide();
+    });
 });
