@@ -4,6 +4,7 @@
     padding: .2em !important;
     border-radius: 0 !important;
     color: $secondary-color !important;
+    padding: 0 !important;
 }
 
 .ui-widget-content {
@@ -13,4 +14,11 @@
 .ui-button {
     border-radius: 0 !important;
     color: $primary-color !important;
+}
+
+.ui-dialog-titlebar {
+    display: block !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: $odd-color !important;
 }

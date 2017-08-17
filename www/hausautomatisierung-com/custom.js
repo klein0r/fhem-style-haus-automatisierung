@@ -10,12 +10,12 @@ jQuery(document).ready(function ($) {
 
     // Add missing classes for elements
     $('.SVGplot').prevAll('a').addClass('plot-nav');
-    
+
     // Icon selection
     $('button.dist').wrapAll('<div class="icons"/>');
     $('button.dist').css({width: '50px', height: '50px', margin: '5px', padding: '0'});
     $('button.dist > *').css({maxWidth: '40px', maxHeight: '40px', display: 'block', margin: '0px auto'});
-    
+
     $('input[type=text][name=icon-filter]').keyup(function() {
         var val = $(this).val().toLowerCase();
         if (val.length === 0) {
@@ -26,4 +26,5 @@ jQuery(document).ready(function ($) {
             }).show();
         }
     });
+
 });
