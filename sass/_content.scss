@@ -171,8 +171,8 @@
             }
         }
 
-        &#TYPE_Plots {
-            background: none;
+        .no-background {
+            background: none !important;
         }
 
         &.block td:nth-child(1) {

@@ -1,7 +1,14 @@
 jQuery(document).ready(function ($) {
-    
+
+    var themeVersion = '2.4';
+
     // Check für JS-Installation entfernen
     $('#hdr').addClass('js-installed');
+    
+    // Add version to logo
+    $('#logo').append(
+        $('<span class="theme-version">' + themeVersion + '</span>')
+    );
 
 	// Clear spaces
     $('#content .devType, #menu .room a').each(function() {
@@ -13,6 +20,8 @@ jQuery(document).ready(function ($) {
 
     // Add missing classes for elements
     $('.SVGplot').prevAll('a').addClass('plot-nav');
+    $('.SVGplot').parents('tr.odd').addClass('no-background').parents('.block').addClass('no-background');
+    $('.SVGplot').parents('tr.even').addClass('no-background').parents('.block').addClass('no-background');
 
     // Icon selection
     $('button.dist').wrapAll('<div class="icons"/>');
@@ -34,12 +43,12 @@ jQuery(document).ready(function ($) {
     var $navElement = jQuery('#menu .room').last().find('tbody');
 
     $navElement.append(
-        $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/klein0r/fhem-style-haus-automatisierung/issues/">Theme-Fehler melden</a></div></td></tr>')
+        $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/klein0r/fhem-style-haus-automatisierung/issues/">Theme-Fehler melden (v' + themeVersion + ')</a></div></td></tr>')
     );
 
     // Automatische Breite für HDR Input
     $('#hdr input.maininput').css({width: $('#content').width() + 'px'});
-    $( window ).resize(function() {
+    $(window).resize(function() {
         $('#hdr input.maininput').css({width: $('#content').width() + 'px'});
     });
 
