@@ -1,7 +1,6 @@
 DEL ./www/hausautomatisierung-com/custom.js
 UPD 2017-10-14_09:47:39 2185 www/hausautomatisierung-com/custom.js
 DEL ./www/hausautomatisierung-com/images/bg_wrapper.jpg
-UPD 2017-07-04_22:17:20 81828 www/hausautomatisierung-com/images/bg_wrapper.jpg
 DEL ./www/hausautomatisierung-com/images/haus_automatisierung.png
 UPD 2017-07-04_22:17:20 20144 www/hausautomatisierung-com/images/haus_automatisierung.png
 DEL ./www/images/hausautomatisierung_com/doorhandle.svg
