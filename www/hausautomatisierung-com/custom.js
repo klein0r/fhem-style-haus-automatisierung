@@ -1,10 +1,10 @@
 jQuery(document).ready(function ($) {
 
-    var themeVersion = '2.4';
+    var themeVersion = '2.5';
 
     // Check für JS-Installation entfernen
     $('#hdr').addClass('js-installed');
-    
+
     // Add version to logo
     $('#logo').append(
         $('<span class="theme-version">' + themeVersion + '</span>')
@@ -56,4 +56,37 @@ jQuery(document).ready(function ($) {
     $('body').on('click', '#errmsg', function() {
         $(this).hide();
     });
+
+    $('.roomoverview .col1, .makeTable .col1').each(function(index) {
+        $(this).parent().addClass('first-table-column');
+    });
+
+    // Image Slider
+    $('.image-slide').each(function(index) {
+        $(this).attr('data-index', index);
+        if (index > 0) {
+            $(this).hide();
+        } else {
+            $(this).addClass('current');
+        }
+    });
+
+    function rotateSlides() {
+        var nextSlideId = parseInt($('.image-slide.current').attr('data-index')) + 1;
+        
+        var nextSlide = $('.image-slide[data-index=' + nextSlideId + ']');
+
+        if (nextSlide.length == 0) {
+            nextSlide = $('.image-slide[data-index=0]');
+        }
+
+        $('.image-slide').each(function(index) {
+            $(this).removeClass('current');
+            $(this).hide();
+        });
+
+        nextSlide.show();
+        nextSlide.addClass('current');
+    }
+    setInterval(rotateSlides, 1000);
 });

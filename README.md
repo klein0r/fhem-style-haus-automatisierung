@@ -1,6 +1,6 @@
 # FHEM Style: haus-automatisierung.com (v2)
 
-Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - look and feel sind dabei an das Webdesign der Seite [haus-automatisierung.com](https://haus-automatisierung.com/) angelehnt.
+Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - "Look and Feel" sind dabei an das Webdesign der Seite [haus-automatisierung.com](https://haus-automatisierung.com/) angelehnt.
 
 ## Installation
 
@@ -18,7 +18,7 @@ update all ha_theme
 
 ```
 attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js
-attr WEB roomIcons Save config:message_attention
+attr WEB roomIcons Save.config:message_attention
 ```
 
 Einmal speichern und neu laden - fertig.

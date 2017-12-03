@@ -9,6 +9,10 @@
 
 .ui-widget-content {
     background: #fff !important;
+    
+    pre {
+        font-family: 'Source Code Pro', monospace !important;
+    }
 }
 
 .ui-button {
@@ -21,4 +25,29 @@
     border: none !important;
     border-radius: 0 !important;
     background: $odd-color !important;
+}
+
+#dashboard {
+    .ui-widget-content a,
+    .fhemlog,
+    #fwmenu li a {
+        color: $primary-color !important;
+    }
+
+    .ui-corner-all,
+    .ui-corner-top,
+    .ui-corner-right,
+    .ui-corner-left,
+    .ui-corner-bottom,
+
+    .ui-corner-bl,
+    .ui-corner-br,
+    .ui-corner-tl,
+    .ui-corner-tr {
+        border-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+    }
 }
