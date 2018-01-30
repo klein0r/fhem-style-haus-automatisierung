@@ -8,8 +8,45 @@ svg.on, svg.FS20_on {
     fill: $primary-color !important;
 }
 
+// Z-Wave Neighbor-Map
+#ZWDongleNrSVG {
+    background: $odd-color;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-left: 5px $primary-color solid;
+    border-right: 5px $primary-color solid;
+    box-sizing: border-box;
+    width: 1000px !important;
+}
+
 svg.zw_nr {
     fill: transparent !important;
+
+    text {
+        fill: $primary-color;
+    }
+
+    .col_link {
+        color: $primary-color;
+        stroke: $primary-color;
+    }
+
+    .zwMargin {
+        stroke: transparent;
+        color: transparent;
+    }
+
+    .zwLine {
+        stroke-width: 1px;
+    }
+
+    .zwBox {
+        stroke-width: 2px;
+    }
+
+    .zwDongle {
+        stroke-width: 3px;
+    }
 }
 
 svg:not([fill]):not(.jssvg) {

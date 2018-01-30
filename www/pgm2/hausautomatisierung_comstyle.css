@@ -216,7 +216,15 @@ svg { width: 32px; height: 32px; vertical-align: middle; }
 
 svg.on, svg.FS20_on { fill: #e56524 !important; }
 
+#ZWDongleNrSVG { background: #f5f6f9; margin-bottom: 10px; margin-top: 10px; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; width: 1000px !important; }
+
 svg.zw_nr { fill: transparent !important; }
+svg.zw_nr text { fill: #e56524; }
+svg.zw_nr .col_link { color: #e56524; stroke: #e56524; }
+svg.zw_nr .zwMargin { stroke: transparent; color: transparent; }
+svg.zw_nr .zwLine { stroke-width: 1px; }
+svg.zw_nr .zwBox { stroke-width: 2px; }
+svg.zw_nr .zwDongle { stroke-width: 3px; }
 
 svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 
