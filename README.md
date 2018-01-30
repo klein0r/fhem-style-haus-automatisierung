@@ -29,7 +29,7 @@ Bitte [hier](https://github.com/klein0r/fhem-style-haus-automatisierung/issues) 
 
 ## Vorschau
 
-![FHEM Style](https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/master/preview.png)
+![FHEM Style](https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-2/preview.png)
 
 ## Smart-Home-Icons:
 
