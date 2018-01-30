@@ -101,6 +101,28 @@
         background: url(../jscolor/hue_background.svg); background-size: 150px;
     }
 
+    // Doif-Tools
+    .dval {
+        
+        > table {
+            margin-bottom: 10px;
+
+            .downText {
+                line-height: 24px;
+                font-family: 'Source Code Pro', monospace !important;
+            }
+        }
+
+        input {
+            border: 2px $primary-color solid;
+            border-radius: 0;
+            color: $primary-color;
+            padding: 1px 10px;
+            background: transparent;
+            font-size: $large-fontsize;
+        }
+    }
+
     .makeSelect {
         background: #fff;
         border-left: 5px $primary-color solid;

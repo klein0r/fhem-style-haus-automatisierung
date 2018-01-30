@@ -71,6 +71,9 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .colorpicker_ct .slider { background: url(../jscolor/ct_background.svg); background-size: 150px; }
 #content .colorpicker_ct_mired .slider { background: url(../jscolor/ct_mired_background.svg); background-size: 150px; }
 #content .colorpicker_hue .slider { background: url(../jscolor/hue_background.svg); background-size: 150px; }
+#content .dval > table { margin-bottom: 10px; }
+#content .dval > table .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
+#content .dval input { border: 2px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeSelect { background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; clear: left; color: #676f7a; display: inline; float: left; padding: 5px; width: 100%; }
 #content .makeSelect .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 2px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }
@@ -122,7 +125,9 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 
 #console { bottom: 0; overflow-y: auto; overflow-x: scroll; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 
-#console, .fhemlog { color: #fff; font-family: 'Source Code Pro', monospace; }
+textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; border-left: 5px #e56524 solid; font-size: 100%; }
+
+#console, .fhemlog { color: #fff; font-family: 'Source Code Pro', monospace; background: none; border: none; }
 
 #dashboard { margin-top: -10px; }
 #dashboard .dashboard-button { background: #f5f5f5 no-repeat 7px !important; border: 1px solid #ddd; border-radius: 0 !important; cursor: pointer; display: inline-block; height: 1.9em; margin-top: 2px; padding: 0 .6em; position: absolute; width: 14px; }

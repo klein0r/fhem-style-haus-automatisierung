@@ -8,7 +8,18 @@
     width: 100%;
 }
 
+// Doif-Tools
+textarea#console {
+    white-space: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: 5px $primary-color solid;
+    font-size: 100%;
+}
+
 #console, .fhemlog {
     color: #fff;
     font-family: 'Source Code Pro', monospace;
+    background: none;
+    border: none;
 }
