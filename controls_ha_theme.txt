@@ -1,5 +1,5 @@
 DEL ./www/hausautomatisierung-com/custom.js
-UPD 2017-12-03_17:10:07 3104 www/hausautomatisierung-com/custom.js
+UPD 2018-01-30_20:22:38 2102 www/hausautomatisierung-com/custom.js
 DEL ./www/hausautomatisierung-com/images/bg_wrapper.jpg
 UPD 2017-07-04_22:17:20 81828 www/hausautomatisierung-com/images/bg_wrapper.jpg
 DEL ./www/hausautomatisierung-com/images/haus_automatisierung.png
@@ -29,6 +29,6 @@ UPD 2017-08-17_20:17:57 6623 www/images/hausautomatisierung_com/weather.svg
 DEL ./www/pgm2/hausautomatisierung_comfloorplanstyle.css
 UPD 2017-10-14_09:47:39 4942 www/pgm2/hausautomatisierung_comfloorplanstyle.css
 DEL ./www/pgm2/hausautomatisierung_comstyle.css
-UPD 2017-12-03_17:10:07 24233 www/pgm2/hausautomatisierung_comstyle.css
+UPD 2018-01-30_20:22:38 26470 www/pgm2/hausautomatisierung_comstyle.css
 DEL ./www/pgm2/hausautomatisierung_comsvg_style.css
-UPD 2017-08-17_20:17:57 4993 www/pgm2/hausautomatisierung_comsvg_style.css
+UPD 2018-01-30_20:22:38 5011 www/pgm2/hausautomatisierung_comsvg_style.css
