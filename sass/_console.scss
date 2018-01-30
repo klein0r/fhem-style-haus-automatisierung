@@ -1,6 +1,8 @@
 #console {
     bottom: 0;
     overflow-y: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
     position: absolute;
     top: 2em;
     width: 100%;

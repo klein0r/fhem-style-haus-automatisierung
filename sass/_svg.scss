@@ -8,6 +8,10 @@ svg.on, svg.FS20_on {
     fill: $primary-color !important;
 }
 
+svg.zw_nr {
+    fill: transparent !important;
+}
+
 svg:not([fill]):not(.jssvg) {
     fill: $secondary-color;
 }
