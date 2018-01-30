@@ -20,8 +20,6 @@ jQuery(document).ready(function ($) {
 
     // Add missing classes for elements
     $('.SVGplot').prevAll('a').addClass('plot-nav');
-    $('.SVGplot').parents('tr.odd').addClass('no-background').parents('.block').addClass('no-background');
-    $('.SVGplot').parents('tr.even').addClass('no-background').parents('.block').addClass('no-background');
 
     // Icon selection
     $('button.dist').wrapAll('<div class="icons"/>');

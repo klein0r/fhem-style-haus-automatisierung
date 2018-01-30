@@ -98,6 +98,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #pedit > * { text-transform: none; font-size: 13px; letter-spacing: normal; }
 #content #pedit .plotEditor select.svgSrc, #content #pedit .plotEditor select.set { border: 2px #e56524 solid; border-radius: 0; color: #e56524; }
 #content .SVGlabel { background: #f5f6f9; padding: 5px; }
+#content .SVGplot { background: #f5f6f9; padding: 10px; }
+#content .odd .SVGplot, #content .even .SVGplot { background: none !important; }
 #content .devType { font-size: 20px; text-transform: uppercase; letter-spacing: 10px; margin-top: 10px; }
 #content .devType a { color: #fff; }
 #content .odd .devType, #content .even .devType { color: #676f7a; margin-left: 5px; margin-bottom: 10px; }

@@ -5,7 +5,9 @@
 
 @import 'vars';
 
-$gric-color: gray;
+$grid-color: gray;
+$plotTextColor: $secondary-color;
+$backgroundColor: #fff;
 
 $svg-color-1: #215A94;
 $svg-color-2: #18986E;
@@ -43,18 +45,18 @@ svg {
         fill: none;
     }
 
-    // Nicht füllen, ansonsten gehen keine durchsichtigen Plots mehr
     .border {
         stroke: $primary-color;
+        fill: $backgroundColor;
     }
 
     .vgrid {
-        stroke: $gric-color;
+        stroke: $grid-color;
         stroke-dasharray: 2, 6;
     }
 
     .hgrid {
-        stroke: $gric-color;
+        stroke: $grid-color;
         stroke-dasharray: 2, 6;
     }
 
@@ -65,11 +67,11 @@ svg {
 
     text {
         stroke: none !important;
-        fill: #fff;
+        fill: $plotTextColor;
         font-size: 11px;
 
         &.title {
-            fill: #fff;
+            fill: $plotTextColor;
             font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 10px;

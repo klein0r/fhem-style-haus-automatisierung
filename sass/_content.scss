@@ -253,7 +253,7 @@
         text-transform: uppercase;
         font-size: $large-fontsize;
         letter-spacing: 10px;
-        
+
         > * {
             text-transform: none;
             font-size: $default-fontsize;
@@ -272,6 +272,15 @@
     .SVGlabel {
         background: $odd-color;
         padding: 5px;
+    }
+    
+    .SVGplot {
+        background: $odd-color;
+        padding: 10px;
+    }
+
+    .odd .SVGplot, .even .SVGplot {
+        background: none !important;
     }
 
     .devType {
