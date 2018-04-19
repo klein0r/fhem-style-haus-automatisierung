@@ -337,13 +337,14 @@
 
     .detLink {
       background: #00000061;
-        border: 1px $primary-color solid;
-        padding: 2px 10px;
-        display: inline-block;
-        margin-top: 10px;
-        line-height: 20px;
-        margin-right: 10px;
-        vertical-align: top;
+      border: 1px $primary-color solid;
+      padding: 2px 10px;
+      display: inline-block;
+      margin-top: 10px;
+      line-height: 20px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      vertical-align: top;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;

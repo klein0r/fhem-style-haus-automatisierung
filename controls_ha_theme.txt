@@ -29,6 +29,6 @@ UPD 2018-04-19_13:26:03 6623 www/images/hausautomatisierung_com/weather.svg
 DEL ./www/pgm2/hausautomatisierung_comfloorplanstyle.css
 UPD 2018-04-19_16:48:22 4942 www/pgm2/hausautomatisierung_comfloorplanstyle.css
 DEL ./www/pgm2/hausautomatisierung_comstyle.css
-UPD 2018-04-19_16:53:30 26867 www/pgm2/hausautomatisierung_comstyle.css
+UPD 2018-04-19_17:00:27 26888 www/pgm2/hausautomatisierung_comstyle.css
 DEL ./www/pgm2/hausautomatisierung_comsvg_style.css
 UPD 2018-04-19_16:48:22 5011 www/pgm2/hausautomatisierung_comsvg_style.css
