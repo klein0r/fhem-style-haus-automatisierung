@@ -130,14 +130,14 @@ jQuery(document).ready(function ($) {
             }
             else if( wScrollDiff > 0 && $element.hasClass( elClassHidden ) ) // scrolled up; element slides in
             {
-                //$element.removeClass( elClassHidden );
+                $element.removeClass( elClassHidden );
             }
             else if( wScrollDiff < 0 ) // scrolled down
             {
 
                 if( wScrollCurrent + wHeight >= dHeight && $element.hasClass( elClassHidden ) ) // scrolled to the very bottom; element slides in
                 {
-                    //$element.removeClass( elClassHidden );
+                    $element.removeClass( elClassHidden );
                 }
                 else // scrolled down; element slides out
                 {
