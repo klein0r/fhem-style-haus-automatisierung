@@ -64,9 +64,9 @@
             margin-top: 10px;
         }
 
-        & + .makeSelect {
-            margin-top: 10px;
-        }
+        //& + .makeSelect {
+        //    margin-top: 10px;
+        //}
 
         .slider {
             height: 16px;
@@ -344,6 +344,11 @@
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
+
+      a {
+        text-shadow: 0 0 13px #fff;
+        color: $primary-color-lt;
+      }
     }
 
     #devSpecHelp {
