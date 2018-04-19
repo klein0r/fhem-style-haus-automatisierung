@@ -103,6 +103,12 @@ input[type="text"] {
     &.js-installed:after{
         content: none;
     }
+
+    &.header--hidden{
+      -webkit-transform: translateY( -110% );
+      -ms-transform: translateY( -110% );
+      transform: translateY( -110% );
+    }
 }
 
 #errmsg {
@@ -138,11 +144,4 @@ select {
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-}
-
-.header--hidden
-{
-  -webkit-transform: translateY( -110% );
-  -ms-transform: translateY( -110% );
-  transform: translateY( -110% );
 }
