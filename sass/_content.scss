@@ -41,7 +41,10 @@
         letter-spacing: 10px;
         overflow-x: scroll;
         background: #cccccc54;
-        
+
+        .mkTitle {
+          padding-left: 5px;
+        }
         .first-table-column {
             width: 25%;
             border-right: 2px $primary-color solid;
@@ -66,11 +69,11 @@
         }
 
         .slider {
-            height: 16px;
+            //height: 16px;
 
             .handle {
-                height: 16px;
-                line-height: 16px;
+                //height: 16px;
+                //line-height: 16px;
             }
         }
     }
@@ -150,7 +153,7 @@
             border: 1px $primary-color solid;
             border-radius: 0;
             color: #e56524;
-            font-size: 16px;
+            //font-size: 16px;
             line-height: 20px;
             height: 24px;
             margin-left: 5px;
@@ -330,6 +333,7 @@
     }
 
     .detLink {
+      background: #00000061;
         border: 1px $primary-color solid;
         padding: 2px 10px;
         display: inline-block;
@@ -337,6 +341,9 @@
         line-height: 20px;
         margin-right: 10px;
         vertical-align: top;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
     }
 
     #devSpecHelp {
