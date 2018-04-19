@@ -63,17 +63,23 @@ button.dist {
 }
 
 input[type="text"] {
-    border: 2px #e56524 solid;
+    border: none;
     background: none;
+    border-bottom: 1px #e56524 solid;
 }
 
 #hdr {
-    left: 320px;
-    position: absolute;
-    top: 10px;
-
+    left: 310px;
+    position: fixed;
+    top: 0px;
+    background: #fffffff0;
+    padding: 10px;
+    z-index: 99;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 3px #11111130;
+    
     input.maininput {
-        color: #fff;
+        color: #e56524;
         width: 1000px;
         font-size: $large-fontsize;
         box-sizing: border-box;
