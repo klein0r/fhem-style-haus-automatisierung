@@ -77,8 +77,8 @@
             margin-top: -35px;
             background: transparent;
             color: red;
-            border-right: 5px #e56524 solid;
-            border-left: 5px #e56524 solid;
+            border-right: 5px $primary-color solid;
+            border-left: 5px $primary-color solid;
             text-indent: -9999px;
             margin-left: 220px;
         }
@@ -95,7 +95,7 @@
 
             td a:after {
                 border-bottom: 17px solid transparent;
-                border-left: 13px solid #e56524;
+                border-left: 13px solid $primary-color;
                 border-top: 17px solid transparent;
                 content: " ";
                 height: 0;

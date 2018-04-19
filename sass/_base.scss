@@ -65,7 +65,7 @@ button.dist {
 input[type="text"] {
     border: none;
     background: none;
-    border-bottom: 1px #e56524 solid;
+    border-bottom: 1px $primary-color solid;
 }
 
 #hdr {
@@ -79,7 +79,7 @@ input[type="text"] {
     box-shadow: 0 3px 3px #11111130;
     
     input.maininput {
-        color: #e56524;
+        color: $primary-color;
         width: 1000px;
         font-size: $large-fontsize;
         box-sizing: border-box;
