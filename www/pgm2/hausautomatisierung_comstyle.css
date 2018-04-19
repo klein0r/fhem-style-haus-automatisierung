@@ -39,7 +39,7 @@ button.dist { border: 0; cursor: pointer; margin: 10px; }
 input[type="text"] { border: none; background: none; border-bottom: 1px #2f7ebe solid; }
 
 #hdr { left: 310px; position: fixed; top: 0px; background: #fffffff0; padding: 10px; z-index: 99; border-radius: 0 0 4px 4px; box-shadow: 0 3px 3px #11111130; }
-#hdr input.maininput { color: #2f7ebe; width: 1000px; font-size: 16px; box-sizing: border-box; }
+#hdr input.maininput { color: #2f7ebe; width: 1000px; font-size: 14px; box-sizing: border-box; }
 #hdr input.maininput:focus { outline: none; }
 #hdr:after { color: #2f7ebe; content: '!!! Bitte Theme-JS aktivieren für vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js'; margin-top: 5px; display: block; background: #fff; padding: 5px; opacity: 0.9; }
 #hdr.js-installed:after { content: none; }
@@ -57,8 +57,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content pre { font-family: 'Source Code Pro', monospace !important; }
 #content .roomoverview .icon { margin-right: 5px; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #2f7ebe solid; }
-#content .modCmdinput[type="submit"] { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; padding: 1px 10px; background: transparent; font-size: 16px; }
-#content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; background: #cccccc54; }
+#content .modCmdinput[type="submit"] { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; padding: 1px 10px; background: transparent; font-size: 14px; }
+#content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 14px; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; background: #cccccc54; }
 #content .makeTable .mkTitle { padding-left: 5px; }
 #content .makeTable .first-table-column { width: 25%; border-right: 2px #2f7ebe solid; }
 #content .makeTable table { font-size: 13px; text-transform: none; letter-spacing: normal; }
@@ -73,13 +73,13 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .colorpicker_hue .slider { background: url(../jscolor/hue_background.svg); background-size: 150px; }
 #content .dval > table { margin-bottom: 10px; }
 #content .dval > table .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
-#content .dval input { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; padding: 1px 10px; background: transparent; font-size: 16px; }
+#content .dval input { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; padding: 1px 10px; background: transparent; font-size: 14px; }
 #content .makeSelect { background: #fff; border-left: 5px #2f7ebe solid; border-right: 5px #2f7ebe solid; box-sizing: border-box; clear: left; color: #676f7a; display: inline; float: left; padding: 5px; width: 100%; }
 #content .makeSelect .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
-#content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }
-#content .makeSelect input[type="submit"] { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; padding: 1px 10px; background: transparent; font-size: 16px; }
-#content .makeSelect input[type="text"] { border: 1px #2f7ebe solid; color: #555; background: transparent; font-size: 16px; }
-#content .makeSelect + .makeSelect { border-top: 1px solid #676f7a; }
+#content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; font-size: 16px; line-height: 20px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }
+#content .makeSelect input[type="submit"] { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; padding: 1px 10px; background: transparent; font-size: 14px; }
+#content .makeSelect input[type="text"] { border: 1px #2f7ebe solid; color: #555; background: transparent; font-size: 14px; }
+#content .makeSelect + .makeSelect { border-top: 1px solid #f5f6f9; }
 #content .makeSelect + .makeTable { margin-top: 10px; }
 #content .makeSelect .slider { width: 250px; height: 22px; }
 #content .makeSelect .slider .handle { height: 22px; line-height: 22px; }
@@ -97,7 +97,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table tr.odd > td, #content table tr.even > td { padding: 5px; }
 #content table .ex { max-width: 1000px; white-space: normal; }
 #content table input + select, #content table select + select { margin-left: 10px; }
-#content #pedit { margin-bottom: 10px; text-transform: uppercase; font-size: 16px; letter-spacing: 10px; }
+#content #pedit { margin-bottom: 10px; text-transform: uppercase; font-size: 14px; letter-spacing: 10px; }
 #content #pedit > * { text-transform: none; font-size: 13px; letter-spacing: normal; }
 #content #pedit .plotEditor select.svgSrc, #content #pedit .plotEditor select.set { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; }
 #content .SVGlabel { background: #f5f6f9; padding: 5px; }
@@ -122,7 +122,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp { font-size: 13px !important; text-transform: none !important; letter-spacing: normal !important; background: #fff; color: #676f7a; padding: 5px; box-sizing: border-box; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
 #content .CodeMirror { width: 1000px !important; }
-#content #edit input[type="submit"].psc { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
+#content #edit input[type="submit"].psc { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; font-size: 14px; margin: 10px; background: transparent; min-width: 200px; }
 
 #console { bottom: 0; overflow-y: auto; overflow-x: scroll; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 
