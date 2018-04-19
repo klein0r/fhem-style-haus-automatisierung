@@ -57,8 +57,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content pre { font-family: 'Source Code Pro', monospace !important; }
 #content .roomoverview .icon { margin-right: 5px; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
-#content .modCmdinput[type="submit"] { border: 2px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
-#content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; }
+#content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
+#content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; background: #cccccc54; }
 #content .makeTable .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
 #content .makeTable table { font-size: 13px; text-transform: none; letter-spacing: normal; }
 #content .makeTable table.block td:nth-child(2) { width: 60%; }
@@ -73,19 +73,19 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .colorpicker_hue .slider { background: url(../jscolor/hue_background.svg); background-size: 150px; }
 #content .dval > table { margin-bottom: 10px; }
 #content .dval > table .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
-#content .dval input { border: 2px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
+#content .dval input { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeSelect { background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; clear: left; color: #676f7a; display: inline; float: left; padding: 5px; width: 100%; }
 #content .makeSelect .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
-#content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 2px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }
-#content .makeSelect input[type="submit"] { border: 2px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
-#content .makeSelect input[type="text"] { border: 2px #e56524 solid; color: #555; background: transparent; font-size: 16px; }
+#content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }
+#content .makeSelect input[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
+#content .makeSelect input[type="text"] { border: 1px #e56524 solid; color: #555; background: transparent; font-size: 16px; }
 #content .makeSelect + .makeSelect { margin-top: 10px; }
 #content .makeSelect + .makeTable { margin-top: 10px; }
 #content .makeSelect .slider { width: 250px; height: 22px; }
 #content .makeSelect .slider .handle { height: 22px; line-height: 22px; }
 #content table { border-collapse: collapse; max-width: 1000px; width: 100%; }
 #content table.wide { width: 100%; }
-#content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 2px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 0px 0 10px; min-width: 90px; max-width: 300px; }
+#content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 0px 0 10px; min-width: 90px; max-width: 300px; }
 #content table .slider { width: 150px; }
 #content table.block { background: #fff; border: none; color: #676f7a; }
 #content table.block.readings .changed { color: #e56524; }
@@ -99,7 +99,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table input + select, #content table select + select { margin-left: 10px; }
 #content #pedit { margin-bottom: 10px; text-transform: uppercase; font-size: 16px; letter-spacing: 10px; }
 #content #pedit > * { text-transform: none; font-size: 13px; letter-spacing: normal; }
-#content #pedit .plotEditor select.svgSrc, #content #pedit .plotEditor select.set { border: 2px #e56524 solid; border-radius: 0; color: #e56524; }
+#content #pedit .plotEditor select.svgSrc, #content #pedit .plotEditor select.set { border: 1px #e56524 solid; border-radius: 0; color: #e56524; }
 #content .SVGlabel { background: #f5f6f9; padding: 5px; }
 #content .SVGplot { background: #f5f6f9; padding: 10px; }
 #content .odd .SVGplot, #content .even .SVGplot { background: none !important; }
@@ -107,7 +107,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .devType a { color: #fff; }
 #content .odd .devType, #content .even .devType { color: #676f7a; margin-left: 5px; margin-bottom: 10px; }
 #content .odd .devType a, #content .even .devType a { color: #676f7a; }
-#content .detLink { border: 2px #e56524 solid; padding: 2px 10px; display: inline-block; margin-top: 10px; line-height: 20px; margin-right: 10px; vertical-align: top; }
+#content .detLink { border: 1px #e56524 solid; padding: 2px 10px; display: inline-block; margin-top: 10px; line-height: 20px; margin-right: 10px; vertical-align: top; }
 #content #devSpecHelp { background: #fff; border-left: 5px #e56524 solid; color: #676f7a; font-family: 'Source Code Pro', monospace !important; max-width: 985px; padding: 5px; width: 100%; margin-top: 10px; }
 #content #devSpecHelp h3 { font-size: 16px; letter-spacing: 10px; text-transform: uppercase; font-weight: bold; }
 #content #devSpecHelp dd { margin-left: 50px; }
@@ -121,7 +121,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp { font-size: 13px !important; text-transform: none !important; letter-spacing: normal !important; background: #fff; color: #676f7a; padding: 5px; box-sizing: border-box; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
 #content .CodeMirror { width: 1000px !important; }
-#content #edit input[type="submit"].psc { border: 2px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
+#content #edit input[type="submit"].psc { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
 
 #console { bottom: 0; overflow-y: auto; overflow-x: scroll; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 

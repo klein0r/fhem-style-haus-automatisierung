@@ -22,7 +22,7 @@
     
     .modCmd {
         &input[type="submit"] {
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
             color: $primary-color;
             padding: 1px 10px;
@@ -40,6 +40,7 @@
         text-transform: uppercase;
         letter-spacing: 10px;
         overflow-x: scroll;
+        background: #cccccc54;
         
         .first-table-column {
             width: 25%;
@@ -114,7 +115,7 @@
         }
 
         input {
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
             color: $primary-color;
             padding: 1px 10px;
@@ -146,7 +147,7 @@
             background-size: 5px 5px, 5px 5px, 1px 0.9em;
             background-repeat: no-repeat;
 
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
             color: #e56524;
             font-size: 16px;
@@ -159,7 +160,7 @@
         }
 
         input[type="submit"] {
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
             color: $primary-color;
             padding: 1px 10px;
@@ -168,7 +169,7 @@
         }
 
         input[type="text"] {
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             color: #555;
             background: transparent;
             font-size: $large-fontsize;
@@ -208,7 +209,7 @@
             background-size: 5px 5px, 5px 5px, 1px 0.9em;
             background-repeat: no-repeat;
 
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
             color: #e56524;
             font-size: 100%;
@@ -284,7 +285,7 @@
 
         .plotEditor {
             select.svgSrc, select.set {
-                border: 2px $primary-color solid;
+                border: 1px $primary-color solid;
                 border-radius: 0;
                 color: $primary-color;
             }
@@ -329,7 +330,7 @@
     }
 
     .detLink {
-        border: 2px $primary-color solid;
+        border: 1px $primary-color solid;
         padding: 2px 10px;
         display: inline-block;
         margin-top: 10px;
@@ -419,7 +420,7 @@
     #edit {
         input[type="submit"] {
             &.psc {
-                border: 2px $primary-color solid;
+                border: 1px $primary-color solid;
                 border-radius: 0;
                 color: $primary-color;
                 font-size: $large-fontsize;
