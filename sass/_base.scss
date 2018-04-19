@@ -105,9 +105,10 @@ input[type="text"] {
     }
 
     &.header--hidden{
-      -webkit-transform: translateY( -110% );
-      -ms-transform: translateY( -110% );
-      transform: translateY( -110% );
+
+      //-webkit-transform: translateY( -110% );
+      //-ms-transform: translateY( -110% );
+      //transform: translateY( -110% );
     }
 }
 
