@@ -83,10 +83,20 @@
             margin-left: 220px;
         }
 
+        tr {
+          a{
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+          }
+        }
+
         tr.sel {
             a {
-                background: $primary-color;
-                color: #fff;
+              background: $primary-color;
+              color: #fff;
+              border-top: 1px solid $primary-color-dk;
+              border-bottom: 1px solid $primary-color-dk;
+
             }
 
             svg.icon {

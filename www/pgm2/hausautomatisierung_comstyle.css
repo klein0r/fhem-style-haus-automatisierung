@@ -120,7 +120,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #devSpecHelp ul li { margin: 10px 0; }
 #content #devSpecHelp table td { padding: 5px; }
 #content #ZWHelp { font-size: 13px !important; text-transform: none !important; letter-spacing: normal !important; background: #fff; color: #676f7a; padding: 5px; box-sizing: border-box; }
-#content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
+#content #ZWHelp.makeTable.help:empty { display: none; }
+#content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; display: none; }
 #content .CodeMirror { width: 1000px !important; }
 #content #edit input[type="submit"].psc { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; font-size: 14px; margin: 10px; background: transparent; min-width: 200px; }
 
@@ -207,7 +208,8 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #menu table.room .custom-menu-entry { color: #2f7ebe; }
 #menu table.room img.icon, #menu table.room svg.icon { width: 20px; height: 20px; margin: 0; position: absolute; right: 10px; top: 7px; }
 #menu table.room #saveCheck { margin-top: -35px; background: transparent; color: red; border-right: 5px #2f7ebe solid; border-left: 5px #2f7ebe solid; text-indent: -9999px; margin-left: 220px; }
-#menu table.room tr.sel a { background: #2f7ebe; color: #fff; }
+#menu table.room tr a { border-top: 1px solid transparent; border-bottom: 1px solid transparent; }
+#menu table.room tr.sel a { background: #2f7ebe; color: #fff; border-top: 1px solid #25689e; border-bottom: 1px solid #25689e; }
 #menu table.room tr.sel svg.icon { fill: #fff; }
 #menu table.room tr.sel td a:after { border-bottom: 17px solid transparent; border-left: 13px solid #2f7ebe; border-top: 17px solid transparent; content: " "; height: 0; margin-top: -17px; position: absolute; right: -13px; top: 50%; width: 0; }
 

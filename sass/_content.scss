@@ -417,16 +417,22 @@
         color: $secondary-color;
         padding: 5px;
         box-sizing: border-box;
+
+      &.makeTable.help:empty {
+        display: none;
+      }
     }
 
     div.img {
-        width: 100%;
-        background: #fff;
-        padding: 5px;
-        box-sizing: border-box;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
+      width: 100%;
+      background: #fff;
+      padding: 5px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      display: none; // produktbild ausgeblendet
     }
 
     .CodeMirror {
