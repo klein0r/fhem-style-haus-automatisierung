@@ -125,7 +125,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .CodeMirror { width: 1000px !important; }
 #content #edit input[type="submit"].psc { border: 1px #2f7ebe solid; border-radius: 0; color: #2f7ebe; font-size: 14px; margin: 10px; background: transparent; min-width: 200px; }
 
-#console { bottom: 0; overflow-y: auto; overflow-x: scroll; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
+#console { bottom: 0; overflow: auto; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 
 textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; border-left: 5px #2f7ebe solid; font-size: 100%; }
 
