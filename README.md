@@ -1,3 +1,7 @@
+# NEUE VERSION VERFÜGBAR (v2)
+
+**Bitte in den Branch v2 schauen - dieser Zweig wird nicht mehr weiterentwickelt!**
+
 # FHEM Style: haus-automatisierung.com
 
 Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - look and feel sind dabei an das Webdesign der Seite [haus-automatisierung.com](https://haus-automatisierung.com/) angelehnt.
