@@ -16,7 +16,7 @@
     left: 0;
     
     &:after {
-        color: #e56524;
+        color: $primary-color;
         content: $version;
         opacity: 0.7;
     }

@@ -77,16 +77,26 @@
             margin-top: -35px;
             background: transparent;
             color: red;
-            border-right: 5px #e56524 solid;
-            border-left: 5px #e56524 solid;
+            border-right: 5px $primary-color solid;
+            border-left: 5px $primary-color solid;
             text-indent: -9999px;
             margin-left: 220px;
         }
 
+        tr {
+          a{
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+          }
+        }
+
         tr.sel {
             a {
-                background: $primary-color;
-                color: #fff;
+              background: $primary-color;
+              color: #fff;
+              border-top: 1px solid $primary-color-dk;
+              border-bottom: 1px solid $primary-color-dk;
+
             }
 
             svg.icon {
@@ -95,7 +105,7 @@
 
             td a:after {
                 border-bottom: 17px solid transparent;
-                border-left: 13px solid #e56524;
+                border-left: 13px solid $primary-color;
                 border-top: 17px solid transparent;
                 content: " ";
                 height: 0;

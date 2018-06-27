@@ -22,7 +22,7 @@
     
     .modCmd {
         &input[type="submit"] {
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
             color: $primary-color;
             padding: 1px 10px;
@@ -40,7 +40,11 @@
         text-transform: uppercase;
         letter-spacing: 10px;
         overflow-x: scroll;
-        
+        background: #cccccc54;
+
+        .mkTitle {
+          padding-left: 5px;
+        }
         .first-table-column {
             width: 25%;
             border-right: 2px $primary-color solid;
@@ -60,9 +64,9 @@
             margin-top: 10px;
         }
 
-        & + .makeSelect {
-            margin-top: 10px;
-        }
+        //& + .makeSelect {
+        //    margin-top: 10px;
+        //}
 
         .slider {
             height: 16px;
@@ -114,7 +118,7 @@
         }
 
         input {
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
             color: $primary-color;
             padding: 1px 10px;
@@ -146,9 +150,9 @@
             background-size: 5px 5px, 5px 5px, 1px 0.9em;
             background-repeat: no-repeat;
 
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
-            color: #e56524;
+            color: $primary-color;
             font-size: 16px;
             line-height: 20px;
             height: 24px;
@@ -159,23 +163,26 @@
         }
 
         input[type="submit"] {
-            border: 2px $primary-color solid;
-            border-radius: 0;
-            color: $primary-color;
-            padding: 1px 10px;
-            background: transparent;
-            font-size: $large-fontsize;
+          border: 1px $primary-color solid;
+          border-radius: 0;
+          color: $primary-color;
+          padding: 1px 10px;
+          background: transparent;
+          font-size: $large-fontsize;
+          height: 24px;
         }
 
         input[type="text"] {
-            border: 2px $primary-color solid;
-            color: #555;
-            background: transparent;
-            font-size: $large-fontsize;
+          border: 1px $primary-color solid;
+          color: #555;
+          background: transparent;
+          font-size: $large-fontsize;
+          height: 20px;
         }
 
         & + .makeSelect {
-            margin-top: 10px;
+          border-top: 1px solid $odd-color;
+            //margin-top: 10px;
         }
         
         & + .makeTable {
@@ -208,9 +215,9 @@
             background-size: 5px 5px, 5px 5px, 1px 0.9em;
             background-repeat: no-repeat;
 
-            border: 2px $primary-color solid;
+            border: 1px $primary-color solid;
             border-radius: 0;
-            color: #e56524;
+            color: $primary-color;
             font-size: 100%;
             line-height: 20px;
             padding: 0 0px 0 10px;
@@ -284,7 +291,7 @@
 
         .plotEditor {
             select.svgSrc, select.set {
-                border: 2px $primary-color solid;
+                border: 1px $primary-color solid;
                 border-radius: 0;
                 color: $primary-color;
             }
@@ -306,10 +313,12 @@
     }
 
     .devType {
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase;
-        letter-spacing: 10px;
+        letter-spacing: 3px;
         margin-top: 10px;
+        background: #cccccc54;
+        padding-left: 5px;
         
         a {
             color: #fff;
@@ -327,13 +336,23 @@
     }
 
     .detLink {
-        border: 2px $primary-color solid;
-        padding: 2px 10px;
-        display: inline-block;
-        margin-top: 10px;
-        line-height: 20px;
-        margin-right: 10px;
-        vertical-align: top;
+      background: #00000061;
+      border: 1px $primary-color solid;
+      padding: 2px 10px;
+      display: inline-block;
+      margin-top: 10px;
+      line-height: 20px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      vertical-align: top;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+
+      a {
+        text-shadow: 0 0 13px #fff;
+        color: $primary-color-lt;
+      }
     }
 
     #devSpecHelp {
@@ -398,16 +417,22 @@
         color: $secondary-color;
         padding: 5px;
         box-sizing: border-box;
+
+      &.makeTable.help:empty {
+        display: none;
+      }
     }
 
     div.img {
-        width: 100%;
-        background: #fff;
-        padding: 5px;
-        box-sizing: border-box;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
+      width: 100%;
+      background: #fff;
+      padding: 5px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      display: none; // produktbild ausgeblendet
     }
 
     .CodeMirror {
@@ -417,7 +442,7 @@
     #edit {
         input[type="submit"] {
             &.psc {
-                border: 2px $primary-color solid;
+                border: 1px $primary-color solid;
                 border-radius: 0;
                 color: $primary-color;
                 font-size: $large-fontsize;

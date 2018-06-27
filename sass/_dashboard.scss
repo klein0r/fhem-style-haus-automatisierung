@@ -292,7 +292,7 @@
     }
     
     .ui-widget-header {
-        background: #e56524;
+        background: $primary-color;
         border: none;
         color: #fff;
         margin: 0;
@@ -318,7 +318,7 @@
 }
 
 #dashboard-dialog {
-    border: 2px solid #e56524;
+    border: 2px solid $primary-color;
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: $default-fontsize !important;
     left: 0;

@@ -64,17 +64,23 @@ button.dist {
 }
 
 input[type="text"] {
-    border: 2px #e56524 solid;
+    border: none;
     background: none;
+    border-bottom: 1px $primary-color solid;
 }
 
 #hdr {
-    left: 320px;
-    position: absolute;
-    top: 10px;
-
+    left: 310px;
+    position: fixed;
+    top: 0px;
+    background: #fffffff0;
+    padding: 10px;
+    z-index: 99;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 3px #11111130;
+    
     input.maininput {
-        color: #fff;
+        color: $primary-color;
         width: 1000px;
         font-size: $large-fontsize;
         box-sizing: border-box;
@@ -97,6 +103,13 @@ input[type="text"] {
     // Wird vom Javascript hinzugefügt
     &.js-installed:after{
         content: none;
+    }
+
+    &.header--hidden{
+
+      //-webkit-transform: translateY( -110% );
+      //-ms-transform: translateY( -110% );
+      //transform: translateY( -110% );
     }
 }
 
