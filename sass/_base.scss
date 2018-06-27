@@ -49,6 +49,13 @@ button.dist {
     .theme-version {
         opacity: 0.7;
     }
+
+    #clock {
+        opacity: 0.7;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 #content, #right {
@@ -64,9 +71,8 @@ button.dist {
 }
 
 input[type="text"] {
-    border: none;
+    border: 1px #e56524 solid;
     background: none;
-    border-bottom: 1px $primary-color solid;
 }
 
 #hdr {
@@ -106,10 +112,9 @@ input[type="text"] {
     }
 
     &.header--hidden{
-
-      //-webkit-transform: translateY( -110% );
-      //-ms-transform: translateY( -110% );
-      //transform: translateY( -110% );
+      -webkit-transform: translateY(-110%);
+      -ms-transform: translateY(-110%);
+      transform: translateY(-110%);
     }
 }
 

@@ -1,19 +1,25 @@
 
-function GetClock() {
-    d = new Date();
+function getClock() {
+    var d = new Date();
     nhour = d.getHours();
     nmin = d.getMinutes();
-    if (nmin <= 9) { nmin = "0" + nmin; }
-    document.getElementById('logo').innerHTML = nhour + ":" + nmin;
-    setTimeout("GetClock()", 1000);
+    
+    if (nhour <= 9) {
+        nhour = '0' + nhour;
+    }
+
+    if (nmin <= 9) {
+        nmin = '0' + nmin;
+    }
+
+    document.getElementById('clock').innerHTML = nhour + ':' + nmin + ' Uhr';
+
+    setTimeout(getClock, 1000);
 }
 
 jQuery(document).ready(function ($) {
 
-    var themeVersion = '2.6';
-
-    // Add clock
-    window.addEventListener("load",GetClock,false);
+    var themeVersion = '2.7';
 
     // Check für JS-Installation entfernen
     $('#hdr').addClass('js-installed');
@@ -21,7 +27,12 @@ jQuery(document).ready(function ($) {
     // Add version to logo
     $('#logo').append(
         $('<span class="theme-version">' + themeVersion + '</span>')
+    ).append(
+        $('<span id="clock"></span>')
     );
+
+    // Add clock
+    window.addEventListener('load', getClock, false);
 
 	// Clear spaces
     $('#content .devType, #menu .room a').each(function() {
@@ -73,80 +84,69 @@ jQuery(document).ready(function ($) {
     });
 
     // hide elements by name
-    if(document.URL.indexOf("showall") != -1) {
+    if (document.URL.indexOf("showall") != -1) {
         //don't hide anything
     } else {
         $("div.devType:contains('-hidden')").parent('td').hide();
     }
 
-    ;( function( $, window, document, undefined )
-    {
+    (function($, window, document, undefined) {
         'use strict';
 
-        var elSelector		= '#hdr, #logo',
-            elClassHidden	= 'header--hidden',
-            throttleTimeout	= 50,
-            $element		= $( elSelector );
+        var elSelector = '#hdr, #logo',
+            elClassHidden = 'header--hidden',
+            throttleTimeout = 50,
+            $element = $(elSelector);
 
-        if( !$element.length ) return true;
+        if (!$element.length) return true;
 
-        var $window			= $( window ),
-            wHeight			= 0,
-            wScrollCurrent	= 0,
-            wScrollBefore	= 0,
-            wScrollDiff		= 0,
-            $document		= $( document ),
-            dHeight			= 0,
-
-            throttle = function( delay, fn )
-            {
+        var $window = $(window),
+            wHeight = 0,
+            wScrollCurrent = 0,
+            wScrollBefore = 0,
+            wScrollDiff = 0,
+            $document = $(document),
+            dHeight = 0,
+            throttle = function(delay, fn) {
                 var last, deferTimer;
-                return function()
-                {
+                return function() {
                     var context = this, args = arguments, now = +new Date;
-                    if( last && now < last + delay )
-                    {
-                        clearTimeout( deferTimer );
-                        deferTimer = setTimeout( function(){ last = now; fn.apply( context, args ); }, delay );
-                    }
-                    else
-                    {
+                    if(last && now < last + delay) {
+                        clearTimeout(deferTimer);
+                        deferTimer = setTimeout(
+                            function() {
+                                last = now;
+                                fn.apply(context, args);
+                            },
+                            delay
+                        );
+                    } else {
                         last = now;
-                        fn.apply( context, args );
+                        fn.apply(context, args);
                     }
                 };
             };
 
-        $window.on( 'scroll', throttle( throttleTimeout, function()
-        {
-            dHeight			= $document.height();
-            wHeight			= $window.height();
-            wScrollCurrent	= $window.scrollTop();
-            wScrollDiff		= wScrollBefore - wScrollCurrent;
+        $window.on('scroll', throttle(throttleTimeout, function() {
+            dHeight = $document.height();
+            wHeight	= $window.height();
+            wScrollCurrent = $window.scrollTop();
+            wScrollDiff = wScrollBefore - wScrollCurrent;
 
-            if( wScrollCurrent <= 50 ) // scrolled to the very top; element sticks to the top
-            {
-                $element.removeClass( elClassHidden );
-            }
-            else if( wScrollDiff > 0 && $element.hasClass( elClassHidden ) ) // scrolled up; element slides in
-            {
-                $element.removeClass( elClassHidden );
-            }
-            else if( wScrollDiff < 0 ) // scrolled down
-            {
-
-                if( wScrollCurrent + wHeight >= dHeight && $element.hasClass( elClassHidden ) ) // scrolled to the very bottom; element slides in
-                {
-                    $element.removeClass( elClassHidden );
-                }
-                else // scrolled down; element slides out
-                {
-                    $element.addClass( elClassHidden );
+            if (wScrollCurrent <= 50) {
+                $element.removeClass(elClassHidden);
+            } else if (wScrollDiff > 0 && $element.hasClass(elClassHidden)) {
+                $element.removeClass(elClassHidden);
+            } else if (wScrollDiff < 0) {
+                if (wScrollCurrent + wHeight >= dHeight && $element.hasClass(elClassHidden)) {
+                    $element.removeClass(elClassHidden);
+                } else {
+                    $element.addClass(elClassHidden);
                 }
             }
 
             wScrollBefore = wScrollCurrent;
         }));
 
-    })( jQuery, window, document );
+    })(jQuery, window, document);
 });
