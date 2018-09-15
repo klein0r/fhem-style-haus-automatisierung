@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
@@ -21,6 +20,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Author: Matthias Kleine */
 body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0 auto; padding: 0; tab-size: 4; background-size: cover; }
 
+div { font-family: 'Open Sans', sans-serif !important; font-size: 13px !important; }
+
 body.dashboard_fullsize #content { border: none !important; float: none !important; height: 100% !important; overflow: visible !important; padding: 0 !important; position: inherit !important; width: 100% !important; }
 
 body.dashboard_fullsize #menuScrollArea, body.dashboard_fullsize #hdr, div.ui-dialog div.ui-dialog-titlebar { display: none; }
@@ -42,7 +43,7 @@ input[type="text"] { border: 1px #e56524 solid; background: none; }
 #hdr { left: 310px; position: fixed; top: 0px; background: #fffffff0; padding: 10px; z-index: 99; border-radius: 0 0 4px 4px; box-shadow: 0 3px 3px #11111130; }
 #hdr input.maininput { color: #e56524; width: 1000px; font-size: 16px; box-sizing: border-box; }
 #hdr input.maininput:focus { outline: none; }
-#hdr:after { color: #e56524; content: '!!! Bitte Theme-JS aktivieren für vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js'; margin-top: 5px; display: block; background: #fff; padding: 5px; opacity: 0.9; }
+#hdr:after { color: #e56524; content: 'Theme-JS aktivieren fuer vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js'; margin-top: 5px; display: block; padding: 5px; opacity: 0.9; }
 #hdr.js-installed:after { content: none; }
 #hdr.header--hidden { -webkit-transform: translateY(-110%); -ms-transform: translateY(-110%); transform: translateY(-110%); }
 
@@ -200,7 +201,7 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 
 #menu { margin-left: 20px; margin-top: 140px; width: 260px; z-index: 9999; }
 #menu table { border-collapse: collapse; border-radius: 0; width: 100%; }
-#menu a { background: #fff; color: #676f7a; display: block; padding: 10px 15px; position: relative; line-height: 15px; }
+#menu a { background: #fff; color: #676f7a; display: block; padding: 10px 15px; position: relative; }
 #menu .menuTree { position: relative; }
 #menu .menuTree.level0.closed > td > div > a:after { width: 35px; height: 35px; content: ' '; position: absolute; top: 0; right: 0; background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(229, 101, 36)" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z" transform="rotate(90,896,896)"/></svg>') !important; }
 #menu .menuTree.level0.open > td > div > a:after { width: 35px; height: 35px; content: ' '; position: absolute; top: 0; right: 0; background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(229, 101, 36)" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z" transform="rotate(270,896,896)"/></svg>') !important; }
@@ -210,7 +211,7 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #menu table.room img.icon, #menu table.room svg.icon { width: 20px; height: 20px; margin: 0; position: absolute; right: 10px; top: 7px; }
 #menu table.room #saveCheck { margin-top: -35px; background: transparent; color: red; border-right: 5px #e56524 solid; border-left: 5px #e56524 solid; text-indent: -9999px; margin-left: 220px; }
 #menu table.room tr a { border-top: 1px solid transparent; border-bottom: 1px solid transparent; }
-#menu table.room tr.sel a { background: #e56524; color: #fff; border-top: 1px solid #25689e; border-bottom: 1px solid #25689e; }
+#menu table.room tr.sel a { background: #e56524; color: #fff; }
 #menu table.room tr.sel svg.icon { fill: #fff; }
 #menu table.room tr.sel td a:after { border-bottom: 17px solid transparent; border-left: 13px solid #e56524; border-top: 17px solid transparent; content: " "; height: 0; margin-top: -17px; position: absolute; right: -13px; top: 50%; width: 0; }
 

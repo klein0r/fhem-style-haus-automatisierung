@@ -1,7 +1,7 @@
 body {
     background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed;
-    background-size:cover;
-    background-position:top center;
+    background-size: cover;
+    background-position: top center;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: $default-fontsize;
@@ -9,6 +9,11 @@ body {
     padding: 0;
     tab-size: 4;
     background-size: cover;
+}
+
+div {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: $default-fontsize !important;
 }
 
 body.dashboard_fullsize #content {
@@ -98,23 +103,22 @@ input[type="text"] {
 
     &:after {
         color: $primary-color;
-        content: '!!! Bitte Theme-JS aktivieren für vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js';
+        content: 'Theme-JS aktivieren fuer vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js';
         margin-top: 5px;
         display: block;
-        background: #fff;
         padding: 5px;
         opacity: 0.9;
     }
 
-    // Wird vom Javascript hinzugefügt
+    // Wird vom Javascript hinzugefuegt
     &.js-installed:after{
         content: none;
     }
 
     &.header--hidden{
-      -webkit-transform: translateY(-110%);
-      -ms-transform: translateY(-110%);
-      transform: translateY(-110%);
+        -webkit-transform: translateY(-110%);
+        -ms-transform: translateY(-110%);
+        transform: translateY(-110%);
     }
 }
 

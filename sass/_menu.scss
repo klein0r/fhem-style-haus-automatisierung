@@ -16,9 +16,8 @@
         display: block;
         padding: 10px 15px;
         position: relative;
-        line-height: 15px;
     }
-    
+
     .menuTree {
 
         position: relative;
@@ -84,19 +83,16 @@
         }
 
         tr {
-          a{
-            border-top: 1px solid transparent;
-            border-bottom: 1px solid transparent;
-          }
+            a {
+                border-top: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+            }
         }
 
         tr.sel {
             a {
-              background: $primary-color;
-              color: #fff;
-              border-top: 1px solid $primary-color-dk;
-              border-bottom: 1px solid $primary-color-dk;
-
+                background: $primary-color;
+                color: #fff;
             }
 
             svg.icon {
