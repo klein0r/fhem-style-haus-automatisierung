@@ -24,6 +24,12 @@ jQuery(document).ready(function ($) {
     // Check für JS-Installation entfernen
     $('#hdr').addClass('js-installed');
 
+    // attr WEB hiddenroom input -> Ansicht anpassen
+    if ($('#hdr .maininput').length == 0) {
+        $('#hdr').hide();
+        $('#content').css({top: '10px'});
+    }
+
     // Add version to logo
     $('#logo').append(
         $('<span class="theme-version">' + themeVersion + '</span>')
