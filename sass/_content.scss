@@ -36,7 +36,7 @@
         display: inline;
         float: left;
         width: 100%;
-        font-size: $large-fontsize;
+        font-size: $large-fontsize !important;
         text-transform: uppercase;
         letter-spacing: 10px;
         overflow-x: scroll;
@@ -304,7 +304,7 @@
     }
 
     .devType {
-        font-size: $large-fontsize;
+        font-size: $large-fontsize !important;
         text-transform: uppercase;
         letter-spacing: 10px;
         margin-top: 10px;
@@ -419,7 +419,7 @@
     }
 
     .CodeMirror {
-        width: 1000px !important;
+        width: auto;
     }
 
     #edit {

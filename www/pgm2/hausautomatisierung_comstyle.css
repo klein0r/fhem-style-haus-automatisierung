@@ -47,7 +47,7 @@ input[type="text"] { border: 1px #e56524 solid; background: none; }
 #hdr.js-installed:after { content: none; }
 #hdr.header--hidden { -webkit-transform: translateY(-110%); -ms-transform: translateY(-110%); transform: translateY(-110%); }
 
-#errmsg { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 20px; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 10px; width: 100%; z-index: 99999; opacity: 0.8; }
+#errmsg { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 10px; width: 100%; z-index: 99999; opacity: 0.8; }
 #errmsg:after { content: ' !!!!'; }
 #errmsg:before { content: '!!!! '; }
 
@@ -61,7 +61,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .roomoverview .icon { margin-right: 5px; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
-#content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; }
+#content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; }
 #content .makeTable .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
 #content .makeTable table { font-size: 13px; text-transform: none; letter-spacing: normal; }
 #content .makeTable table.block td:nth-child(2) { width: 60%; }
@@ -105,7 +105,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .SVGlabel { background: #f5f6f9; padding: 5px; }
 #content .SVGplot { background: #f5f6f9; padding: 10px; }
 #content .odd .SVGplot, #content .even .SVGplot { background: none !important; }
-#content .devType { font-size: 16px; text-transform: uppercase; letter-spacing: 10px; margin-top: 10px; }
+#content .devType { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; margin-top: 10px; }
 #content .devType a { color: #fff; }
 #content .odd .devType, #content .even .devType { color: #676f7a; margin-left: 5px; margin-bottom: 10px; }
 #content .odd .devType a, #content .even .devType a { color: #676f7a; }
@@ -124,7 +124,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp { font-size: 13px !important; text-transform: none !important; letter-spacing: normal !important; background: #fff; color: #676f7a; padding: 5px; box-sizing: border-box; }
 #content #ZWHelp.makeTable.help:empty { display: none; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
-#content .CodeMirror { width: 1000px !important; }
+#content .CodeMirror { width: auto; }
 #content #edit input[type="submit"].psc { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
 
 #console { bottom: 0; overflow: auto; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
@@ -209,8 +209,7 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #menu table.room { border: none; border-spacing: 0; margin-bottom: 10px; }
 #menu table.room .custom-menu-entry { color: #e56524; }
 #menu table.room img.icon, #menu table.room svg.icon { width: 20px; height: 20px; margin: 0; position: absolute; right: 10px; top: 7px; }
-#menu table.room #saveCheck { margin-top: -35px; background: transparent; color: red; border-right: 5px #e56524 solid; border-left: 5px #e56524 solid; text-indent: -9999px; margin-left: 220px; }
-#menu table.room tr a { border-top: 1px solid transparent; border-bottom: 1px solid transparent; }
+#menu table.room #saveCheck { margin-top: -33px; background: transparent; border-right: 5px #e56524 solid; border-left: 5px #e56524 solid; text-indent: -9999px; margin-left: 220px; }
 #menu table.room tr.sel a { background: #e56524; color: #fff; }
 #menu table.room tr.sel svg.icon { fill: #fff; }
 #menu table.room tr.sel td a:after { border-bottom: 17px solid transparent; border-left: 13px solid #e56524; border-top: 17px solid transparent; content: " "; height: 0; margin-top: -17px; position: absolute; right: -13px; top: 50%; width: 0; }
@@ -234,6 +233,7 @@ svg.zw_nr .zwDongle { stroke-width: 3px; }
 svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 
 .ui-dialog { background: #fff !important; border: 2px solid #e56524 !important; padding: .2em !important; border-radius: 0 !important; color: #676f7a !important; padding: 0 !important; }
+.ui-dialog .CodeMirror { width: auto; }
 
 .ui-widget-content { background: #fff !important; }
 .ui-widget-content pre { font-family: 'Source Code Pro', monospace !important; }

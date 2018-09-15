@@ -89,7 +89,7 @@ input[type="text"] {
     z-index: 99;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 3px 3px #11111130;
-    
+
     input.maininput {
         color: $primary-color;
         width: 1000px;
@@ -127,7 +127,7 @@ input[type="text"] {
     border-bottom: 3px #fff solid;
     border-top: 3px #fff solid;
     color: #fff;
-    font-size: 20px;
+    font-size: $large-fontsize !important;
     font-weight: 700;
     left: 0;
     padding: 20px;

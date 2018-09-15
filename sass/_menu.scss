@@ -73,20 +73,12 @@
         }
 
         #saveCheck {
-            margin-top: -35px;
+            margin-top: -33px;
             background: transparent;
-            color: red;
             border-right: 5px $primary-color solid;
             border-left: 5px $primary-color solid;
             text-indent: -9999px;
             margin-left: 220px;
-        }
-
-        tr {
-            a {
-                border-top: 1px solid transparent;
-                border-bottom: 1px solid transparent;
-            }
         }
 
         tr.sel {

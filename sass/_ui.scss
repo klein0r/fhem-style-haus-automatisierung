@@ -5,6 +5,10 @@
     border-radius: 0 !important;
     color: $secondary-color !important;
     padding: 0 !important;
+
+    .CodeMirror {
+        width: auto;
+    }
 }
 
 .ui-widget-content {
