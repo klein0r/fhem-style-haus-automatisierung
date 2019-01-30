@@ -258,4 +258,4 @@ svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 #right > ul ul li, #right > div ul li, #right > div > ul ul li, #right > p ul li { margin: 10px 0; }
 #right > ul table td, #right > div table td, #right > div > ul table td, #right > p table td { padding: 5px; }
 
-#weekprofile\.BD_WEEKPROFILE\.header { background-color: #fff; }
+[id*="weekprofile"] { background-color: #fff; }
