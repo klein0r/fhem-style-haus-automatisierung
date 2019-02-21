@@ -21,7 +21,7 @@ UPD 2017-08-17_20:17:57 6250 www/images/hausautomatisierung_com/router.svg
 DEL ./www/images/hausautomatisierung_com/doorhandle.svg
 UPD 2017-08-17_20:17:57 2398 www/images/hausautomatisierung_com/doorhandle.svg
 DEL ./www/pgm2/hausautomatisierung_comstyle.css
-UPD 2018-09-15_13:48:01 26959 www/pgm2/hausautomatisierung_comstyle.css
+UPD 2018-09-15_13:48:01 27008 www/pgm2/hausautomatisierung_comstyle.css
 DEL ./www/pgm2/hausautomatisierung_comfloorplanstyle.css
 UPD 2018-09-15_13:48:01 4942 www/pgm2/hausautomatisierung_comfloorplanstyle.css
 DEL ./www/pgm2/hausautomatisierung_comsvg_style.css
