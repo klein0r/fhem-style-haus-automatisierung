@@ -362,11 +362,14 @@
         background: #fff;
         border-left: 5px $primary-color solid;
         color: $secondary-color;
+        font-size: $default-fontsize !important;
         font-family: 'Source Code Pro', monospace !important;
         max-width: 985px;
         padding: 5px;
         width: 100%;
         margin-top: 10px;
+        text-transform: none;
+        letter-spacing: normal !important;
 
         h3 {
             font-size: 16px;
