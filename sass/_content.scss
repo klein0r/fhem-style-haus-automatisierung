@@ -7,6 +7,7 @@
     
     pre {
         font-family: 'Source Code Pro', monospace !important;
+        white-space: pre-wrap;
     }
 
     .roomoverview {
@@ -120,6 +121,23 @@
             padding: 1px 10px;
             background: transparent;
             font-size: $large-fontsize;
+        }
+    }
+    
+    // Weekdayprofile
+    
+    div[id^=weekprofile] {
+        background: #fff;
+        padding: 5px;
+        
+        button {
+            border: 1px $primary-color solid;
+            border-radius: 0;
+            color: $primary-color;
+            padding: 1px 10px;
+            background: transparent;
+            font-size: $large-fontsize;
+            height: 24px;
         }
     }
 

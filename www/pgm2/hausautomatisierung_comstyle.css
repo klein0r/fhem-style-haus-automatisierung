@@ -57,7 +57,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 
 #content { max-width: 1000px; }
 #content .get, #content .set, #content .attr { float: left; }
-#content pre { font-family: 'Source Code Pro', monospace !important; }
+#content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
 #content .roomoverview .icon { margin-right: 5px; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
@@ -77,6 +77,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .dval > table { margin-bottom: 10px; }
 #content .dval > table .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .dval input { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
+#content div[id^=weekprofile] { background: #fff; padding: 5px; }
+#content div[id^=weekprofile] button { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
 #content .makeSelect { background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; clear: left; color: #676f7a; display: inline; float: left; padding: 5px; width: 100%; }
 #content .makeSelect .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }

@@ -19,7 +19,7 @@ function getClock() {
 
 jQuery(document).ready(function ($) {
 
-    var themeVersion = '2.8';
+    var themeVersion = '2.9';
 
     // Check für JS-Installation entfernen
     $('#hdr').addClass('js-installed');
