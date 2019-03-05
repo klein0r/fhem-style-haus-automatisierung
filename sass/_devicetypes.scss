@@ -1,0 +1,41 @@
+#content {
+
+    // abstracttable
+    .abstract-table {
+        padding: 10px 0;
+
+        th {
+            font-weight: bold;
+            color: $secondary-color;
+            padding: 10px 2px;
+            border-bottom: 1px $secondary-color solid;
+        }
+    }
+
+    // FB_CALLLIST
+    .fbcalllist.header {
+        td {
+            font-weight: bold;
+            color: $secondary-color;
+            padding: 10px 2px;
+            border-bottom: 1px $secondary-color solid;
+        }
+    }
+
+    // weekdayprofile
+    div[id^=weekprofile] {
+        background: #fff;
+        padding: 5px;
+        
+        button {
+            border: 1px $primary-color solid;
+            border-radius: 0;
+            color: $primary-color;
+            padding: 1px 10px;
+            background: transparent;
+            font-size: $large-fontsize;
+            height: 24px;
+        }
+    }
+    
+}

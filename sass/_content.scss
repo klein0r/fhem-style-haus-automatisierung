@@ -4,7 +4,7 @@
     .get, .set, .attr {
         float: left;
     }
-    
+
     pre {
         font-family: 'Source Code Pro', monospace !important;
         white-space: pre-wrap;
@@ -20,7 +20,7 @@
             border-right: 2px $primary-color solid;
         }
     }
-    
+
     .modCmd {
         &input[type="submit"] {
             border: 1px $primary-color solid;
@@ -31,7 +31,7 @@
             font-size: $large-fontsize;
         }
     }
-    
+
     .makeTable {
         clear: left;
         display: inline;
@@ -121,23 +121,6 @@
             padding: 1px 10px;
             background: transparent;
             font-size: $large-fontsize;
-        }
-    }
-    
-    // Weekdayprofile
-    
-    div[id^=weekprofile] {
-        background: #fff;
-        padding: 5px;
-        
-        button {
-            border: 1px $primary-color solid;
-            border-radius: 0;
-            color: $primary-color;
-            padding: 1px 10px;
-            background: transparent;
-            font-size: $large-fontsize;
-            height: 24px;
         }
     }
 
