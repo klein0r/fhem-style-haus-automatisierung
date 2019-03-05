@@ -18,6 +18,7 @@
         .first-table-column {
             width: 25%;
             border-right: 2px $primary-color solid;
+            line-height: 29px;
         }
     }
 
@@ -249,7 +250,17 @@
             background: $odd-color;
         }
 
-        &.readings td:nth-child(2) {
+        &.internals td:nth-child(1),
+        &.attributes td:nth-child(1),
+        &.readings td:nth-child(1),
+        &.assoc td:nth-child(1) {
+            width: 20%;
+        }
+
+        &.internals td:nth-child(2),
+        &.attributes td:nth-child(2),
+        &.readings td:nth-child(2),
+        &.assoc td:nth-child(2) {
             word-break: break-all;
         }
 
@@ -438,9 +449,5 @@
                 min-width: 200px;
             }
         }
-    }
-    
-    #dashboardtabs {
-        
     }
 }

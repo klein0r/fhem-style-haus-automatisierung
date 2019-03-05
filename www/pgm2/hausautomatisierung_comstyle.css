@@ -59,7 +59,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .get, #content .set, #content .attr { float: left; }
 #content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
 #content .roomoverview .icon { margin-right: 5px; }
-#content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
+#content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; }
 #content .makeTable .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
@@ -95,7 +95,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table .no-background { background: none !important; }
 #content table.block td:nth-child(1) { white-space: nowrap; }
 #content table.block tr.odd { background: #f5f6f9; }
-#content table.readings td:nth-child(2) { word-break: break-all; }
+#content table.internals td:nth-child(1), #content table.attributes td:nth-child(1), #content table.readings td:nth-child(1), #content table.assoc td:nth-child(1) { width: 20%; }
+#content table.internals td:nth-child(2), #content table.attributes td:nth-child(2), #content table.readings td:nth-child(2), #content table.assoc td:nth-child(2) { word-break: break-all; }
 #content table tr.odd > td, #content table tr.even > td { padding: 5px; }
 #content table .ex { max-width: 1000px; white-space: normal; }
 #content table input + select, #content table select + select { margin-left: 10px; }
@@ -127,7 +128,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .CodeMirror { width: auto; }
 #content #edit input[type="submit"].psc { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
 
-#content .abstract-table { padding: 10px 0; }
+#content .abstract-table { margin: 10px 0; }
 #content .abstract-table th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
 #content .fbcalllist.header td { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
 #content div[id^=weekprofile] { background: #fff; padding: 5px; }
