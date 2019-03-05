@@ -63,6 +63,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; }
 #content .makeTable .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
+#content .makeTable .first-table-column img.icon { vertical-align: middle; width: 32px; height: 32px; }
 #content .makeTable table { font-size: 13px; text-transform: none; letter-spacing: normal; }
 #content .makeTable table.block td:nth-child(2) { width: 60%; }
 #content .makeTable + .makeTable { margin-top: 10px; }
@@ -70,7 +71,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .makeTable .slider { height: 16px; }
 #content .makeTable .slider .handle { height: 16px; line-height: 16px; }
 #content .slider { width: 350px; border: 1px #e56524 solid; }
-#content .slider .handle { -moz-user-select: none; -user-select: none; -webkit-user-select: none; background: #e56524; color: #f5f6f9; cursor: pointer; position: relative; text-align: center; width: 40px; }
+#content .slider .handle { -webkit-user-select: none; /* Safari 3.1+ */ -moz-user-select: none; /* Firefox 2+ */ -ms-user-select: none; /* IE 10+ */ user-select: none; /* Standard syntax */ background: #e56524; color: #f5f6f9; cursor: pointer; position: relative; text-align: center; width: 40px; }
+#content .colorpicker_widget { line-height: 20px; }
 #content .colorpicker_ct .slider { background: url(../jscolor/ct_background.svg); background-size: 150px; }
 #content .colorpicker_ct_mired .slider { background: url(../jscolor/ct_mired_background.svg); background-size: 150px; }
 #content .colorpicker_hue .slider { background: url(../jscolor/hue_background.svg); background-size: 150px; }
@@ -81,13 +83,14 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .makeSelect .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }
 #content .makeSelect input[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
-#content .makeSelect input[type="text"] { border: 1px #e56524 solid; color: #555; background: transparent; font-size: 16px; height: 20px; }
+#content .makeSelect input[type="text"] { border: 1px #e56524 solid; color: #555; background: transparent; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; }
+#content .makeSelect[cmd="attr"] select.select_widget, #content .makeSelect[cmd="attr"] input[type="text"] { width: 300px; }
 #content .makeSelect + .makeTable { margin-top: 10px; }
-#content .makeSelect .slider { width: 250px; height: 22px; }
+#content .makeSelect .slider { width: 250px; height: 22px; margin-left: 5px; margin-right: 5px; }
 #content .makeSelect .slider .handle { height: 22px; line-height: 22px; }
 #content table { border-collapse: collapse; max-width: 1000px; width: 100%; }
 #content table.wide { width: 100%; }
-#content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 0px 0 10px; min-width: 90px; max-width: 300px; }
+#content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 0px 0 10px; min-width: 90px; max-width: 400px; }
 #content table .slider { width: 150px; }
 #content table.block { background: #fff; border: none; color: #676f7a; }
 #content table.block.readings .changed { color: #e56524; }
@@ -241,6 +244,12 @@ svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 
 .ui-dialog { background: #fff !important; border: 2px solid #e56524 !important; padding: .2em !important; border-radius: 0 !important; color: #676f7a !important; padding: 0 !important; }
 .ui-dialog .CodeMirror { width: auto; }
+.ui-dialog .slider { width: 350px; border: 1px #e56524 solid; height: 22px; }
+.ui-dialog .slider .handle { -webkit-user-select: none; /* Safari 3.1+ */ -moz-user-select: none; /* Firefox 2+ */ -ms-user-select: none; /* IE 10+ */ user-select: none; /* Standard syntax */ background: #e56524; color: #f5f6f9; cursor: pointer; position: relative; text-align: center; width: 40px; height: 22px; line-height: 22px; }
+.ui-dialog .colorpicker { line-height: 30px; }
+.ui-dialog .colorpicker_ct .slider { background: url(../jscolor/ct_background.svg); background-size: 150px; }
+.ui-dialog .colorpicker_ct_mired .slider { background: url(../jscolor/ct_mired_background.svg); background-size: 150px; }
+.ui-dialog .colorpicker_hue .slider { background: url(../jscolor/hue_background.svg); background-size: 150px; }
 
 .ui-widget-content { background: #fff !important; }
 .ui-widget-content pre { font-family: 'Source Code Pro', monospace !important; }
