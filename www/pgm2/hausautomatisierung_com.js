@@ -3,7 +3,7 @@ function getClock() {
     var d = new Date();
     nhour = d.getHours();
     nmin = d.getMinutes();
-    
+
     if (nhour <= 9) {
         nhour = '0' + nhour;
     }
@@ -42,6 +42,7 @@ jQuery(document).ready(function ($) {
                 $('<div></div>')
                     .append(textArea)
                     .dialog({
+                        title: 'bla',
                         modal: true,
                         width: $(window).width() * 0.9,
                         buttons: [
@@ -71,7 +72,7 @@ jQuery(document).ready(function ($) {
     ).append(
         $('<span id="clock"></span>')
     );
-
+    
     // Add clock
     window.addEventListener('load', getClock, false);
 
@@ -103,19 +104,20 @@ jQuery(document).ready(function ($) {
     });
 
     // Links in der Navigation hinzufügen
-    var $navElement = jQuery('#menu .room').last().find('tbody');
-
-    $navElement.append(
+    var navElement = jQuery('#menu .room').last().find('tbody');
+    navElement.append(
         $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/klein0r/fhem-style-haus-automatisierung/issues/">Theme-Fehler melden (v' + themeVersion + ')</a></div></td></tr>')
     );
 
     // Automatische Breite für HDR Input
-    $('#hdr').css({width: $('#content').width() + 'px'});
-    $('.maininput').css({width: ($('#hdr').width() - $('.maininputPopupLink').outerWidth() - 4) + 'px'});
-    $(window).resize(function() {
-        $('#hdr').css({width: $('#content').width() + 'px'});
+    function resizeHeader() {
+        var baseWidth = $('#content').length ? $('#content').width() : $(window).width() - $('#menuScrollArea').width() - 30;
+
+        $('#hdr').css({width: baseWidth + 'px'});
         $('.maininput').css({width: ($('#hdr').width() - $('.maininputPopupLink').outerWidth() - 4) + 'px'});
-    });
+    }
+    resizeHeader();
+    $(window).resize(resizeHeader);
 
     // Klick auf Error-Message blendet diese aus
     $('body').on('click', '#errmsg', function() {

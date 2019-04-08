@@ -21,6 +21,11 @@
             border-bottom: 1px $secondary-color solid;
         }
     }
+    
+    // SONOS
+    .rc_body {
+        margin-top: 10px;
+    }
 
     // weekdayprofile
     div[id^=weekprofile] {

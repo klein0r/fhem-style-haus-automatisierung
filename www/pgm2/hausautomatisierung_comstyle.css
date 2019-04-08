@@ -31,8 +31,8 @@ a { color: #e56524; text-decoration: none; }
 button.dist { border: 0; cursor: pointer; margin: 10px; }
 
 #logo { background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat; height: 120px; margin-left: 40px; margin-top: 10px; position: fixed; width: 220px; }
-#logo .theme-version { opacity: 0.7; }
-#logo #clock { opacity: 0.7; position: absolute; right: 0; top: 0; }
+#logo .theme-version { opacity: 0.7; font-weight: bold; }
+#logo #clock { opacity: 0.7; position: absolute; font-weight: bold; right: 0; top: 0; }
 
 #content, #right { bottom: 20px; left: 180px; position: absolute; right: 10px; top: 50px; }
 
@@ -58,7 +58,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content { max-width: 1000px; }
 #content .get, #content .set, #content .attr { float: left; }
 #content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
-#content .roomoverview .icon { margin-right: 5px; }
+#content .roomoverview .icon { margin-right: 5px; vertical-align: middle; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; }
@@ -134,6 +134,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .abstract-table { margin: 10px 0; }
 #content .abstract-table th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
 #content .fbcalllist.header td { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
+#content .rc_body { margin-top: 10px; }
 #content div[id^=weekprofile] { background: #fff; padding: 5px; }
 #content div[id^=weekprofile] button { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
 
@@ -217,6 +218,7 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #menu .menuTree.level0.open > td > div > a:after { width: 35px; height: 35px; content: ' '; position: absolute; top: 0; right: 0; background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(229, 101, 36)" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z" transform="rotate(270,896,896)"/></svg>') !important; }
 #menu .menuTree > td > div > div { display: none; }
 #menu table.room { border: none; border-spacing: 0; margin-bottom: 10px; }
+#menu table.room .menu_Save_config { font-weight: bold; }
 #menu table.room .custom-menu-entry { color: #e56524; }
 #menu table.room img.icon, #menu table.room svg.icon { width: 20px; height: 20px; margin: 0; position: absolute; right: 10px; top: 7px; }
 #menu table.room #saveCheck { margin-top: -33px; background: transparent; border-right: 5px #e56524 solid; border-left: 5px #e56524 solid; text-indent: -9999px; margin-left: 220px; }

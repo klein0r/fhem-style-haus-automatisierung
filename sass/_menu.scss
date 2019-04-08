@@ -58,6 +58,10 @@
         border-spacing: 0;
         margin-bottom: 10px;
 
+        .menu_Save_config {
+            font-weight: bold;
+        }
+
         .custom-menu-entry {
             color: $primary-color;
         }
