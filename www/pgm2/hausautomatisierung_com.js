@@ -25,6 +25,44 @@ jQuery(document).ready(function ($) {
     if ($('#hdr .maininput').length == 0) {
         $('#hdr').hide();
         $('#content').css({top: '10px'});
+    } else {
+        // Link mit Popup Button
+        $('<div class="maininputPopupLink"></div>')
+            .appendTo("#hdr")
+            .click(function () {
+                var hasCodeMirror = typeof AddCodeMirror == 'function';
+
+                var textArea = $('<textarea rows="20" cols="60" style="width: 99%; ' + (hasCodeMirror ? 'opacity: 0;' : '') + '"/>');
+                if (hasCodeMirror) {
+                    AddCodeMirror(textArea, function(cm) { 
+                        cm.on("change", function() { textArea.val(cm.getValue()) } );
+                    });
+                }
+
+                $('<div></div>')
+                    .append(textArea)
+                    .dialog({
+                        modal: true,
+                        width: $(window).width() * 0.9,
+                        buttons: [
+                            {
+                                text: "Execute",
+                                click: function() {
+                                    FW_execRawDef(textArea.val())
+                                }
+                            },
+                            {
+                                text: "Close",
+                                click: function() {
+                                    $(this).remove();
+                                }
+                            },
+                        ],
+                        close: function() {
+                            $(this).remove();
+                        }
+                    });
+            });
     }
 
     // Add version to logo
@@ -39,7 +77,7 @@ jQuery(document).ready(function ($) {
 
 	// Clear spaces
     $('#content .devType, #menu .room a').each(function() {
-    	$(this).html($(this).html().replace(/&nbsp;/g, ''));
+    	    $(this).html($(this).html().replace(/&nbsp;/g, ''));
     });
 
     $('#content > br').remove();
@@ -72,9 +110,11 @@ jQuery(document).ready(function ($) {
     );
 
     // Automatische Breite für HDR Input
-    $('#hdr input.maininput').css({width: $('#content').width() + 'px'});
+    $('#hdr').css({width: $('#content').width() + 'px'});
+    $('.maininput').css({width: ($('#hdr').width() - $('.maininputPopupLink').outerWidth() - 4) + 'px'});
     $(window).resize(function() {
-        $('#hdr input.maininput').css({width: $('#content').width() + 'px'});
+        $('#hdr').css({width: $('#content').width() + 'px'});
+        $('.maininput').css({width: ($('#hdr').width() - $('.maininputPopupLink').outerWidth() - 4) + 'px'});
     });
 
     // Klick auf Error-Message blendet diese aus
@@ -87,10 +127,10 @@ jQuery(document).ready(function ($) {
     });
 
     // hide elements by name
-    if (document.URL.indexOf("showall") != -1) {
+    if (document.URL.indexOf('showall') != -1) {
         //don't hide anything
     } else {
-        $("div.devType:contains('-hidden')").parent('td').hide();
+        $('div.devType:contains("-hidden")').parent('td').hide();
     }
 
     (function($, window, document, undefined) {
