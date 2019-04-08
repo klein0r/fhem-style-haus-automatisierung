@@ -17,6 +17,7 @@ update all ha_theme
 3. Ein paar Anpassungen am Web-Device:
 
 ```
+attr WEB JavaScripts codemirror/fhem_codemirror.js
 attr WEB roomIcons Save.config:message_attention
 ```
 

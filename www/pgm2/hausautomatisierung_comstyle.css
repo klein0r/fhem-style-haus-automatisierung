@@ -130,6 +130,11 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
 #content .CodeMirror { width: auto; }
 #content #edit input[type="submit"].psc { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
+#content div.fileList { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; }
+#content > form { margin-top: 10px; background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
+#content > form > .saveName { border: 1px #e56524 solid; color: #555; background: #fff; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; float: right; }
+#content > form > input[name="saveAs"] { float: right; }
+#content > form > input[name="save"], #content > form > input[name="saveAs"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
 
 #content .abstract-table { margin: 10px 0; }
 #content .abstract-table th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
@@ -245,6 +250,7 @@ svg.zw_nr .zwDongle { stroke-width: 3px; }
 svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 
 .ui-dialog { background: #fff !important; border: 2px solid #e56524 !important; padding: .2em !important; border-radius: 0 !important; color: #676f7a !important; padding: 0 !important; }
+.ui-dialog .ui-widget-header { color: #676f7a; }
 .ui-dialog .CodeMirror { width: auto; }
 .ui-dialog .slider { width: 350px; border: 1px #e56524 solid; height: 22px; }
 .ui-dialog .slider .handle { -webkit-user-select: none; /* Safari 3.1+ */ -moz-user-select: none; /* Firefox 2+ */ -ms-user-select: none; /* IE 10+ */ user-select: none; /* Standard syntax */ background: #e56524; color: #f5f6f9; cursor: pointer; position: relative; text-align: center; width: 40px; height: 22px; line-height: 22px; }

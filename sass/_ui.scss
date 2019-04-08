@@ -5,6 +5,10 @@
     border-radius: 0 !important;
     color: $secondary-color !important;
     padding: 0 !important;
+    
+    .ui-widget-header {
+        color: $primary-color-lt;
+    }
 
     .CodeMirror {
         width: auto;

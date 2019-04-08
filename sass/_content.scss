@@ -473,4 +473,46 @@
             }
         }
     }
+
+    div.fileList {
+        font-size: $large-fontsize !important;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    // Edit files
+    > form {
+        margin-top: 10px;
+        background: #fff;
+        border-left: 5px $primary-color solid;
+        border-right: 5px $primary-color solid;
+        box-sizing: border-box;
+        padding: 5px;
+
+        > .saveName {
+            border: 1px $primary-color solid;
+            color: #555;
+            background: #fff;
+            font-size: $large-fontsize;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            float: right;
+        }
+
+        > input[name="saveAs"] {
+            float: right;
+        }
+
+        > input[name="save"],
+        > input[name="saveAs"] {
+            border: 1px $primary-color solid;
+            border-radius: 0;
+            color: $primary-color;
+            padding: 1px 10px;
+            background: transparent;
+            font-size: $large-fontsize;
+            height: 24px;
+        }
+    }
 }

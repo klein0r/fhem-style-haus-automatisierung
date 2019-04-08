@@ -39,25 +39,18 @@ jQuery(document).ready(function ($) {
                     });
                 }
 
-                $('<div></div>')
+                $('<div title="Multiline Command"></div>')
                     .append(textArea)
                     .dialog({
-                        title: 'bla',
                         modal: true,
                         width: $(window).width() * 0.9,
                         buttons: [
                             {
                                 text: "Execute",
                                 click: function() {
-                                    FW_execRawDef(textArea.val())
+                                    FW_execRawDef(textArea.val());
                                 }
-                            },
-                            {
-                                text: "Close",
-                                click: function() {
-                                    $(this).remove();
-                                }
-                            },
+                            }
                         ],
                         close: function() {
                             $(this).remove();
