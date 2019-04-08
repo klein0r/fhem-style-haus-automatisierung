@@ -43,8 +43,6 @@ input[type="text"] { border: 1px #e56524 solid; background: none; }
 #hdr { left: 310px; position: fixed; top: 0px; background: #fffffff0; padding: 10px; z-index: 99; border-radius: 0 0 4px 4px; box-shadow: 0 3px 3px #11111130; }
 #hdr input.maininput { color: #e56524; width: 1000px; font-size: 16px; box-sizing: border-box; }
 #hdr input.maininput:focus { outline: none; }
-#hdr:after { color: #e56524; content: 'Theme-JS aktivieren fuer vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js'; margin-top: 5px; display: block; padding: 5px; opacity: 0.9; }
-#hdr.js-installed:after { content: none; }
 #hdr.header--hidden { -webkit-transform: translateY(-110%); -ms-transform: translateY(-110%); transform: translateY(-110%); }
 
 #errmsg { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 10px; width: 100%; z-index: 99999; opacity: 0.8; }

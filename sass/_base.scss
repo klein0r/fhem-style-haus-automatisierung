@@ -101,20 +101,6 @@ input[type="text"] {
         }
     }
 
-    &:after {
-        color: $primary-color;
-        content: 'Theme-JS aktivieren fuer vollen Funktionsumfang: attr WEB JavaScripts codemirror/fhem_codemirror.js hausautomatisierung-com/custom.js';
-        margin-top: 5px;
-        display: block;
-        padding: 5px;
-        opacity: 0.9;
-    }
-
-    // Wird vom Javascript hinzugefuegt
-    &.js-installed:after{
-        content: none;
-    }
-
     &.header--hidden{
         -webkit-transform: translateY(-110%);
         -ms-transform: translateY(-110%);

@@ -3,6 +3,9 @@
 #compass compile --force
 
 rm controls_ha_theme.txt
+
+echo "DEL ./www/hausautomatisierung-com/custom.js" >> controls_ha_theme.txt
+
 find ./www -type f \( ! -iname ".*" \) -print0 | while IFS= read -r -d '' f;
 do
     echo "DEL ${f}" >> controls_ha_theme.txt
