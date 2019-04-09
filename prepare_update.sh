@@ -15,4 +15,4 @@ done
 # CHANGED file
 echo "FHEM haus-automatisierung.com custom theme last changes:" > CHANGED
 echo $(date +"%Y-%m-%d") >> CHANGED
-echo " - $(git log -1 --pretty=%B)" >> CHANGED
+git log -n 10 --reverse --pretty="format:- %s" >> CHANGED
