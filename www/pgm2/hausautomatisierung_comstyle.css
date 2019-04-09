@@ -270,7 +270,8 @@ svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 .ui-widget-content caption, .ui-widget-content .mkTitle { text-transform: uppercase; font-size: 16px !important; letter-spacing: 10px; margin: 10px 0; }
 .ui-widget-content .makeTable { margin-bottom: 10px; }
 .ui-widget-content .makeTable table { width: 100%; }
-.ui-widget-content .makeTable th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
+.ui-widget-content .makeTable thead th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
+.ui-widget-content .makeTable tbody th { padding-top: 5px; }
 .ui-widget-content .makeTable tfoot { color: #676f7a; }
 .ui-widget-content .makeTable tfoot td { padding-top: 5px; }
 .ui-widget-content .makeTable tr.odd > td, .ui-widget-content .makeTable tr.even > td { padding: 5px; }

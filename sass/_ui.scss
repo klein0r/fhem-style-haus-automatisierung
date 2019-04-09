@@ -76,11 +76,17 @@
             width: 100%;
         }
 
-        th {
+        thead th {
             font-weight: bold;
             color: $secondary-color;
             padding: 10px 2px;
             border-bottom: 1px $secondary-color solid;
+        }
+
+        tbody {
+            th {
+                padding-top: 5px;
+            }
         }
 
         tfoot {
