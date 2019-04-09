@@ -58,6 +58,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content { max-width: 1000px; }
 #content .get, #content .set, #content .attr { float: left; }
 #content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
+#content pre.CodeMirror-line { white-space: pre; }
+#content pre.log { background: #000; padding: 10px; }
 #content .roomoverview .icon { margin-right: 5px; vertical-align: middle; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
@@ -128,7 +130,6 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp { font-size: 13px !important; text-transform: none !important; letter-spacing: normal !important; background: #fff; color: #676f7a; padding: 5px; box-sizing: border-box; }
 #content #ZWHelp.makeTable.help:empty { display: none; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
-#content .CodeMirror { width: auto; }
 #content #edit input[type="submit"].psc { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
 #content div.fileList { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; }
 #content > form { margin-top: 10px; background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
@@ -261,6 +262,14 @@ svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 
 .ui-widget-content { background: #fff !important; }
 .ui-widget-content pre { font-family: 'Source Code Pro', monospace !important; }
+.ui-widget-content a { color: #e56524 !important; }
+.ui-widget-content caption { text-transform: uppercase; font-size: 16px !important; letter-spacing: 10px; }
+.ui-widget-content .makeTable { margin-bottom: 10px; }
+.ui-widget-content .makeTable th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
+.ui-widget-content .makeTable tfoot { color: #676f7a; }
+.ui-widget-content .makeTable tfoot td { padding-top: 5px; }
+.ui-widget-content .makeTable tr.odd > td, .ui-widget-content .makeTable tr.even > td { padding: 5px; }
+.ui-widget-content .makeTable .block tr.odd { background: #f5f6f9; }
 
 .ui-button { border-radius: 0 !important; color: #e56524 !important; }
 

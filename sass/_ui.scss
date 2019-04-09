@@ -52,9 +52,47 @@
 
 .ui-widget-content {
     background: #fff !important;
-    
+
     pre {
         font-family: 'Source Code Pro', monospace !important;
+    }
+
+    a {
+        color: $primary-color !important;
+    }
+
+    caption {
+        text-transform: uppercase;
+        font-size: $large-fontsize !important;
+        letter-spacing: 10px;
+    }
+
+    .makeTable {
+        margin-bottom: 10px;
+
+        th {
+            font-weight: bold;
+            color: $secondary-color;
+            padding: 10px 2px;
+            border-bottom: 1px $secondary-color solid;
+        }
+
+        tfoot {
+            color: $primary-color-lt;
+
+            td {
+                padding-top: 5px;
+            }
+        }
+
+        tr.odd > td,
+        tr.even > td {
+            padding: 5px;
+        }
+
+        .block tr.odd {
+            background: $odd-color;
+        }
     }
 }
 
