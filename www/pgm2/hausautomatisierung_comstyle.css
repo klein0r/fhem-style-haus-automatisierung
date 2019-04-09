@@ -92,8 +92,9 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .makeSelect + .makeTable { margin-top: 10px; }
 #content .makeSelect .slider { width: 250px; height: 22px; margin-left: 5px; margin-right: 5px; }
 #content .makeSelect .slider .handle { height: 22px; line-height: 22px; }
-#content table { border-collapse: collapse; max-width: 1000px; width: 100%; }
-#content table.wide { width: 100%; }
+#content > table { width: 100%; }
+#content table { border-collapse: collapse; max-width: 1000px; }
+#content table.wide, #content table.roomoverview { width: 100%; }
 #content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 0px 0 10px; min-width: 90px; max-width: 400px; }
 #content table .slider { width: 150px; }
 #content table.block { background: #fff; border: none; color: #676f7a; }
@@ -132,9 +133,10 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp { font-size: 13px !important; text-transform: none !important; letter-spacing: normal !important; background: #fff; color: #676f7a; padding: 5px; box-sizing: border-box; }
 #content #ZWHelp.makeTable.help:empty { display: none; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
+#content .CodeMirror { max-width: 100%; }
 #content #edit input[type="submit"].psc { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
 #content div.fileList { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; }
-#content > form { margin-top: 10px; background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
+#content > form { margin-top: 10px; background: #fff; color: #676f7a; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
 #content > form > .saveName { border: 1px #e56524 solid; color: #555; background: #fff; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; float: right; }
 #content > form > input[name="saveAs"] { float: right; }
 #content > form > input[name="save"], #content > form > input[name="saveAs"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
@@ -145,6 +147,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .rc_body { margin-top: 10px; }
 #content div[id^=weekprofile] { background: #fff; padding: 5px; }
 #content div[id^=weekprofile] button { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
+#content .todoist_container .col_header { background: #fff; }
 #content #fhemsearch { color: #676f7a; margin-top: 10px; background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
 #content #fhemsearch > input[type="text"] { border: 1px #e56524 solid; color: #555; background: #fff; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; }
 
@@ -240,6 +243,7 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #menuScrollArea { height: 100%; top: 0; left: 0; overflow: auto; position: relative; width: 300px; }
 
 svg { width: 32px; height: 32px; vertical-align: middle; }
+svg text.title { text-transform: none !important; letter-spacing: 2px !important; }
 
 svg.on, svg.FS20_on { fill: #e56524 !important; }
 

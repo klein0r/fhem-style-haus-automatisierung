@@ -2,6 +2,11 @@ svg {
     width: 32px;
     height: 32px;
     vertical-align: middle;
+    
+    text.title {
+        text-transform: none !important;
+        letter-spacing: 2px !important;
+    }
 }
 
 svg.on, svg.FS20_on {

@@ -239,12 +239,16 @@
         }
     }
 
+    > table {
+        width: 100%;
+    }
+
     table {
         border-collapse: collapse;
         max-width: 1000px;
-        width: 100%;
 
-        &.wide {
+        &.wide,
+        &.roomoverview {
             width: 100%;
         }
 
@@ -480,7 +484,7 @@
     }
 
     .CodeMirror {
-        
+        max-width: 100%;
     }
 
     #edit {
@@ -507,6 +511,7 @@
     > form {
         margin-top: 10px;
         background: #fff;
+        color: $primary-color-lt;
         border-left: 5px $primary-color solid;
         border-right: 5px $primary-color solid;
         box-sizing: border-box;
