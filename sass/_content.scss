@@ -53,6 +53,13 @@
         letter-spacing: 10px;
         overflow-x: scroll;
 
+        caption {
+            text-transform: uppercase;
+            font-size: $large-fontsize !important;
+            letter-spacing: 10px;
+            margin: 10px 0;
+        }
+
         .first-table-column {
             width: 25%;
             border-right: 2px $primary-color solid;
@@ -68,6 +75,13 @@
             font-size: $default-fontsize;
             text-transform: none;
             letter-spacing: normal;
+
+            th {
+                font-weight: bold;
+                color: $secondary-color;
+                padding: 10px 2px;
+                border-bottom: 1px $secondary-color solid;
+            }
         }
 
         table.block td:nth-child(2) {

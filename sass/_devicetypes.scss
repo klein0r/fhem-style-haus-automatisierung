@@ -42,4 +42,25 @@
             height: 24px;
         }
     }
+
+    // search command
+    #fhemsearch {
+        color: $primary-color-lt;
+        margin-top: 10px;
+        background: #fff;
+        border-left: 5px $primary-color solid;
+        border-right: 5px $primary-color solid;
+        box-sizing: border-box;
+        padding: 5px;
+        
+        > input[type="text"] {
+            border: 1px $primary-color solid;
+            color: #555;
+            background: #fff;
+            font-size: $large-fontsize;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
 }

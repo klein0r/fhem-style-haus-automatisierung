@@ -64,9 +64,11 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeTable { clear: left; display: inline; float: left; width: 100%; font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; overflow-x: scroll; }
+#content .makeTable caption { text-transform: uppercase; font-size: 16px !important; letter-spacing: 10px; margin: 10px 0; }
 #content .makeTable .first-table-column { width: 25%; border-right: 2px #e56524 solid; }
 #content .makeTable .first-table-column img.icon { vertical-align: middle; width: 32px; height: 32px; }
 #content .makeTable table { font-size: 13px; text-transform: none; letter-spacing: normal; }
+#content .makeTable table th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
 #content .makeTable table.block td:nth-child(2) { width: 60%; }
 #content .makeTable + .makeTable { margin-top: 10px; }
 #content .makeTable + .makeSelect { margin-top: 10px; }
@@ -143,6 +145,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .rc_body { margin-top: 10px; }
 #content div[id^=weekprofile] { background: #fff; padding: 5px; }
 #content div[id^=weekprofile] button { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
+#content #fhemsearch { color: #676f7a; margin-top: 10px; background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
+#content #fhemsearch > input[type="text"] { border: 1px #e56524 solid; color: #555; background: #fff; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; }
 
 #console { bottom: 0; overflow: auto; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 
@@ -262,7 +266,7 @@ svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 
 .ui-widget-content { background: #fff !important; }
 .ui-widget-content pre { font-family: 'Source Code Pro', monospace !important; }
-.ui-widget-content a { color: #e56524 !important; }
+.ui-widget-content a { color: #e56524 !important; text-decoration: none; }
 .ui-widget-content caption { text-transform: uppercase; font-size: 16px !important; letter-spacing: 10px; }
 .ui-widget-content .makeTable { margin-bottom: 10px; }
 .ui-widget-content .makeTable th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
