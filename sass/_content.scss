@@ -1,5 +1,5 @@
 #content {
-    max-width: 1000px;
+    max-width: $maxWidthContent;
 
     .get, .set, .attr {
         float: left;
@@ -245,7 +245,7 @@
 
     table {
         border-collapse: collapse;
-        max-width: 1000px;
+        max-width: $maxWidthContent;
 
         &.wide,
         &.roomoverview {
@@ -320,7 +320,7 @@
         }
 
         .ex {
-            max-width: 1000px;
+            max-width: $maxWidthContent;
             white-space: normal;
         }
 
@@ -484,7 +484,7 @@
     }
 
     .CodeMirror {
-        max-width: 100%;
+        max-width: $maxWidthContent;
     }
 
     #edit {

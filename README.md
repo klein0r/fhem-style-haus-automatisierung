@@ -24,6 +24,12 @@ attr WEB roomIcons Save.config:message_attention
 
 Einmal speichern und neu laden - fertig.
 
+## Entwicklungsumgebung aufsetzen
+
+Der Style basiert auf SCSS / Compass.
+
+
+
 ## Fehler melden
 
 Bitte [hier](https://github.com/klein0r/fhem-style-haus-automatisierung/issues) einen Issue erstellen

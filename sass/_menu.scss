@@ -1,7 +1,7 @@
 #menu {
     margin-left: 20px;
     margin-top: 140px;
-    width: 260px;
+    width: $menuWidth - 40px;
     z-index: 9999;
 
     table {
@@ -122,5 +122,20 @@
     left: 0;
     overflow: auto;
     position: relative;
-    width: 300px;
+    width: $menuWidth;
+}
+
+#haToolbar {
+    color: $secondary-color;
+    font-family: 'Source Code Pro', monospace !important;
+    background-color: #fff;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    bottom: 0;
+    left: 20px;
+    min-width: $menuWidth - 40px;
+    border: 1px $primary-color dashed;
+    border-bottom: none;
+    line-height: 25px;
 }

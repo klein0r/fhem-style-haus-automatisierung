@@ -34,7 +34,7 @@ button.dist { border: 0; cursor: pointer; margin: 10px; }
 #logo .theme-version { opacity: 0.7; font-weight: bold; }
 #logo #clock { opacity: 0.7; position: absolute; font-weight: bold; right: 0; top: 0; }
 
-#content, #right { bottom: 20px; left: 180px; position: absolute; right: 10px; top: 50px; }
+#content, #right { bottom: 20px; position: absolute; right: 10px; top: 50px; }
 
 #content, #hdr, #right { left: 320px; }
 
@@ -133,7 +133,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp { font-size: 13px !important; text-transform: none !important; letter-spacing: normal !important; background: #fff; color: #676f7a; padding: 5px; box-sizing: border-box; }
 #content #ZWHelp.makeTable.help:empty { display: none; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
-#content .CodeMirror { max-width: 100%; }
+#content .CodeMirror { max-width: 1000px; }
 #content #edit input[type="submit"].psc { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
 #content div.fileList { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; }
 #content > form { margin-top: 10px; background: #fff; color: #676f7a; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
@@ -148,6 +148,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content div[id^=weekprofile] { background: #fff; padding: 5px; }
 #content div[id^=weekprofile] button { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
 #content .todoist_container .col_header { background: #fff; }
+#content a#pdisp { background: #00000061; color: #e56524; border: 1px #e56524 solid; padding: 2px 10px; display: inline-block; margin-top: 10px; line-height: 20px; margin-right: 10px; margin-bottom: 10px; vertical-align: top; }
 #content #fhemsearch { color: #676f7a; margin-top: 10px; background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
 #content #fhemsearch > input[type="text"] { border: 1px #e56524 solid; color: #555; background: #fff; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; }
 
@@ -242,6 +243,8 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 
 #menuScrollArea { height: 100%; top: 0; left: 0; overflow: auto; position: relative; width: 300px; }
 
+#haToolbar { color: #676f7a; font-family: 'Source Code Pro', monospace !important; background-color: #fff; position: fixed; box-sizing: border-box; padding: 5px 15px; bottom: 0; left: 20px; min-width: 260px; border: 1px #e56524 dashed; border-bottom: none; line-height: 25px; }
+
 svg { width: 32px; height: 32px; vertical-align: middle; }
 svg text.title { text-transform: none !important; letter-spacing: 2px !important; }
 
@@ -270,6 +273,7 @@ svg:not([fill]):not(.jssvg) { fill: #676f7a; }
 .ui-dialog .colorpicker_hue .slider { background: url(../jscolor/hue_background.svg); background-size: 150px; }
 
 .ui-widget-content { background: #fff !important; }
+.ui-widget-content#fwmenu { background: #fff; border: 1px #e56524 solid; font-size: 100%; font-weight: 400; max-width: 600px; position: absolute; text-align: left; z-index: 1005; }
 .ui-widget-content pre { font-family: 'Source Code Pro', monospace !important; }
 .ui-widget-content a { color: #e56524 !important; text-decoration: none; }
 .ui-widget-content caption, .ui-widget-content .mkTitle { text-transform: uppercase; font-size: 16px !important; letter-spacing: 10px; margin: 10px 0; }

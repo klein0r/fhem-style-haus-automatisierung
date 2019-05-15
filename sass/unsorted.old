@@ -13,17 +13,6 @@
     margin-bottom: 0;
 }
 
-#fwmenu {
-    background: #FFFFE7;
-    border: 1px solid #278727;
-    font-size: 100%;
-    font-weight: 400;
-    max-width: 600px;
-    position: absolute;
-    text-align: left;
-    z-index: 1005;
-}
-
 #right {
     bottom: 5px;
     left: 180px;

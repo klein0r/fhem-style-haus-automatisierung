@@ -21,7 +21,7 @@
             border-bottom: 1px $secondary-color solid;
         }
     }
-    
+
     // SONOS
     .rc_body {
         margin-top: 10px;
@@ -48,6 +48,20 @@
         .col_header {
             background: #fff;
         }
+    }
+
+    // SVG
+    a#pdisp {
+        background: #00000061;
+        color: $primary-color;
+        border: 1px $primary-color solid;
+        padding: 2px 10px;
+        display: inline-block;
+        margin-top: 10px;
+        line-height: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        vertical-align: top;
     }
 
     // search command
