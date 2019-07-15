@@ -142,6 +142,10 @@ table.block tr.odd {
     background: #f5f6f9;
 }
 
+table.column.tblcol_2 {
+    margin-left:15px;
+}
+
 input.maininput {
     width: 600px;
 }
