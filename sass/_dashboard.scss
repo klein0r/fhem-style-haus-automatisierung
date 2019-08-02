@@ -99,7 +99,7 @@
     }
     
     .dashboard_tabnav {
-        background: #fff !important;
+        background: $brightest-background !important;
         border-radius: 0;
     }
     
@@ -306,7 +306,7 @@
     }
     
     .ui-widget-header .ui-state-default {
-        background: #fff;
+        background: $brightest-background;
         border: 1px solid #ddd;
         color: $secondary-color;
         font-weight: 400;
@@ -380,7 +380,7 @@
     }
     
     .ui-widget-header {
-        background: #fff;
+        background: $brightest-background;
         color: $secondary-color;
         padding: 5px;
     }

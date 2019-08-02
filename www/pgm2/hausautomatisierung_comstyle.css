@@ -148,6 +148,9 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content div[id^=weekprofile] { background: #fff; padding: 5px; }
 #content div[id^=weekprofile] button { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
 #content .todoist_container .col_header { background: #fff; }
+#content table.calendar { background: #fff; }
+#content table.calendar td { color: #676f7a; padding: 10px 10px; }
+#content table.calendar tr:nth-child(2n) { background: #f5f6f9; }
 #content a#pdisp { background: #00000061; color: #e56524; border: 1px #e56524 solid; padding: 2px 10px; display: inline-block; margin-top: 10px; line-height: 20px; margin-right: 10px; margin-bottom: 10px; vertical-align: top; }
 #content #fhemsearch { color: #676f7a; margin-top: 10px; background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; padding: 5px; }
 #content #fhemsearch > input[type="text"] { border: 1px #e56524 solid; color: #555; background: #fff; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; }

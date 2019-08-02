@@ -11,7 +11,7 @@
     }
 
     a {
-        background: #fff;
+        background: $brightest-background;
         color: $secondary-color;
         display: block;
         padding: 10px 15px;
@@ -128,7 +128,7 @@
 #haToolbar {
     color: $secondary-color;
     font-family: 'Source Code Pro', monospace !important;
-    background-color: #fff;
+    background-color: $brightest-background;
     position: fixed;
     box-sizing: border-box;
     padding: 5px 15px;

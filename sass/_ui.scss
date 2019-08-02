@@ -1,5 +1,5 @@
 .ui-dialog {
-    background: #fff !important;
+    background: $brightest-background !important;
     border: 2px solid $primary-color !important;
     padding: .2em !important;
     border-radius: 0 !important;
@@ -51,10 +51,10 @@
 }
 
 .ui-widget-content {
-    background: #fff !important;
+    background: $brightest-background !important;
 
     &#fwmenu {
-        background: #fff;
+        background: $brightest-background;
         border: 1px $primary-color solid;
         font-size: 100%;
         font-weight: 400;
@@ -132,14 +132,14 @@
     }
 
     input[type="text"] {
-            border: 1px $primary-color solid;
-            color: #555;
-            background: #fff;
-            font-size: $large-fontsize;
-            height: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
+        border: 1px $primary-color solid;
+        color: #555;
+        background: $brightest-background;
+        font-size: $large-fontsize;
+        height: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 .ui-button {

@@ -12,7 +12,7 @@
     
     > ul, > div, > div > ul, > p {
         color: $secondary-color;
-        background: #fff;        
+        background: $brightest-background;        
         border-collapse: collapse;
         border-left: 5px $primary-color solid;
         font-family: 'Source Code Pro', monospace !important;

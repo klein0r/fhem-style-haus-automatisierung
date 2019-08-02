@@ -161,7 +161,7 @@
     }
 
     .makeSelect {
-        background: #fff;
+        background: $brightest-background;
         border-left: 5px $primary-color solid;
         border-right: 5px $primary-color solid;
         box-sizing: border-box;
@@ -273,7 +273,7 @@
         }
 
         &.block {
-            background: #fff;
+            background: $brightest-background;
             border: none;
             color: $secondary-color;
 
@@ -403,7 +403,7 @@
     }
 
     #devSpecHelp {
-        background: #fff;
+        background: $brightest-background;
         border-left: 5px $primary-color solid;
         color: $secondary-color;
         font-size: $default-fontsize !important;
@@ -463,7 +463,7 @@
         font-size: $default-fontsize !important;
         text-transform: none !important;
         letter-spacing: normal !important;
-        background: #fff;
+        background: $brightest-background;
         color: $secondary-color;
         padding: 5px;
         box-sizing: border-box;
@@ -475,7 +475,7 @@
 
     div.img {
         width: 100%;
-        background: #fff;
+        background: $brightest-background;
         padding: 5px;
         box-sizing: border-box;
         text-align: center;
@@ -510,7 +510,7 @@
     // Edit files
     > form {
         margin-top: 10px;
-        background: #fff;
+        background: $brightest-background;
         color: $primary-color-lt;
         border-left: 5px $primary-color solid;
         border-right: 5px $primary-color solid;
@@ -520,7 +520,7 @@
         > .saveName {
             border: 1px $primary-color solid;
             color: #555;
-            background: #fff;
+            background: $brightest-background;
             font-size: $large-fontsize;
             height: 20px;
             margin-left: 5px;
