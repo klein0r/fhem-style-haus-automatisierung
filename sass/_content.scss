@@ -250,6 +250,43 @@
         &.wide,
         &.roomoverview {
             width: 100%;
+
+            // Columns in Rooms
+            tr.column {
+
+                table.column {
+                    width: 100%;
+                }
+
+                > td {
+                    padding: 0 5px;
+                }
+
+                /* one item */
+                > td:first-child:nth-last-child(1) {
+                /* -or- li:only-child { */
+                    width: 100%;
+                }
+
+                /* two items */
+                > td:first-child:nth-last-child(2),
+                > td:first-child:nth-last-child(2) ~ td {
+                    width: 50%;
+                }
+
+                /* three items */
+                > td:first-child:nth-last-child(3),
+                > td:first-child:nth-last-child(3) ~ td {
+                    width: 33.3333%;
+                }
+
+                /* four items */
+                > td:first-child:nth-last-child(4),
+                > td:first-child:nth-last-child(4) ~ td {
+                    width: 25%;
+                }
+    
+            }
         }
 
         select {

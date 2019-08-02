@@ -95,6 +95,13 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content > table { width: 100%; }
 #content table { border-collapse: collapse; max-width: 1000px; }
 #content table.wide, #content table.roomoverview { width: 100%; }
+#content table.wide tr.column, #content table.roomoverview tr.column { /* one item */ /* two items */ /* three items */ /* four items */ }
+#content table.wide tr.column table.column, #content table.roomoverview tr.column table.column { width: 100%; }
+#content table.wide tr.column > td, #content table.roomoverview tr.column > td { padding: 0 5px; }
+#content table.wide tr.column > td:first-child:nth-last-child(1), #content table.roomoverview tr.column > td:first-child:nth-last-child(1) { /* -or- li:only-child { */ width: 100%; }
+#content table.wide tr.column > td:first-child:nth-last-child(2), #content table.wide tr.column > td:first-child:nth-last-child(2) ~ td, #content table.roomoverview tr.column > td:first-child:nth-last-child(2), #content table.roomoverview tr.column > td:first-child:nth-last-child(2) ~ td { width: 50%; }
+#content table.wide tr.column > td:first-child:nth-last-child(3), #content table.wide tr.column > td:first-child:nth-last-child(3) ~ td, #content table.roomoverview tr.column > td:first-child:nth-last-child(3), #content table.roomoverview tr.column > td:first-child:nth-last-child(3) ~ td { width: 33.3333%; }
+#content table.wide tr.column > td:first-child:nth-last-child(4), #content table.wide tr.column > td:first-child:nth-last-child(4) ~ td, #content table.roomoverview tr.column > td:first-child:nth-last-child(4), #content table.roomoverview tr.column > td:first-child:nth-last-child(4) ~ td { width: 25%; }
 #content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 0px 0 10px; min-width: 90px; max-width: 400px; }
 #content table .slider { width: 150px; }
 #content table.block { background: #fff; border: none; color: #676f7a; }
