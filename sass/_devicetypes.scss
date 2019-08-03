@@ -98,4 +98,22 @@
             margin-right: 5px;
         }
     }
+
+    // Dashboard
+    #dashboardtoolbar {
+
+        // Text: "Helper:"
+        td {
+            padding: 5px;
+        }
+        
+        button {
+            border: 1px $primary-color solid;
+            border-radius: 0;
+            color: $primary-color;
+            font-size: $large-fontsize;
+            margin: 5px;
+            background: transparent;
+        }
+    }
 }

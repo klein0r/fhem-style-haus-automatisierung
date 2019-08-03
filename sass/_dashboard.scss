@@ -75,52 +75,34 @@
     .dashboard_columncenter {
         height: inherit;
     }
-    
-    .dashboard_columnhelper {
-        border: 1px dotted gray;
-    }
-    
+
     .dashboard_content tr {
         height: 50px;
     }
-    
-    .dashboard_content.table {
-        border: 1px none #278727 !important;
-        border-bottom: 1px solid #278727 !important;
-        border-left: 1px solid #278727 !important;
-        border-radius: 0 0 8px 8px !important;
-        border-right: 1px solid #278727 !important;
-        box-shadow: none !important;
-    }
-    
+
     .dashboard_row {
         height: inherit;
         padding: 0;
         width: 100%;
     }
-    
+
     .dashboard_tabcontent {
         margin: 0;
         padding: 0;
         width: 100%;
     }
-    
+
     .dashboard_tabnav {
         background: $brightest-background !important;
         border-radius: 0;
     }
-    
-    .dashboard_tabnav_hidden {
-        background: #F8F8d5;
-    }
-    
+
     .dashboard_widget {
         border-radius: 8px;
         float: left;
     }
-    
+
     .dashboard_widgetheader {
-        background: #F0F0D8;
         border: 1px solid gray;
         font-weight: 400;
         margin: .2em;
@@ -128,29 +110,25 @@
         padding-left: .7em;
         padding-top: 3px;
     }
-    
-    .dashboard_widgethelper {
-        background: #A8A870;
-    }
-    
+
     .dashboard_widgetinner {
         padding: .2em;
     }
-    
+
     .dashboard_widgetinner .block .block {
         border: none;
         box-shadow: none;
     }
-    
+
     .ui-button .ui-button-text, #dashboard-dialog .ui-button .ui-button-text {
         display: block;
         line-height: normal;
     }
-    
+
     .ui-button, #dashboard .ui-button:active, #dashboard-dialog .ui-button, #dashboard-dialog .ui-button:hover, #dashboard-dialog .ui-button:active {
         text-decoration: none;
     }
-    
+
     .ui-button, #dashboard-dialog .ui-button {
         cursor: pointer;
         display: inline-block;
@@ -160,25 +138,25 @@
         text-align: center;
         vertical-align: middle;
     }
-    
+
     .ui-button-text-only .ui-button-text, #dashboard-dialog .ui-button-text-only .ui-button-text {
         padding: .4em 1em;
     }
-    
+
     .ui-helper-clearfix, #dashboard-dialog .ui-helper-clearfix {
         min-height: 0;
     }
-    
+
     .ui-helper-clearfix:after, #dashboard-dialog .ui-helper-clearfix:after {
         clear: both;
     }
-    
+
     .ui-helper-clearfix:before, #dashboard .ui-helper-clearfix:after, #dashboard-dialog .ui-helper-clearfix:before, #dashboard-dialog .ui-helper-clearfix:after {
         border-collapse: collapse;
         content: "";
         display: table;
     }
-    
+
     .ui-helper-reset {
         border: 0;
         font-size: 100%;
@@ -189,74 +167,74 @@
         padding: 0;
         text-decoration: none;
     }
-    
+
     .ui-resizable, #dashboard .dashboard_rowcenter {
         position: relative;
     }
-    
+
     .ui-resizable-handle {
         font-size: .1px;
         position: absolute;
     }
-    
+
     .ui-resizable-se {
         background: url(data:image/gif;base64,R0lGODlhEAAQAIABAJOnY////yH5BAEAAAEALAAAAAAQABAAAAIZjI+py+0IwDtx2ktlqI1zDCae9mXGGKZgAQA7);
-        bottom: 1px;
+        bottom: 5px;
         cursor: se-resize;
         height: 12px;
-        right: 1px;
+        right: 5px;
         width: 12px;
     }
-    
+
     .ui-sortable-placeholder {
         border: 1px dotted #278727;
         height: 25px !important;
         visibility: visible !important;
         width: 150px;
     }
-    
+
     .ui-state-active a, #dashboard .ui-state-hover a, #dashboard .ui-state-focus a:hover, #dashboard-dialog .ui-state-active a, #dashboard-dialog .ui-state-hover a, #dashboard-dialog .ui-state-hover a:hover {
         color: #278727;
         text-decoration: none;
     }
-    
+
     .ui-state-default a, #dashboard-dialog .ui-state-default a {
         color: #F8F8d5;
         text-decoration: none;
     }
-    
+
     .ui-state-disabled {
         filter: Alpha(Opacity=35);
         opacity: .35;
     }
-    
+
     .ui-state-hover, #dashboard-dialog .ui-state-hover {
         border: 1px solid #278727;
         color: #278727;
         font-weight: 400;
     }
-    
+
     .ui-tabs {
         padding: 0;
         position: relative;
     }
-    
+
     .ui-tabs .ui-tabs-nav {
         margin: 0 3px;
         padding: .2em;
     }
-    
+
     .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
         float: left;
         padding: .5em;
         text-decoration: none;
     }
-    
+
     .ui-tabs .ui-tabs-nav li a {
         float: none;
         padding: 0;
     }
-    
+
     .ui-tabs .ui-tabs-nav li, #dashboard-dialog .ui-tabs .ui-tabs-nav li {
         float: left;
         list-style: none;
@@ -265,7 +243,7 @@
         position: relative;
         top: 0;
     }
-    
+
     .ui-tabs .ui-tabs-panel, #dashboard-dialog .ui-tabs .ui-tabs-panel {
         border-radius: 0;
         border-width: 0;
@@ -273,52 +251,49 @@
         display: block;
         padding: 0;
     }
-    
+
     .ui-tabs-icon {
         height: 23px;
         margin: -8px 2px -6px -3px;
         padding-right: 2px;
         width: 23px;
     }
-    
+
     .ui-widget .ui-widget {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em;
     }
-    
+
     .ui-widget-content {
-        background: #F8F8d5;
         border: none;
         color: #278727;
         font-family: Arial, Helvetica, sans-serif !important;
         font-size: $default-fontsize !important;
     }
-    
+
     .ui-widget-content a, .fhemlog, #fwmenu li a {
         color: #278727;
     }
-    
+
     .ui-widget-header {
         background: $primary-color;
         border: none;
         color: #fff;
         margin: 0;
     }
-    
+
     .ui-widget-header .ui-state-active, #dashboard-dialog .ui-state-active {
-        background: #F8F8d5;
-        border: 1px solid #278727;
         color: #278727;
         font-weight: 400;
     }
-    
+
     .ui-widget-header .ui-state-default {
         background: $brightest-background;
         border: 1px solid #ddd;
         color: $secondary-color;
         font-weight: 400;
     }
-    
+
     td table, .wide {
         width: 100%;
     }
@@ -337,7 +312,6 @@
     z-index: 100;
     
     .ui-dialog-buttonpane {
-        background: #f5f6f9;
         padding: 5px;
     }
     
@@ -356,14 +330,12 @@
     }
     
     .ui-state-default {
-        background: #f5f6f9;
         border: 1px solid #ddd;
         color: #F8F8d5;
         font-weight: 400;
     }
     
     .ui-state-disabled {
-        background: #F8F8d5;
         border: 1px solid #444;
         color: #444;
         font-weight: 400;
