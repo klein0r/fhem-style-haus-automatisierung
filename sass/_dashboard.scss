@@ -1,5 +1,4 @@
 #dashboard {
-    margin-top: -10px;
 
     .dashboard-button {
         background: #f5f5f5 no-repeat 7px !important;
@@ -15,31 +14,39 @@
     }
 
     .dashboard-button-defineDetails {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY4NjYwOTg0NEJFQzExRTI4MjI3OTFCOEEyNzY2MzE2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY4NjYwOTg1NEJFQzExRTI4MjI3OTFCOEEyNzY2MzE2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Rjg2NjA5ODI0QkVDMTFFMjgyMjc5MUI4QTI3NjYzMTYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Rjg2NjA5ODM0QkVDMTFFMjgyMjc5MUI4QTI3NjYzMTYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7i4cyWAAAAsElEQVR42mJgoCEwA+IPUGxGrKZkIE6AsjOB+D8UZyKJReHTDNOwGoifIPEfAvFGJH4gIQMIYZyuWI3mCm8oRhZfhCvA0pCcvRGLmnVI3klDD9gPaE50gopvRDLMG00NSA8DCw6vcELpX0hifwnFeRrUef+hzsXlhSfYvMCA5GTkQPSAYvTAxQoyyYlGJiQDviOxFwPxCyQ+iL0eh1oUEA7EfniSciySPG0yE8kAIMAAicRYTX3YPyoAAAAASUVORK5CYII=) !important;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY4NjYwOTg0NEJFQzExRTI4MjI3OTFCOEEyNzY2MzE2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY4NjYwOTg1NEJFQzExRTI4MjI3OTFCOEEyNzY2MzE2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Rjg2NjA5ODI0QkVDMTFFMjgyMjc5MUI4QTI3NjYzMTYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Rjg2NjA5ODM0QkVDMTFFMjgyMjc5MUI4QTI3NjYzMTYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7i4cyWAAAAsElEQVR42mJgoCEwA+IPUGxGrKZkIE6AsjOB+D8UZyKJReHTDNOwGoifIPEfAvFGJH4gIQMIYZyuWI3mCm8oRhZfhCvA0pCcvRGLmnVI3klDD9gPaE50gopvRDLMG00NSA8DCw6vcELpX0hifwnFeRrUef+hzsXlhSfYvMCA5GTkQPSAYvTAxQoyyYlGJiQDviOxFwPxCyQ+iL0eh1oUEA7EfniSciySPG0yE8kAIMAAicRYTX3YPyoAAAAASUVORK5CYII=) !important;
+        background-position: center center;
+        background-repeat: no-repeat;
         right: 10px;
         top: .2em;
     }
 
     .dashboard-button-editTab {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVR42o3SPUhCURjG8WPR1tBgU23SEEH0AUFDSURDtFU4FOQSQh9LlDgEUdSiU7QUuSq0RCAIYhTl0JCUIEFLRUQ1NLWIEGX9D74XRPJ4XvjB5V7Oc8597nUpuxnDBDbxWfnAZbG4Ce9w4xmzuLINaEALlrGBRnxjCzs2AWF4MA0vYmjHL7pwbwoYRxz9COABJ9jDG0KmE7Qhh0U5chR9mJSQF1MH+j3PcYcIbuFHM3bRjQ9TwLZ8smGcSuP7yMIn91StgFEcYwDzUpy+d4kU1qt3qwxoRR6rqvyzxKTAFfRgBD+mAF3clJxAF7iAEg7Ri9f/2nYCBmXBkjTdiQPcYA7JWt/aCdDveoFHzOAaR7LrmjJMdYCeL1X+baPSRckmYAgZuS4gLTs/qTrjBHQgiATOUKy30Jk/KjtDEXVEBowAAAAASUVORK5CYII=);
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVR42o3SPUhCURjG8WPR1tBgU23SEEH0AUFDSURDtFU4FOQSQh9LlDgEUdSiU7QUuSq0RCAIYhTl0JCUIEFLRUQ1NLWIEGX9D74XRPJ4XvjB5V7Oc8597nUpuxnDBDbxWfnAZbG4Ce9w4xmzuLINaEALlrGBRnxjCzs2AWF4MA0vYmjHL7pwbwoYRxz9COABJ9jDG0KmE7Qhh0U5chR9mJSQF1MH+j3PcYcIbuFHM3bRjQ9TwLZ8smGcSuP7yMIn91StgFEcYwDzUpy+d4kU1qt3qwxoRR6rqvyzxKTAFfRgBD+mAF3clJxAF7iAEg7Ri9f/2nYCBmXBkjTdiQPcYA7JWt/aCdDveoFHzOAaR7LrmjJMdYCeL1X+baPSRckmYAgZuS4gLTs/qTrjBHQgiATOUKy30Jk/KjtDEXVEBowAAAAASUVORK5CYII=) !important;
+        background-position: center center;
+        background-repeat: no-repeat;
         right: 115px;
         top: .2em;
     }
 
     .dashboard-button-goBack {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAZ0lEQVQ4jd3RMQqDQBBA0YekV0wj3v8QNqZTJBEtPY42K9l2p0s+TDHF/zAMf8kTE4aovOPEp1TucGRyE5XXUhnmJJfMCFUKVMp55EuLzfeENhBUY0mRA30kkr/xHQnckQWvaODHuADAUSEXjMLoMwAAAABJRU5ErkJggg==) !important;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAZ0lEQVQ4jd3RMQqDQBBA0YekV0wj3v8QNqZTJBEtPY42K9l2p0s+TDHF/zAMf8kTE4aovOPEp1TucGRyE5XXUhnmJJfMCFUKVMp55EuLzfeENhBUY0mRA30kkr/xHQnckQWvaODHuADAUSEXjMLoMwAAAABJRU5ErkJggg==) !important;
+        background-position: center center;
+        background-repeat: no-repeat;
         right: 80px;
         top: .2em;
     }
 
     .dashboard-button-setPosition {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYUlEQVR4XtWRUQrAMAhDneyg9mT2ptugHRaCY/FnLJAveWKifCW7AS3Avlj2AmzrFUrDIYhgJNwvN4VcBDwiYC5/CyclBpDDoe2poATGEuegs3AswCUIk/8+pl2K8uE/6ATG4BstrVLVgQAAAABJRU5ErkJggg==) !important;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYUlEQVR4XtWRUQrAMAhDneyg9mT2ptugHRaCY/FnLJAveWKifCW7AS3Avlj2AmzrFUrDIYhgJNwvN4VcBDwiYC5/CyclBpDDoe2poATGEuegs3AswCUIk/8+pl2K8uE/6ATG4BstrVLVgQAAAABJRU5ErkJggg==) !important;
+        background-position: center center;
+        background-repeat: no-repeat;
         right: 45px;
         top: .2em;
     }
 
     .dashboard-button-setPosition:not(.ui-state-disabled) {
-        background: red !important;
+        background-color: $primary-color !important;
     }
 
     .dashboard_button_icon {
@@ -50,13 +57,13 @@
     }
 
     .dashboard_button_iconminus {
-        background: -52px 0;
+        background-position: -52px 0;
         float: right;
         margin: .1em .4em;
     }
 
     .dashboard_button_iconplus {
-        background: -65px 0;
+        background-position: -65px 0;
         float: right;
         margin: .1em .4em;
     }
