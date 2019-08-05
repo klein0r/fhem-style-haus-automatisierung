@@ -99,6 +99,19 @@
         }
     }
 
+    // remotecontrol
+    .remotecontrol {
+        .rc_body {
+            border: 1px $primary-color solid;
+            background: $primary-color-lt;
+            margin-bottom: 10px;
+            
+            .rc_button {
+                padding: 5px;
+            }
+        }
+    }
+
     // Dashboard
     #dashboardtoolbar {
 
