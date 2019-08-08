@@ -175,30 +175,38 @@ jQuery(document).ready(function ($) {
     attrList['floorplan'] = ['fp_arrange', 'fp_backgroundimg', 'fp_default', 'fp_noMenu', 'fp_roomIcons', 'fp_setbutton', 'fp_viewport'];
     attrList['database'] = ['DbLogExclude', 'DbLogInclude'];
 
+    var optGroups = new Object();
+    optGroups['device'] = $('<optgroup label="device"></optgroup>');
+    for (var attrGroup in attrList) {
+        optGroups[attrGroup] = $('<optgroup label="' + attrGroup + '"></optgroup>');
+    }
+
     if (attrSelect) {
         // clear the original list
         var attributeOptionList = attrSelect.children();
         attrSelect.empty();
 
-        attrSelect.append($('<optgroup label="device"></optgroup>'));
-        for (var attrGroup in attrList) {
-            var newOptGroup = $('<optgroup label="' + attrGroup + '"></optgroup>');
-            attrSelect.append(newOptGroup);
-        }
-
+        // add attributes to predefined optgroups
         attributeOptionList.each(function(i, e) {
             var found = false;
             for (var attrGroup in attrList) {
                 if (attrList[attrGroup].indexOf($(e).attr('value')) > -1) {
-                    $('optgroup[label=' + attrGroup + ']').append(e);
+                    optGroups[attrGroup].append(e);
                     found = true;
                 }
             }
 
             if (!found) {
-                $('optgroup[label=device]').append(e);
+                optGroups['device'].append(e);
             }
         });
+
+        // add optgroups to select
+        for (var optGroup in optGroups) {
+            if (optGroups[optGroup].children().length) {
+                attrSelect.append(optGroups[optGroup]);
+            }
+        };
     }
 
     (function($, window, document, undefined) {
