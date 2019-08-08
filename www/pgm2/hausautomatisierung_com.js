@@ -165,6 +165,41 @@ jQuery(document).ready(function ($) {
 
         elHaToolbar.html("AttrVal('" + deviceName + "', '" + rowVal + "', '');").show();
     });
+    
+    var attrSelect = $('select.attr');
+    var attrList = new Object();
+    attrList['general'] = ['userReadings', 'userattr', 'verbose', 'disable'];
+    attrList['msg'] = ['msgContactAudio', 'msgContactLight', 'msgContactMail', 'msgContactPush', 'msgContactScreen', 'msgParams', 'msgPriority', 'msgRecipient', 'msgRecipientAudio', 'msgRecipientLight', 'msgRecipientMail', 'msgRecipientPush', 'msgRecipientScreen', 'msgRecipientText', 'msgTitle', 'msgTitleShrt', 'msgType'];
+    attrList['events'] = ['event-aggregator', 'event-min-interval', 'event-on-change-reading', 'event-on-update-reading', 'eventMap'];
+    attrList['fhemweb'] = ['alias', 'comment', 'devStateIcon', 'devStateStyle', 'group', 'icon', 'room', 'sortby', 'stateFormat', 'webCmd', 'webCmdLabel', 'widgetOverride'];
+    attrList['floorplan'] = ['fp_arrange', 'fp_backgroundimg', 'fp_default', 'fp_noMenu', 'fp_roomIcons', 'fp_setbutton', 'fp_viewport'];
+    attrList['database'] = ['DbLogExclude', 'DbLogInclude'];
+
+    if (attrSelect) {
+        // clear the original list
+        var attributeOptionList = attrSelect.children();
+        attrSelect.empty();
+
+        attrSelect.append($('<optgroup label="device"></optgroup>'));
+        for (var attrGroup in attrList) {
+            var newOptGroup = $('<optgroup label="' + attrGroup + '"></optgroup>');
+            attrSelect.append(newOptGroup);
+        }
+
+        attributeOptionList.each(function(i, e) {
+            var found = false;
+            for (var attrGroup in attrList) {
+                if (attrList[attrGroup].indexOf($(e).attr('value')) > -1) {
+                    $('optgroup[label=' + attrGroup + ']').append(e);
+                    found = true;
+                }
+            }
+
+            if (!found) {
+                $('optgroup[label=device]').append(e);
+            }
+        });
+    }
 
     (function($, window, document, undefined) {
         'use strict';
