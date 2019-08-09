@@ -18,7 +18,7 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* Author: Matthias Kleine */
-body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0 auto; padding: 0; tab-size: 4; background-size: cover; }
+body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0 auto; padding: 0; tab-size: 4; }
 
 div { font-family: 'Open Sans', sans-serif !important; font-size: 13px !important; }
 
