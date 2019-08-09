@@ -87,7 +87,7 @@
         border-right: 5px $primary-color solid;
         box-sizing: border-box;
         padding: 5px;
-        
+
         > input[type="text"] {
             border: 1px $primary-color solid;
             color: #555;
@@ -127,6 +127,28 @@
             font-size: $large-fontsize;
             margin: 5px;
             background: transparent;
+        }
+    }
+
+    // Floorplan
+    #fpmenu {
+        input[type=submit] {
+            border: 1px $primary-color solid;
+            border-radius: 0;
+            color: $primary-color;
+            font-size: $large-fontsize;
+            margin: 5px;
+            background: transparent;
+        }
+
+        input[type="text"] {
+            border: 1px $primary-color solid;
+            color: #555;
+            background: transparent;
+            font-size: $large-fontsize;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
 }

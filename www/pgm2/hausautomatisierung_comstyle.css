@@ -85,7 +85,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .dval input { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeSelect { background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; clear: left; color: #676f7a; display: inline; float: left; padding: 5px; width: 100%; }
 #content .makeSelect .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
-#content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 10px; min-width: 200px; }
+#content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 20px 0 10px; min-width: 200px; }
 #content .makeSelect input[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; height: 24px; }
 #content .makeSelect input[type="text"] { border: 1px #e56524 solid; color: #555; background: transparent; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; }
 #content .makeSelect[cmd="attr"] select.select_widget, #content .makeSelect[cmd="attr"] input[type="text"] { width: 300px; }
@@ -94,6 +94,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .makeSelect .slider .handle { height: 22px; line-height: 22px; }
 #content > table { width: 100%; }
 #content table { border-collapse: collapse; max-width: 1000px; }
+#content table th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
 #content table.wide, #content table.roomoverview { width: 100%; }
 #content table.wide tr.column, #content table.roomoverview tr.column { /* one item */ /* two items */ /* three items */ /* four items */ }
 #content table.wide tr.column table.column, #content table.roomoverview tr.column table.column { width: 100%; }
@@ -102,7 +103,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table.wide tr.column > td:first-child:nth-last-child(2), #content table.wide tr.column > td:first-child:nth-last-child(2) ~ td, #content table.roomoverview tr.column > td:first-child:nth-last-child(2), #content table.roomoverview tr.column > td:first-child:nth-last-child(2) ~ td { width: 50%; }
 #content table.wide tr.column > td:first-child:nth-last-child(3), #content table.wide tr.column > td:first-child:nth-last-child(3) ~ td, #content table.roomoverview tr.column > td:first-child:nth-last-child(3), #content table.roomoverview tr.column > td:first-child:nth-last-child(3) ~ td { width: 33.3333%; }
 #content table.wide tr.column > td:first-child:nth-last-child(4), #content table.wide tr.column > td:first-child:nth-last-child(4) ~ td, #content table.roomoverview tr.column > td:first-child:nth-last-child(4), #content table.roomoverview tr.column > td:first-child:nth-last-child(4) ~ td { width: 25%; }
-#content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 0px 0 10px; min-width: 90px; max-width: 400px; }
+#content table select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 100%; line-height: 20px; padding: 0 20px 0 10px; min-width: 90px; max-width: 400px; }
 #content table .slider { width: 150px; }
 #content table.block { background: #fff; border: none; color: #676f7a; }
 #content table.block.readings .changed { color: #e56524; }
@@ -165,6 +166,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .remotecontrol .rc_body .rc_button { padding: 5px; }
 #content #dashboardtoolbar td { padding: 5px; }
 #content #dashboardtoolbar button { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 5px; background: transparent; }
+#content #fpmenu input[type=submit] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; margin: 5px; background: transparent; }
+#content #fpmenu input[type="text"] { border: 1px #e56524 solid; color: #555; background: transparent; font-size: 16px; height: 20px; margin-left: 5px; margin-right: 5px; }
 
 #console { bottom: 0; overflow: auto; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 

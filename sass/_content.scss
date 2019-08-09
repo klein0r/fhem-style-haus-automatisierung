@@ -186,12 +186,12 @@
             border: 1px $primary-color solid;
             border-radius: 0;
             color: $primary-color;
-            font-size: 16px;
+            font-size: $large-fontsize;
             line-height: 20px;
             height: 24px;
             margin-left: 5px;
             margin-right: 5px;
-            padding: 0 10px;
+            padding: 0 20px 0 10px;
             min-width: 200px;
         }
 
@@ -247,6 +247,13 @@
         border-collapse: collapse;
         max-width: $maxWidthContent;
 
+        th {
+            font-weight: bold;
+            color: $secondary-color;
+            padding: 10px 2px;
+            border-bottom: 1px $secondary-color solid;
+        }
+
         &.wide,
         &.roomoverview {
             width: 100%;
@@ -300,7 +307,7 @@
             color: $primary-color;
             font-size: 100%;
             line-height: 20px;
-            padding: 0 0px 0 10px;
+            padding: 0 20px 0 10px;
             min-width: 90px;
             max-width: 400px;
         }
@@ -453,7 +460,7 @@
         letter-spacing: normal !important;
 
         h3 {
-            font-size: 16px;
+            font-size: $large-fontsize;
             letter-spacing: 10px;
             text-transform: uppercase;
             font-weight: bold;
