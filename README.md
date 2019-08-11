@@ -52,6 +52,8 @@ ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_com
 ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_com.js /opt/fhem/www/pgm2/hausautomatisierung_com.js
 ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_comstyle.css /opt/fhem/www/pgm2/hausautomatisierung_comstyle.css
 ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_comsvg_style.css /opt/fhem/www/pgm2/hausautomatisierung_comsvg_style.css
+
+ln -s /opt/fhem/fhem-style-haus-automatisierung/FHEM/99_myHaUtils.pm /opt/fhem/FHEM/99_myHaUtils.pm
 ```
 
 Auf Änderungen warten und bei Bedarf CSS neu bauen:

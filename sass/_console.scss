@@ -1,3 +1,10 @@
+#content {
+    > button#eventReset,
+    > button#addRegexpPart {
+        @include button
+    }
+}
+
 #console {
     bottom: 0;
     overflow: auto;

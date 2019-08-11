@@ -1,4 +1,4 @@
-$version: '2.14';
+$version: '2.15';
 
 $menuWidth: 300px;
 $maxWidthContent: 1000px;
@@ -14,3 +14,27 @@ $odd-color: #f5f6f9;
 
 $default-fontsize: 13px;
 $large-fontsize: 16px;
+
+@mixin button {
+    border: 1px $primary-color solid;
+    border-radius: 0;
+    color: $primary-color;
+    padding: 1px 10px;
+    background: transparent;
+    font-size: $large-fontsize;
+}
+
+@mixin button-large {
+    @include button;
+    height: 24px;
+}
+
+@mixin textfield {
+    border: 1px $primary-color solid;
+    color: #555;
+    background: transparent;
+    font-size: $large-fontsize;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

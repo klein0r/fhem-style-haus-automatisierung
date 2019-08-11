@@ -12,6 +12,21 @@
         }
     }
 
+    // Zwave
+    #ZWHelp {
+        font-size: $default-fontsize !important;
+        text-transform: none !important;
+        letter-spacing: normal !important;
+        background: $brightest-background;
+        color: $secondary-color;
+        padding: 5px;
+        box-sizing: border-box;
+
+        &.makeTable.help:empty {
+            display: none;
+        }
+    }
+
     // FB_CALLLIST
     .fbcalllist.header {
         td {
@@ -33,13 +48,7 @@
         padding: 5px;
         
         button {
-            border: 1px $primary-color solid;
-            border-radius: 0;
-            color: $primary-color;
-            padding: 1px 10px;
-            background: transparent;
-            font-size: $large-fontsize;
-            height: 24px;
+            @include button-large;
         }
     }
 
@@ -89,13 +98,7 @@
         padding: 5px;
 
         > input[type="text"] {
-            border: 1px $primary-color solid;
-            color: #555;
-            background: $brightest-background;
-            font-size: $large-fontsize;
-            height: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            @include textfield;
         }
     }
 
@@ -119,7 +122,7 @@
         td {
             padding: 5px;
         }
-        
+
         button {
             border: 1px $primary-color solid;
             border-radius: 0;
@@ -133,22 +136,11 @@
     // Floorplan
     #fpmenu {
         input[type=submit] {
-            border: 1px $primary-color solid;
-            border-radius: 0;
-            color: $primary-color;
-            font-size: $large-fontsize;
-            margin: 5px;
-            background: transparent;
+            @include button;
         }
 
         input[type="text"] {
-            border: 1px $primary-color solid;
-            color: #555;
-            background: transparent;
-            font-size: $large-fontsize;
-            height: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            @include textfield;
         }
     }
 }

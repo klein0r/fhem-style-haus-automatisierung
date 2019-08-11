@@ -1,6 +1,21 @@
 #content {
     max-width: $maxWidthContent;
 
+    .motd {
+        background: $primary-color;
+        border-bottom: 3px #fff solid;
+        border-top: 3px #fff solid;
+        color: #fff;
+        font-size: $large-fontsize !important;
+        font-weight: 700;
+        padding: 10px;
+        margin-top: 20px;
+
+        &:before {
+            content: 'MOTD: ';
+        }
+    }
+
     .get, .set, .attr {
         float: left;
     }
@@ -8,7 +23,7 @@
     pre {
         font-family: 'Source Code Pro', monospace !important;
         white-space: pre-wrap;
-        
+
         &.CodeMirror-line {
             white-space: pre;
         }
@@ -48,10 +63,13 @@
         display: inline;
         float: left;
         width: 100%;
-        font-size: $large-fontsize !important;
-        text-transform: uppercase;
-        letter-spacing: 10px;
         overflow-x: scroll;
+        
+        .mkTitle {
+            font-size: $large-fontsize !important;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
 
         caption {
             text-transform: uppercase;
@@ -127,7 +145,6 @@
     .colorpicker_widget {
         line-height: 20px;
     }
-
     .colorpicker_ct .slider {
         background: url(../jscolor/ct_background.svg); background-size: 150px;
     }
@@ -150,13 +167,8 @@
             }
         }
 
-        input {
-            border: 1px $primary-color solid;
-            border-radius: 0;
-            color: $primary-color;
-            padding: 1px 10px;
-            background: transparent;
-            font-size: $large-fontsize;
+        input[type=submit] {
+            @include button;
         }
     }
 
@@ -196,23 +208,11 @@
         }
 
         input[type="submit"] {
-            border: 1px $primary-color solid;
-            border-radius: 0;
-            color: $primary-color;
-            padding: 1px 10px;
-            background: transparent;
-            font-size: $large-fontsize;
-            height: 24px;
+            @include button-large;
         }
 
         input[type="text"] {
-            border: 1px $primary-color solid;
-            color: #555;
-            background: transparent;
-            font-size: $large-fontsize;
-            height: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            @include textfield;
         }
 
         &[cmd="attr"] {
@@ -503,20 +503,6 @@
         }
     }
 
-    #ZWHelp {
-        font-size: $default-fontsize !important;
-        text-transform: none !important;
-        letter-spacing: normal !important;
-        background: $brightest-background;
-        color: $secondary-color;
-        padding: 5px;
-        box-sizing: border-box;
-
-        &.makeTable.help:empty {
-            display: none;
-        }
-    }
-
     div.img {
         width: 100%;
         background: $brightest-background;
@@ -534,12 +520,8 @@
     #edit {
         input[type="submit"] {
             &.psc {
-                border: 1px $primary-color solid;
-                border-radius: 0;
-                color: $primary-color;
-                font-size: $large-fontsize;
+                @include button;
                 margin: 10px;
-                background: transparent;
                 min-width: 200px;
             }
         }
@@ -562,13 +544,7 @@
         padding: 5px;
 
         > .saveName {
-            border: 1px $primary-color solid;
-            color: #555;
-            background: $brightest-background;
-            font-size: $large-fontsize;
-            height: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            @include textfield;
             float: right;
         }
 
@@ -578,13 +554,7 @@
 
         > input[name="save"],
         > input[name="saveAs"] {
-            border: 1px $primary-color solid;
-            border-radius: 0;
-            color: $primary-color;
-            padding: 1px 10px;
-            background: transparent;
-            font-size: $large-fontsize;
-            height: 24px;
+            @include button-large
         }
     }
 }

@@ -89,7 +89,7 @@ input[type="text"] {
     z-index: 99;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 3px 3px #11111130;
-    
+
     .header {
         display: inline-block;
     }
@@ -110,6 +110,11 @@ input[type="text"] {
         width: 22px;
         height: 22px;
         display: inline-block;
+    }
+
+    .mainInputPreview {
+        color: $secondary-color;
+        margin-top: 5px;
     }
 
     &.header--hidden{

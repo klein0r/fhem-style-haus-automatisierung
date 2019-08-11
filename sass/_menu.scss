@@ -138,4 +138,8 @@
     border: 1px $primary-color dashed;
     border-bottom: none;
     line-height: 25px;
+
+    .toHdr {
+        cursor: pointer;
+    }
 }
