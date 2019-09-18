@@ -191,19 +191,6 @@ jQuery(document).ready(function ($) {
         );
     });
 
-    // Auto-Preview hdr input
-    $('<div class="mainInputPreview"></div>').appendTo("#hdr")
-    $('input.maininput').bind("keyup change", function() {
-        var currentText = $(this).val();
-
-        FW_cmd(
-            FW_root + "?cmd.haLivepreview=" + encodeURIComponent('{haTestSetMagic("' + currentText + '");}') + "&XHR=1",
-            function (r) {
-                $('.mainInputPreview').text(r);
-            }
-        );
-    });
-
     // Group attributes
     var attrSelect = $('select.attr');
     var attrList = new Object();

@@ -14,21 +14,6 @@ sub myHaUtils_Initialize($$)
     my ($hash) = @_;
 }
 
-# Test set magic
-# example:
-#           {haTestSetMagic("Das Attribut version des Global-Gerätes hat den Wert: [a:global:version]")}
-
-sub haTestSetMagic($)
-{
-    my ($str) = @_;
-    my $hash = $defs{global};
-
-    my ($err, $str) = ReplaceSetMagic($hash, 1, $str) if ($featurelevel >= 5.7);
-
-    return $err if ($err);
-    return $str;
-}
-
 # Returns an array with all device readings of a given device
 # example:
 #           {haGetAllDeviceReadings("WEB")}

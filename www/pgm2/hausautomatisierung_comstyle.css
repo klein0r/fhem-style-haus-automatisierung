@@ -45,7 +45,6 @@ input[type="text"] { border: 1px #e56524 solid; background: none; }
 #hdr input.maininput { color: #e56524; font-size: 16px; box-sizing: border-box; }
 #hdr input.maininput:focus { outline: none; }
 #hdr .maininputPopupLink { background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path fill="gray" d="M 1302,839 V 939 c 0,19 -15,37 -36,37 H 993 v 277 c 0,19 -15,37 -36,37 H 856 c -20,0 -36,-15 -36,-37 V 977 H 546 c -20,0 -36,-15 -36,-37 V 839 c 0,-19 15,-37 36,-37 H 818 V 521 c 0,-19 15,-37 36,-37 h 97 c 20,0 36,15 36,37 V 798 H 1261 c 20,0 36,15 36,37 z M 1600,331 V 1447 c 0,83 -65,151 -148,151 H 360 C 277,1600 212,1532 212,1448 V 331 C 212,246 277,180 360,180 H 1450 c 81,0 147,66 147,151 z M 1450,1428 V 350 c 0,-8 -7,-17 -17,-17 H 379 c -9,0 -17,7 -17,17 V 1428 c 0,8 7,17 17,17 H 1431 c 9,0 17,-7 17,-17 z"/></svg>'); cursor: pointer; width: 22px; height: 22px; display: inline-block; }
-#hdr .mainInputPreview { color: #676f7a; margin-top: 5px; }
 #hdr.header--hidden { -webkit-transform: translateY(-110%); -ms-transform: translateY(-110%); transform: translateY(-110%); }
 
 #errmsg { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 10px; width: 100%; z-index: 99999; opacity: 0.8; }

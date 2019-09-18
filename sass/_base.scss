@@ -112,11 +112,6 @@ input[type="text"] {
         display: inline-block;
     }
 
-    .mainInputPreview {
-        color: $secondary-color;
-        margin-top: 5px;
-    }
-
     &.header--hidden{
         -webkit-transform: translateY(-110%);
         -ms-transform: translateY(-110%);
