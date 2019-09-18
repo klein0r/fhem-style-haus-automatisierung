@@ -62,6 +62,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
 #content pre.CodeMirror-line { white-space: pre; }
 #content pre.log { background: #000; padding: 10px; }
+#content > pre { background: #fff; padding: 10px; }
 #content .roomoverview .icon { margin-right: 5px; vertical-align: middle; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }

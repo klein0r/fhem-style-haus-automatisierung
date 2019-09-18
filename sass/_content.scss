@@ -34,6 +34,12 @@
         }
     }
 
+    // list
+    > pre {
+        background: $brightest-background;
+        padding: 10px;
+    }
+
     .roomoverview {
         .icon {
             margin-right: 5px;
