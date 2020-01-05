@@ -27,6 +27,9 @@ svg.on, svg.FS20_on {
 svg.zw_nr {
     fill: transparent !important;
 
+    height: auto;
+    width: auto;
+    
     text {
         fill: $primary-color;
     }
