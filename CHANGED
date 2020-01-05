@@ -1,12 +1,12 @@
 FHEM haus-automatisierung.com custom theme last changes:
-2019-08-09
-- 2.12
-- Dashboard fixes
-- Dashboard resizer
+2020-01-05
+- Update _content.scss
+- Merge pull request #121 from aHVzY2g/version-2
+- Merge pull request #120 from mackshot/patch-2
+- Merge pull request #122 from mackshot/patch-3
+- Merge pull request #119 from mackshot/patch-1
+- Korrektur <pre> Element
+- Update _content.scss
+- Merge pull request #123 from mackshot/patch-1
 - Merge branch 'version-2' of github.com:klein0r/fhem-style-haus-automatisierung into version-2
-- 2.13
-- remotecontrol
-- AttrGroups
-- AttrGroups v2
-- Floorplans
-- Floorplans
+- 2.15
