@@ -59,6 +59,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .motd { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; padding: 10px; margin-top: 20px; }
 #content .motd:before { content: 'MOTD: '; }
 #content .get, #content .set, #content .attr { float: left; }
+#content > pre { background: white; color: #676f7a; padding: 5px; }
 #content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
 #content pre.CodeMirror-line { white-space: pre; }
 #content pre.log { background: #000; padding: 10px; }
@@ -96,9 +97,9 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .makeSelect + .makeTable { margin-top: 10px; }
 #content .makeSelect .slider { width: 250px; height: 22px; margin-left: 5px; margin-right: 5px; }
 #content .makeSelect .slider .handle { height: 22px; line-height: 22px; }
-#content > table { width: 100%; }
-#content table { border-collapse: collapse; max-width: 1000px; }
+#content table { width: 100%; border-collapse: collapse; max-width: 1000px; }
 #content table th { font-weight: bold; color: #676f7a; padding: 10px 2px; border-bottom: 1px #676f7a solid; }
+#content table.roomoverview { margin-bottom: 20px; }
 #content table.wide, #content table.roomoverview { width: 100%; }
 #content table.wide tr.column, #content table.roomoverview tr.column { /* one item */ /* two items */ /* three items */ /* four items */ }
 #content table.wide tr.column table.column, #content table.roomoverview tr.column table.column { width: 100%; }
@@ -118,13 +119,14 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table.internals td:nth-child(1), #content table.attributes td:nth-child(1), #content table.readings td:nth-child(1), #content table.assoc td:nth-child(1) { width: 20%; }
 #content table.internals td:nth-child(2), #content table.attributes td:nth-child(2), #content table.readings td:nth-child(2), #content table.assoc td:nth-child(2) { word-break: break-all; }
 #content table tr.odd > td, #content table tr.even > td { padding: 5px; }
-#content table .ex { max-width: 1000px; white-space: normal; }
+#content table .ex { max-width: 1000px; white-space: pre; }
 #content table input + select, #content table select + select { margin-left: 10px; }
 #content #pedit { margin-bottom: 10px; text-transform: uppercase; font-size: 16px; letter-spacing: 10px; }
 #content #pedit > * { text-transform: none; font-size: 13px; letter-spacing: normal; }
 #content #pedit .plotEditor select.svgSrc, #content #pedit .plotEditor select.set { border: 1px #e56524 solid; border-radius: 0; color: #e56524; }
 #content .SVGlabel { background: #f5f6f9; padding: 5px; }
 #content .SVGplot { background: #f5f6f9; padding: 10px; }
+#content #svgmarker { color: gray; }
 #content .odd .SVGplot, #content .even .SVGplot { background: none !important; }
 #content .devType { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; margin-top: 10px; }
 #content .devType a { color: #fff; }
@@ -270,7 +272,7 @@ svg.on, svg.FS20_on { fill: #e56524 !important; }
 
 #ZWDongleNrSVG { background: #f5f6f9; margin-bottom: 10px; margin-top: 10px; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; width: 1000px !important; }
 
-svg.zw_nr { fill: transparent !important; }
+svg.zw_nr { fill: transparent !important; height: auto; width: auto; }
 svg.zw_nr text { fill: #e56524; }
 svg.zw_nr .col_link { color: #e56524; stroke: #e56524; }
 svg.zw_nr .zwMargin { stroke: transparent; color: transparent; }
