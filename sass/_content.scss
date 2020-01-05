@@ -239,11 +239,8 @@
         }
     }
 
-    > table {
-        width: 100%;
-    }
-
     table {
+        width: 100%;
         border-collapse: collapse;
         max-width: $maxWidthContent;
 
@@ -254,6 +251,9 @@
             border-bottom: 1px $secondary-color solid;
         }
 
+        &.roomoverview {
+            margin-bottom: 20px;
+        }
         &.wide,
         &.roomoverview {
             width: 100%;
