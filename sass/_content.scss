@@ -4,6 +4,12 @@
     .get, .set, .attr {
         float: left;
     }
+    
+    > pre {
+        background: white;
+        color: #676f7a;
+        padding: 5px;
+    }
 
     pre {
         font-family: 'Source Code Pro', monospace !important;
