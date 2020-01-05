@@ -9,15 +9,15 @@ $grid-color: gray;
 $plotTextColor: $secondary-color;
 $backgroundColor: #fff;
 
-$svg-color-1: #215A94;
-$svg-color-2: #18986E;
-$svg-color-3: #913100;
-$svg-color-4: #915700;
-$svg-color-5: #07325E;
-$svg-color-6: #006141;
-$svg-color-7: #FFA77A;
-$svg-color-8: #5F8AB6;
-$svg-color-9: #59B99A;
+$svg-color-1: rgba(114,147,203,1);
+$svg-color-2: rgba(255,151,76,1);
+$svg-color-3: rgba(132,186,91,1);
+$svg-color-4: rgba(211,94,96,1);
+$svg-color-5: rgba(128,133,133,1);
+$svg-color-6: rgba(144,103,167,1);
+$svg-color-7: rgba(153,89,89,1);
+$svg-color-8: rgba(204,194,16,1);
+$svg-color-9: rgba(212,60,158,1);
 
 svg {
     font-family: 'Open Sans', sans-serif;
@@ -92,15 +92,15 @@ svg {
 .SVGplot.l6 { stroke: $svg-color-7; }
 .SVGplot.l7 { stroke: $svg-color-8; }
 .SVGplot.l8 { stroke: $svg-color-9; }
-.SVGplot.l0fill { stroke: $svg-color-1; fill: url(#gr_0); }
-.SVGplot.l1fill { stroke: $svg-color-2; fill: url(#gr_1); }
-.SVGplot.l2fill { stroke: $svg-color-3; fill: url(#gr_2); }
-.SVGplot.l3fill { stroke: $svg-color-4; fill: url(#gr_3); }
-.SVGplot.l4fill { stroke: $svg-color-5; fill: url(#gr_4); }
-.SVGplot.l5fill { stroke: $svg-color-6; fill: url(#gr_5); }
-.SVGplot.l6fill { stroke: $svg-color-7; fill: url(#gr_6); }
-.SVGplot.l7fill { stroke: $svg-color-8; fill: url(#gr_7); }
-.SVGplot.l8fill { stroke: $svg-color-9; fill: url(#gr_8); }
+.SVGplot.l0fill { stroke: $svg-color-1; fill: rgba(114,147,203,0.3); }
+.SVGplot.l1fill { stroke: $svg-color-2; fill: rgba(255,151,76,0.3); }
+.SVGplot.l2fill { stroke: $svg-color-3; fill: rgba(132,186,91,0.3); }
+.SVGplot.l3fill { stroke: $svg-color-4; fill: rgba(211,94,96,0.3); }
+.SVGplot.l4fill { stroke: $svg-color-5; fill: rgba(128,133,133,0.3); }
+.SVGplot.l5fill { stroke: $svg-color-6; fill: rgba(144,103,167,0.3); }
+.SVGplot.l6fill { stroke: $svg-color-7; fill: rgba(153,89,89,0.3); }
+.SVGplot.l7fill { stroke: $svg-color-8; fill: rgba(204,194,16,0.3); }
+.SVGplot.l8fill { stroke: $svg-color-9; fill: rgba(212,60,158,0.3); }
 .SVGplot.l0dot { stroke: $svg-color-1; stroke-dasharray: 2,4; }
 .SVGplot.l1dot { stroke: $svg-color-2; stroke-dasharray: 2,4; }
 .SVGplot.l2dot { stroke: $svg-color-3; stroke-dasharray: 2,4; }

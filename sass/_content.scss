@@ -19,6 +19,12 @@
     .get, .set, .attr {
         float: left;
     }
+    
+    > pre {
+        background: white;
+        color: #676f7a;
+        padding: 5px;
+    }
 
     pre {
         font-family: 'Source Code Pro', monospace !important;
@@ -246,11 +252,8 @@
         }
     }
 
-    > table {
-        width: 100%;
-    }
-
     table {
+        width: 100%;
         border-collapse: collapse;
         max-width: $maxWidthContent;
 
@@ -261,6 +264,9 @@
             border-bottom: 1px $secondary-color solid;
         }
 
+        &.roomoverview {
+            margin-bottom: 20px;
+        }
         &.wide,
         &.roomoverview {
             width: 100%;
@@ -372,7 +378,7 @@
 
         .ex {
             max-width: $maxWidthContent;
-            white-space: normal;
+            white-space: pre;
         }
 
         input + select,
@@ -411,6 +417,8 @@
         background: $odd-color;
         padding: 10px;
     }
+
+    #svgmarker { color: gray; }
 
     .odd .SVGplot, .even .SVGplot {
         background: none !important;
