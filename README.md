@@ -18,7 +18,7 @@ update all ha_theme
 
 ```
 attr WEB JavaScripts codemirror/fhem_codemirror.js
-attr WEB codemirrorParam { "theme": "blackboard", "lineNumbers":true, "lineWrapping": true, "height": "auto" }
+attr WEB codemirrorParam { "theme": "blackboard", "lineNumbers":true, "lineWrapping": true, "height": "auto", "autocomplete": true }
 attr WEB roomIcons Save.config:message_attention
 ```
 
