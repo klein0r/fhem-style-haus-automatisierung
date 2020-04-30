@@ -2,17 +2,19 @@
 
 Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - "Look and Feel" sind dabei an das Webdesign der Seite [haus-automatisierung.com](https://haus-automatisierung.com/) angelehnt.
 
+Diese Variante des original Styles https://github.com/klein0r/fhem-style-haus-automatisierung versucht einige Verbesserungen einzubringen, die im Originalstyle entweder aus Zeit- oder Stabilitätsgründen bisher nicht eingegangen sind. Zunächst sollte die allgemeine Empfehlung gelten, den Original-Thema zu benutzen und nicht diesen hier. Dieser hier ist instabiler.
+
 ## Installation
 
 1. Hinzufügen des neuen Themes in Version 2
 
 ```
-update add https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-2/controls_ha_theme.txt
-update check ha_theme
-update all ha_theme
+update add https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-2/controls_ha_theme_mackshot.txt
+update check ha_theme_mackshot
+update all ha_theme_mackshot
 ```
 
-2. Select Style -> hausautomatisierung_com
+2. Select Style -> hausautomatisierung_com-mackshot
 
 3. Ein paar Anpassungen am Web-Device:
 
@@ -26,52 +28,17 @@ Einmal speichern und neu laden - fertig.
 
 ## Entwicklungsumgebung aufsetzen
 
-**Bitte keine Pull-Requests für CSS-Dateien einreichen, diese werden per SASS generiert.**
-
-Der Style basiert auf [SASS](https://sass-lang.com/) / [Compass](http://compass-style.org/). So können die einzelnen Bereiche unterteilt werden und der Style wird viel übersichtlicher und leichter zu warten / erweitern.
-
-Du brauchst:
-
-- git [Doku](https://git-scm.com/book/de/v1/Los-geht%E2%80%99s-Git-installieren)
-- SASS [Doku](https://sass-lang.com/install)
-- Compass [Doku](http://compass-style.org/install/)
-
-Dann die aktuellen Dateien von GitHub holen (oder aus einem eigenen Fork):
-
-```
-cd /opt/fhem/
-git clone -b version-2 git@github.com:klein0r/fhem-style-haus-automatisierung.git
-```
-
-Dann ein paar Symlinks erstellen:
-
-```
-ln -s /opt/fhem/fhem-style-haus-automatisierung/www/hausautomatisierung-com /opt/fhem/www/hausautomatisierung-com
-ln -s /opt/fhem/fhem-style-haus-automatisierung/www/images/hausautomatisierung_com /opt/fhem/www/images/hausautomatisierung_com
-ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_comfloorplanstyle.css /opt/fhem/www/pgm2/hausautomatisierung_comfloorplanstyle.css
-ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_com.js /opt/fhem/www/pgm2/hausautomatisierung_com.js
-ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_comstyle.css /opt/fhem/www/pgm2/hausautomatisierung_comstyle.css
-ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_comsvg_style.css /opt/fhem/www/pgm2/hausautomatisierung_comsvg_style.css
-
-ln -s /opt/fhem/fhem-style-haus-automatisierung/FHEM/99_myHaUtils.pm /opt/fhem/FHEM/99_myHaUtils.pm
-```
-
-Auf Änderungen warten und bei Bedarf CSS neu bauen:
-
-```
-cd /opt/fhem/fhem-style-haus-automatisierung
-compass watch
-```
-
-Dann einfach die SCSS-Dateien bearbeiten.
+Siehe https://github.com/klein0r/fhem-style-haus-automatisierung
 
 ## Fehler melden
 
-Bitte [hier](https://github.com/klein0r/fhem-style-haus-automatisierung/issues) einen Issue erstellen
+Fehler im original Style bitte [hier](https://github.com/klein0r/fhem-style-haus-automatisierung/issues) melden.
+Fehler im angepassten Style bitte [hier](https://github.com/mackshot/fhem-style-haus-automatisierung/issues) melden.
+
 
 ## Vorschau
 
-![FHEM Style](https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-2/preview.png)
+Siehe https://github.com/klein0r/fhem-style-haus-automatisierung
 
 ## Smart-Home-Icons:
 
