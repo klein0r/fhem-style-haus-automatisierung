@@ -353,10 +353,6 @@
             background: none !important;
         }
 
-        &.block td:nth-child(1) {
-            white-space: nowrap;
-        }
-
         &.block tr.odd {
             background: $odd-color;
         }
