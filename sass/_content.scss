@@ -191,6 +191,18 @@
             @include button;
         }
     }
+    
+    // FileLog
+    table.FileLog {
+        div.dval {
+            a > {
+                div.dval {
+                    text-align: right;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 
     .makeSelect {
         background: $brightest-background;
