@@ -46,13 +46,17 @@
         padding: 10px;
     }
 
+    div.col1 {
+        line-height: 29px;
+    }
+
     .roomoverview {
         .icon {
             margin-right: 5px;
             vertical-align: middle;
         }
 
-        .first-table-column {
+        td.first-table-column {
             width: 25%;
             border-right: 2px $primary-color solid;
             line-height: 29px;
