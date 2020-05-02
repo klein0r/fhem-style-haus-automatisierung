@@ -19,7 +19,7 @@ function getClock() {
 
 jQuery(document).ready(function ($) {
 
-    var themeVersion = '2.15';
+    var themeVersion = '2.16b1';
 
     // attr WEB hiddenroom input -> Ansicht anpassen
     if ($('#hdr .maininput').length == 0) {
@@ -86,6 +86,9 @@ jQuery(document).ready(function ($) {
     var navElement = jQuery('#menu .room').last().find('tbody');
     navElement.append(
         $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/klein0r/fhem-style-haus-automatisierung/issues/">Theme-Fehler melden (v' + themeVersion + ')</a></div></td></tr>')
+    );
+    navElement.append(
+        $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/mackshot/fhem-style-haus-automatisierung/issues/">Beta-Theme-Fehler melden (v' + themeVersion + ')</a></div></td></tr>')
     );
 
     // Automatische Breite für HDR Input

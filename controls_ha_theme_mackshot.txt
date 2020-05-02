@@ -12,8 +12,8 @@ UPD 2020-01-05_18:49:11 6263 www/images/hausautomatisierung_com-mackshot/router.
 UPD 2020-01-05_18:49:11 2342 www/images/hausautomatisierung_com-mackshot/smartphone.svg
 UPD 2020-01-05_18:49:11 2287 www/images/hausautomatisierung_com-mackshot/tv.svg
 UPD 2020-01-05_18:49:11 6636 www/images/hausautomatisierung_com-mackshot/weather.svg
-UPD 2020-05-01_08:28:53 11246 www/pgm2/hausautomatisierung_com-mackshot.js
-UPD 2020-05-02_08:26:51 6426 www/pgm2/hausautomatisierung_com-mackshotfloorplanstyle.css
-UPD 2020-05-02_08:26:54 38714 www/pgm2/hausautomatisierung_com-mackshotstyle.css
+UPD 2020-05-02_08:58:47 11480 www/pgm2/hausautomatisierung_com-mackshot.js
+UPD 2020-05-02_13:06:58 6445 www/pgm2/hausautomatisierung_com-mackshotfloorplanstyle.css
+UPD 2020-05-02_13:06:58 38846 www/pgm2/hausautomatisierung_com-mackshotstyle.css
 UPD 2020-05-01_08:29:07 3063 www/pgm2/hausautomatisierung_com-mackshotsvg_defs.svg
-UPD 2020-05-02_08:26:56 5318 www/pgm2/hausautomatisierung_com-mackshotsvg_style.css
+UPD 2020-05-02_13:06:58 5334 www/pgm2/hausautomatisierung_com-mackshotsvg_style.css

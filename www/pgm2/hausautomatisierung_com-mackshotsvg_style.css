@@ -73,6 +73,7 @@ svg rect.SVGplot {
 }
 
 svg polyline.SVGplot {
+  stroke: gray;
   fill: none;
 }
 

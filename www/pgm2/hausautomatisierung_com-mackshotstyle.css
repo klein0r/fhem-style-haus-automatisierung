@@ -108,6 +108,7 @@ button.dist {
 #logo .theme-version {
   opacity: 0.7;
   font-weight: bold;
+  font-size: 11px;
 }
 
 #logo #clock {
@@ -228,6 +229,10 @@ select {
   content: 'MOTD: ';
 }
 
+#content .motd a {
+  color: #1d3d5f;
+}
+
 #content .get, #content .set, #content .attr {
   float: left;
 }
@@ -257,12 +262,16 @@ select {
   padding: 10px;
 }
 
+#content div.col1 {
+  line-height: 29px;
+}
+
 #content .roomoverview .icon {
   margin-right: 5px;
   vertical-align: middle;
 }
 
-#content .roomoverview .first-table-column {
+#content .roomoverview td.first-table-column {
   width: 25%;
   border-right: 2px #e56524 solid;
   line-height: 29px;
@@ -400,6 +409,11 @@ select {
   padding: 1px 10px;
   background: transparent;
   font-size: 16px;
+}
+
+#content table.FileLog div.dval a > div.dval {
+  text-align: right;
+  margin-right: 5px;
 }
 
 #content .makeSelect {
@@ -574,10 +588,6 @@ select {
 
 #content table .no-background {
   background: none !important;
-}
-
-#content table.block td:nth-child(1) {
-  white-space: nowrap;
 }
 
 #content table.block tr.odd {
