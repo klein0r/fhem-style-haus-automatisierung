@@ -1,12 +1,12 @@
 FHEM haus-automatisierung.com custom theme last changes:
-2020-01-05
+2020-05-05
+- Linkcolor in MOTD angepasst
+- Update README.md
 - Update _content.scss
-- Merge pull request #121 from aHVzY2g/version-2
-- Merge pull request #120 from mackshot/patch-2
-- Merge pull request #122 from mackshot/patch-3
-- Merge pull request #119 from mackshot/patch-1
-- Korrektur <pre> Element
-- Update _content.scss
-- Merge pull request #123 from mackshot/patch-1
-- Merge branch 'version-2' of github.com:klein0r/fhem-style-haus-automatisierung into version-2
-- 2.15
+- Merge pull request #124 from mackshot/patch-2
+- Merge pull request #132 from mackshot/patch-7
+- Merge pull request #126 from mackshot/patch-3
+- Merge pull request #127 from mackshot/patch-4
+- Merge pull request #129 from mackshot/patch-5
+- Neue CSS-Dateien nach Pull-Requests
+- Neue Version
