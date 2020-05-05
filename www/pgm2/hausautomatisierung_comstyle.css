@@ -58,14 +58,16 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content { max-width: 1000px; }
 #content .motd { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; padding: 10px; margin-top: 20px; }
 #content .motd:before { content: 'MOTD: '; }
+#content .motd a { color: #1d3d5f; }
 #content .get, #content .set, #content .attr { float: left; }
 #content > pre { background: white; color: #676f7a; padding: 5px; }
 #content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
 #content pre.CodeMirror-line { white-space: pre; }
 #content pre.log { background: #000; padding: 10px; }
 #content > pre { background: #fff; padding: 10px; }
+#content div.col1 { line-height: 29px; }
 #content .roomoverview .icon { margin-right: 5px; vertical-align: middle; }
-#content .roomoverview .first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
+#content .roomoverview td.first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeTable { clear: left; display: inline; float: left; width: 100%; overflow-x: scroll; }
 #content .makeTable .mkTitle { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; }
@@ -88,6 +90,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .dval > table { margin-bottom: 10px; }
 #content .dval > table .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .dval input[type=submit] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
+#content table.FileLog div.dval a > div.dval { text-align: right; margin-right: 5px; }
 #content .makeSelect { background: #fff; border-left: 5px #e56524 solid; border-right: 5px #e56524 solid; box-sizing: border-box; clear: left; color: #676f7a; display: inline; float: left; padding: 5px; width: 100%; }
 #content .makeSelect .downText { margin-left: 5px; line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .makeSelect select { background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc); background-position: calc(100% - 20px) calc(0.5em), calc(100% - 15px) calc(0.5em), calc(100% - 2.5em) 0.2em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px #e56524 solid; border-radius: 0; color: #e56524; font-size: 16px; line-height: 20px; height: 24px; margin-left: 5px; margin-right: 5px; padding: 0 20px 0 10px; min-width: 200px; }
@@ -114,7 +117,6 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table.block.readings .changed { color: #e56524; }
 #content table.block.readings .changed:after { content: ' !!!'; }
 #content table .no-background { background: none !important; }
-#content table.block td:nth-child(1) { white-space: nowrap; }
 #content table.block tr.odd { background: #f5f6f9; }
 #content table.internals td:nth-child(1), #content table.attributes td:nth-child(1), #content table.readings td:nth-child(1), #content table.assoc td:nth-child(1) { width: 20%; }
 #content table.internals td:nth-child(2), #content table.attributes td:nth-child(2), #content table.readings td:nth-child(2), #content table.assoc td:nth-child(2) { word-break: break-all; }

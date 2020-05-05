@@ -22,7 +22,7 @@ svg .background { fill: #000; }
 svg circle#svgmarker { color: #278727; opacity: 0.5; }
 svg path.SVGplot { stroke: black; fill: none; }
 svg rect.SVGplot { stroke: black; fill: none; }
-svg polyline.SVGplot { fill: none; }
+svg polyline.SVGplot { stroke: gray; fill: none; }
 svg .border { stroke: #e56524; fill: #fff; }
 svg .vgrid { stroke: gray; stroke-dasharray: 2, 6; }
 svg .hgrid { stroke: gray; stroke-dasharray: 2, 6; }
