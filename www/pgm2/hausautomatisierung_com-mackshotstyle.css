@@ -245,11 +245,6 @@ select {
 
 #content pre {
   font-family: 'Source Code Pro', monospace !important;
-  white-space: pre-wrap;
-}
-
-#content pre.CodeMirror-line {
-  white-space: pre;
 }
 
 #content pre.log {

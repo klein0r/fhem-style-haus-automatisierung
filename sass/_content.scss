@@ -32,11 +32,6 @@
 
     pre {
         font-family: 'Source Code Pro', monospace !important;
-        white-space: pre-wrap;
-
-        &.CodeMirror-line {
-            white-space: pre;
-        }
 
         &.log {
             background: #000;
