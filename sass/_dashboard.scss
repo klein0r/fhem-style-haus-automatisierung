@@ -80,6 +80,20 @@
         height: inherit;
         padding: 0;
         width: 100%;
+
+        .dashboard_content {
+
+            td {
+                width: 100%
+            }
+            td.first-table-column {
+                width: auto;
+            }
+
+            .col1 a {
+                white-space: nowrap;
+            }
+        }
     }
 
     .dashboard_tabcontent {
