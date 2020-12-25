@@ -17,12 +17,11 @@ function getClock() {
     setTimeout(getClock, 1000);
 }
 
-jQuery(document).ready(function ($) {
-
-    var themeVersion = '2.16';
-
+/**
+ * Verify window size to optimize for mobile or desktop variant
+ */
+function initResponsive() {
     jQuery('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>');
-
 
     if ($(window).width() < 798) {
         var menu = $('#menu > table');
@@ -39,23 +38,34 @@ jQuery(document).ready(function ($) {
         menu.hide();
 
         $('body > form').css('width', '100%');
-
-        $('table.block tr').each(function (index) {
-            if ($(this).find('td').length > 4) {
-                $(this).find('td:gt(1)').css('display', 'table-row');
-                $(this).find('td:gt(1) > div').css('margin', '0.3em');
-            }
-        });
-        
-        roomContainer = $('table.room tr.sel > td > div').clone();
-        roomContainer.addClass('headline');
-
-        roomContainer.prependTo('body > form');
-
-        //$('table.block td:gt(2) > div').css('margin-bottom', '0.2em');
+        showHeadline();
     } else {
         $('#content').css('padding-top', '135px');
     }
+}
+
+/**
+ * Display a headline to visualize the room name.
+ * Especially for mobile version this is usefull when menu entries become hidden
+ */
+function showHeadline() {
+    $('table.block tr').each(function (index) {
+        if ($(this).find('td').length > 4) {
+            $(this).find('td:gt(1)').css('display', 'table-row');
+            $(this).find('td:gt(1) > div').css('margin', '0.3em');
+        }
+    });
+    
+    roomContainer = $('table.room tr.sel > td > div').clone();
+    roomContainer.addClass('headline');
+    roomContainer.prependTo('body > form');
+}
+
+jQuery(document).ready(function ($) {
+
+    var themeVersion = '2.17';
+    
+    initResponsive();
 
     // attr WEB hiddenroom input -> Ansicht anpassen
     if ($('#hdr .maininput').length == 0) {
@@ -277,63 +287,8 @@ jQuery(document).ready(function ($) {
         selectedItem.prop('selected', true);
     }
 
-    (function($, window, document, undefined) {
+    (function($) {
         'use strict';
-
-        var elSelector = '#hdr, #logo',
-            elClassHidden = 'header--hidden',
-            throttleTimeout = 50,
-            $element = $(elSelector);
-
-        if (!$element.length) return true;
-
-        var $window = $(window),
-            wHeight = 0,
-            wScrollCurrent = 0,
-            wScrollBefore = 0,
-            wScrollDiff = 0,
-            $document = $(document),
-            dHeight = 0,
-            throttle = function(delay, fn) {
-                var last, deferTimer;
-                return function() {
-                    var context = this, args = arguments, now = +new Date;
-                    if (last && now < last + delay) {
-                        clearTimeout(deferTimer);
-                        deferTimer = setTimeout(
-                            function() {
-                                last = now;
-                                fn.apply(context, args);
-                            },
-                            delay
-                        );
-                    } else {
-                        last = now;
-                        fn.apply(context, args);
-                    }
-                };
-            };
-
-        $window.on('scroll', throttle(throttleTimeout, function() {
-            dHeight = $document.height();
-            wHeight	= $window.height();
-            wScrollCurrent = $window.scrollTop();
-            wScrollDiff = wScrollBefore - wScrollCurrent;
-
-            if (wScrollCurrent <= 50) {
-                $element.removeClass(elClassHidden);
-            } else if (wScrollDiff > 0 && $element.hasClass(elClassHidden)) {
-                $element.removeClass(elClassHidden);
-            } else if (wScrollDiff < 0) {
-                if (wScrollCurrent + wHeight >= dHeight && $element.hasClass(elClassHidden)) {
-                    $element.removeClass(elClassHidden);
-                } else {
-                    $element.addClass(elClassHidden);
-                }
-            }
-
-            wScrollBefore = wScrollCurrent;
-        }));
-
-    })(jQuery, window, document);
+        
+    })(jQuery);
 });

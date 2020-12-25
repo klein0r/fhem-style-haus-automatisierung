@@ -52,17 +52,19 @@ button.dist {
 
     .theme-version {
         opacity: 0.7;
+        font-size: 150%;
         font-weight: bold;
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
     }
 
     #clock {
         opacity: 0.7;
+        font-size: 150%;
         position: absolute;
         font-weight: bold;
-        right: 30px;
+        right: 0px;
         top: 0;
     }
 }
@@ -114,25 +116,17 @@ input[type="text"] {
         height: 22px;
         display: inline-block;
     }
-
-    &.header--hidden{
-        -webkit-transform: translateY(-110%);
-        -ms-transform: translateY(-110%);
-        transform: translateY(-110%);
-    }
 }
 
 #errmsg {
     background: $primary-color;
-    border-bottom: 3px #fff solid;
-    border-top: 3px #fff solid;
     color: #fff;
     font-size: $large-fontsize !important;
     font-weight: 700;
     left: 0;
     padding: 20px;
     position: fixed;
-    top: 10px;
+    top: 0px;
     width: 100%;
     z-index: 99999;
     opacity: 0.8;
