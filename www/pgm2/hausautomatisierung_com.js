@@ -21,6 +21,42 @@ jQuery(document).ready(function ($) {
 
     var themeVersion = '2.16';
 
+    jQuery('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>');
+
+
+    if ($(window).width() < 798) {
+        var menu = $('#menu > table');
+        // display menu button and hide menu
+        var hamburger = jQuery('<div />', { id: 'menu_hamburger',});
+        hamburger.click(function() {
+            if (menu.is(':visible')) {
+                menu.hide();
+            } else {
+                menu.show();
+            }
+         });
+        hamburger.prependTo('#menu');
+        menu.hide();
+
+        $('body > form').css('width', '100%');
+
+        $('table.block tr').each(function (index) {
+            if ($(this).find('td').length > 4) {
+                $(this).find('td:gt(1)').css('display', 'table-row');
+                $(this).find('td:gt(1) > div').css('margin', '0.3em');
+            }
+        });
+        
+        roomContainer = $('table.room tr.sel > td > div').clone();
+        roomContainer.addClass('headline');
+
+        roomContainer.prependTo('body > form');
+
+        //$('table.block td:gt(2) > div').css('margin-bottom', '0.2em');
+    } else {
+        $('#content').css('padding-top', '135px');
+    }
+
     // attr WEB hiddenroom input -> Ansicht anpassen
     if ($('#hdr .maininput').length == 0) {
         $('#hdr').hide();
@@ -90,10 +126,11 @@ jQuery(document).ready(function ($) {
 
     // Automatische Breite für HDR Input
     function resizeHeader() {
-        var baseWidth = $('#content').length ? $('#content').width() : $(window).width() - $('#menuScrollArea').width() - 30;
+        var baseWidth = $(window).width() - 20;
+        console.log('baseWidth: ' + baseWidth);
 
-        $('#hdr').css({width: baseWidth + 'px'});
-        $('.maininput').css({width: ($('#hdr').width() - $('.maininputPopupLink').outerWidth() - 4) + 'px'});
+        $('#hdr').css({'max-width': baseWidth + 'px', 'width': baseWidth + 'px'});
+        $('.maininput').css({width: (baseWidth - 30)});
     }
     resizeHeader();
     $(window).resize(resizeHeader);
