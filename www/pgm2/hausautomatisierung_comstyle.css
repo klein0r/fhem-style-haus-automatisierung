@@ -1,24 +1,8 @@
+/*@import "compass/reset";*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
-
-html { line-height: 1; }
-
-ol, ul { list-style: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
-
-q, blockquote { quotes: none; }
-q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
-
-a img { border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
-
 /* Author: Matthias Kleine */
-body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0 auto; padding: 0; tab-size: 4; }
+body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0 auto; padding: 0; tab-size: 4; display: flex; flex-wrap: wrap; }
 
 div { font-family: 'Open Sans', sans-serif !important; font-size: 13px !important; }
 
@@ -30,9 +14,9 @@ a { color: #e56524; text-decoration: none; }
 
 button.dist { border: 0; cursor: pointer; margin: 10px; }
 
-#logo { background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat; height: 120px; margin-left: 40px; margin-top: 10px; position: fixed; width: 220px; }
-#logo .theme-version { opacity: 0.7; font-weight: bold; }
-#logo #clock { opacity: 0.7; position: absolute; font-weight: bold; right: 0; top: 0; }
+#logo { background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat; height: 120px; position: relative; background-position: center; }
+#logo .theme-version { opacity: 0.7; font-size: 150%; font-weight: bold; position: absolute; left: 0; top: 0; }
+#logo #clock { opacity: 0.7; font-size: 150%; position: absolute; font-weight: bold; right: 0px; top: 0; }
 
 #content, #right { bottom: 20px; position: absolute; right: 10px; top: 50px; }
 
@@ -40,14 +24,13 @@ button.dist { border: 0; cursor: pointer; margin: 10px; }
 
 input[type="text"] { border: 1px #e56524 solid; background: none; }
 
-#hdr { left: 310px; position: fixed; top: 0px; background: #fffffff0; padding: 10px; z-index: 99; border-radius: 0 0 4px 4px; box-shadow: 0 3px 3px #11111130; }
+#hdr { left: 0px; position: fixed; top: 0px; background: #fffffff0; padding: 10px; z-index: 99; border-radius: 0 0 4px 4px; box-shadow: 0 3px 3px #11111130; }
 #hdr .header { display: inline-block; }
 #hdr input.maininput { color: #e56524; font-size: 16px; box-sizing: border-box; }
 #hdr input.maininput:focus { outline: none; }
 #hdr .maininputPopupLink { background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path fill="gray" d="M 1302,839 V 939 c 0,19 -15,37 -36,37 H 993 v 277 c 0,19 -15,37 -36,37 H 856 c -20,0 -36,-15 -36,-37 V 977 H 546 c -20,0 -36,-15 -36,-37 V 839 c 0,-19 15,-37 36,-37 H 818 V 521 c 0,-19 15,-37 36,-37 h 97 c 20,0 36,15 36,37 V 798 H 1261 c 20,0 36,15 36,37 z M 1600,331 V 1447 c 0,83 -65,151 -148,151 H 360 C 277,1600 212,1532 212,1448 V 331 C 212,246 277,180 360,180 H 1450 c 81,0 147,66 147,151 z M 1450,1428 V 350 c 0,-8 -7,-17 -17,-17 H 379 c -9,0 -17,7 -17,17 V 1428 c 0,8 7,17 17,17 H 1431 c 9,0 17,-7 17,-17 z"/></svg>'); cursor: pointer; width: 22px; height: 22px; display: inline-block; }
-#hdr.header--hidden { -webkit-transform: translateY(-110%); -ms-transform: translateY(-110%); transform: translateY(-110%); }
 
-#errmsg { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 10px; width: 100%; z-index: 99999; opacity: 0.8; }
+#errmsg { background: #e56524; color: #fff; font-size: 16px !important; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 0px; width: 100%; z-index: 99999; opacity: 0.8; }
 #errmsg:after { content: ' !!!!'; }
 #errmsg:before { content: '!!!! '; }
 
@@ -55,19 +38,22 @@ embed { margin-bottom: 10px; }
 
 select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; }
 
-#content { max-width: 1000px; }
+.headline { background: #e56524; color: #fff; display: block; padding: 10px 15px; position: relative; margin: 1em; }
+
+.headline > a { color: unset; }
+
+#content { margin-left: 1em; margin-right: 1em; position: unset; }
 #content .motd { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; padding: 10px; margin-top: 20px; }
 #content .motd:before { content: 'MOTD: '; }
 #content .motd a { color: #1d3d5f; }
 #content .get, #content .set, #content .attr { float: left; }
 #content > pre { background: white; color: #676f7a; padding: 5px; }
-#content pre { font-family: 'Source Code Pro', monospace !important; white-space: pre-wrap; }
-#content pre.CodeMirror-line { white-space: pre; }
+#content pre { font-family: 'Source Code Pro', monospace !important; }
 #content pre.log { background: #000; padding: 10px; }
 #content > pre { background: #fff; padding: 10px; }
 #content div.col1 { line-height: 29px; }
 #content .roomoverview .icon { margin-right: 5px; vertical-align: middle; }
-#content .roomoverview td.first-table-column { width: 25%; border-right: 2px #e56524 solid; line-height: 29px; }
+#content .roomoverview td.first-table-column { /*width: 25%;*/ border-right: 2px #e56524 solid; line-height: 29px; }
 #content .modCmdinput[type="submit"] { border: 1px #e56524 solid; border-radius: 0; color: #e56524; padding: 1px 10px; background: transparent; font-size: 16px; }
 #content .makeTable { clear: left; display: inline; float: left; width: 100%; overflow-x: scroll; }
 #content .makeTable .mkTitle { font-size: 16px !important; text-transform: uppercase; letter-spacing: 10px; }
@@ -197,6 +183,9 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #dashboard .dashboard_column { float: left; }
 #dashboard .dashboard_columncenter { height: inherit; }
 #dashboard .dashboard_row { height: inherit; padding: 0; width: 100%; }
+#dashboard .dashboard_row .dashboard_content td { width: 100%; }
+#dashboard .dashboard_row .dashboard_content td.first-table-column { width: auto; }
+#dashboard .dashboard_row .dashboard_content .col1 a { white-space: nowrap; }
 #dashboard .dashboard_tabcontent { margin: 0; padding: 0; width: 100%; }
 #dashboard .dashboard_tabnav { background: #fff !important; border-radius: 0; }
 #dashboard .dashboard_widget { border-radius: 8px; float: left; }
@@ -245,7 +234,9 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #dashboard-dialog .ui-tabs .ui-tabs-nav .ui-tabs-anchor { float: left; padding: .5em 1em; text-decoration: none; }
 #dashboard-dialog .ui-widget-header { background: #fff; color: #676f7a; padding: 5px; }
 
-#menu { margin-left: 20px; margin-top: 140px; width: 260px; z-index: 9999; }
+#menu_hamburger { width: 100%; height: 40px; background-image: url(../images/hausautomatisierung_com/hamburger.svg); background-repeat: no-repeat; background-size: 30px 30px; background-position: center; }
+
+#menu { background-color: rgba(0, 0, 0, 0.4); z-index: 9999; }
 #menu table { border-collapse: collapse; border-radius: 0; width: 100%; }
 #menu a { background: #fff; color: #676f7a; display: block; padding: 10px 15px; position: relative; }
 #menu .menuTree { position: relative; }
@@ -262,8 +253,10 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
 #menu table.room tr.sel svg.icon { fill: #fff; }
 #menu table.room tr.sel td a:after { border-bottom: 17px solid transparent; border-left: 13px solid #e56524; border-top: 17px solid transparent; content: " "; height: 0; margin-top: -17px; position: absolute; right: -13px; top: 50%; width: 0; }
 
-#menuScrollArea { height: 100%; top: 0; left: 0; overflow: auto; position: relative; width: 300px; }
+#menuScrollArea { padding-top: 50px; padding-left: 1em; padding-right: 1em; }
 
+@media (max-width: 798px) { #menuScrollArea { width: 100%; } }
+@media (min-width: 799px) { #menuScrollArea { max-width: 350px; width: 100%; } }
 #haToolbar { color: #676f7a; font-family: 'Source Code Pro', monospace !important; background-color: #fff; position: fixed; box-sizing: border-box; padding: 5px 15px; bottom: 0; left: 20px; min-width: 260px; border: 1px #e56524 dashed; border-bottom: none; line-height: 25px; }
 #haToolbar .toHdr { cursor: pointer; }
 
