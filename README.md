@@ -53,11 +53,11 @@ ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_com
 ln -s /opt/fhem/fhem-style-haus-automatisierung/www/pgm2/hausautomatisierung_comsvg_style.css /opt/fhem/www/pgm2/hausautomatisierung_comsvg_style.css
 ```
 
-Auf Änderungen warten und bei Bedarf CSS neu bauen:
+SASS wartet auf Änderungen und baut bei Bedarf das CSS neu:
 
 ```
 cd /opt/fhem/fhem-style-haus-automatisierung
-sass sass/:www/pgm2 --no-source-map --watch
+sass sass/:www/pgm2 --sourcemap=none --watch
 ```
 
 Dann einfach die SCSS-Dateien bearbeiten.
