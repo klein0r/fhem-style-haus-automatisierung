@@ -78,7 +78,7 @@ Thanks @ https://dribbble.com/shots/2084609-Smart-House-Icon-Set-Free
 
 MIT License
 
-Copyright (c) 2019 Matthias Kleine
+Copyright (c) 2021 Matthias Kleine
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
