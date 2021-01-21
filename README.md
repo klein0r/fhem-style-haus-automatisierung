@@ -4,7 +4,7 @@ Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - "Look and Feel"
 
 ## Installation
 
-1. Hinzufügen des neuen Themes in Version 2
+1. Hinzufügen des neuen Themes in Version 3
 
 ```
 update add https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-3/controls_ha_theme.txt
@@ -39,7 +39,7 @@ Dann die aktuellen Dateien von GitHub holen (oder aus einem eigenen Fork):
 
 ```
 cd /opt/fhem/
-git clone -b version-2 git@github.com:klein0r/fhem-style-haus-automatisierung.git
+git clone -b version-3 git@github.com:klein0r/fhem-style-haus-automatisierung.git
 ```
 
 Dann ein paar Symlinks erstellen:
@@ -68,7 +68,7 @@ Bitte [hier](https://github.com/klein0r/fhem-style-haus-automatisierung/issues) 
 
 ## Vorschau
 
-![FHEM Style](https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-2/preview.png)
+![FHEM Style](https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-3/preview.png)
 
 ## Smart-Home-Icons:
 
