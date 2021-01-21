@@ -8,8 +8,6 @@ body {
     margin: 0 auto;
     padding: 0;
     tab-size: 4;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 div {
@@ -47,22 +45,21 @@ button.dist {
 #logo {
     background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat;
     height: 120px;
-    position: relative;
-    background-position: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: fixed;
+    width: 220px;
 
     .theme-version {
         opacity: 0.7;
         font-weight: bold;
-        position: absolute;
-        right: 0;
-        top: 0;
     }
 
     #clock {
         opacity: 0.7;
         position: absolute;
         font-weight: bold;
-        right: 30px;
+        right: 0;
         top: 0;
     }
 }
@@ -84,7 +81,7 @@ input[type="text"] {
 }
 
 #hdr {
-    left: 0px;
+    left: 310px;
     position: fixed;
     top: 0px;
     background: #fffffff0;
@@ -95,8 +92,8 @@ input[type="text"] {
 
     .header {
         display: inline-block;
-        
     }
+
     input.maininput {
         color: $primary-color;
         font-size: $large-fontsize;

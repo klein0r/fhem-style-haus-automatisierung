@@ -1,14 +1,7 @@
-#menu_hamburger {
-    width: 100%;
-    height: 40px;
-    background-image: url(../images/hausautomatisierung_com/hamburger.svg);
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    background-position: center;
-}
-
 #menu {
-    background-color: rgba(0,0,0, 0.4);
+    margin-left: 20px;
+    margin-top: 140px;
+    width: $menuWidth - 40px;
     z-index: 9999;
 
     table {
@@ -123,23 +116,13 @@
     }
 }
 
-
 #menuScrollArea {
-    padding-top: 50px;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-@media (max-width: 798px) {
-    #menuScrollArea {
-        width: 100%;
-    }    
-}
-
-@media (min-width: 799px) {
-    #menuScrollArea {
-        max-width: 350px;
-        width: 100%;
-    }    
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    position: relative;
+    width: $menuWidth;
 }
 
 #haToolbar {

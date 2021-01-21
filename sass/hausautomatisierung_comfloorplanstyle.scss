@@ -1,4 +1,4 @@
-/*@import "compass/reset";*/
+@import "compass/reset";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
@@ -13,11 +13,6 @@ body {
 #logo {
     top: 0;
     right: 40px;
-}
-
-#hdr {
-    position: absolute;
-    top: 1em;
 }
 
 #menu {

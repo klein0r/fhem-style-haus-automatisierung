@@ -1,20 +1,5 @@
-.headline {
-    background: #e56524;
-    color: #fff;
-    display: block;
-    padding: 10px 15px;
-    position: relative;
-    margin: 1em;
-}
-
-.headline > a {
-    color: unset;
-}
-
 #content {
-    margin-left: 1em;
-    margin-right: 1em;
-    position: unset;
+    max-width: $maxWidthContent;
 
     .motd {
         background: $primary-color;
@@ -71,7 +56,7 @@
         }
 
         td.first-table-column {
-            /*width: 25%;*/
+            width: 25%;
             border-right: 2px $primary-color solid;
             line-height: 29px;
         }
