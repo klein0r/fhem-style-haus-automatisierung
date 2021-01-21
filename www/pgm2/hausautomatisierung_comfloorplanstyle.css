@@ -1,7 +1,23 @@
-/*@import "compass/reset";*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
-body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0 auto; padding: 0; tab-size: 4; display: flex; flex-wrap: wrap; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0 auto; padding: 0; tab-size: 4; }
 
 div { font-family: 'Open Sans', sans-serif !important; font-size: 13px !important; }
 
@@ -13,9 +29,9 @@ a { color: #e56524; text-decoration: none; }
 
 button.dist { border: 0; cursor: pointer; margin: 10px; }
 
-#logo { background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat; height: 120px; position: relative; background-position: center; }
-#logo .theme-version { opacity: 0.7; font-size: 150%; font-weight: bold; position: absolute; left: 0; top: 0; }
-#logo #clock { opacity: 0.7; font-size: 150%; position: absolute; font-weight: bold; right: 0px; top: 0; }
+#logo { background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat; height: 120px; margin-left: 40px; margin-top: 10px; position: fixed; width: 220px; }
+#logo .theme-version { opacity: 0.7; font-weight: bold; }
+#logo #clock { opacity: 0.7; position: absolute; font-weight: bold; right: 0; top: 0; }
 
 #content, #right { bottom: 20px; position: absolute; right: 10px; top: 50px; }
 
@@ -23,13 +39,14 @@ button.dist { border: 0; cursor: pointer; margin: 10px; }
 
 input[type="text"] { border: 1px #e56524 solid; background: none; }
 
-#hdr { left: 0px; position: fixed; top: 0px; background: #fffffff0; padding: 10px; z-index: 99; border-radius: 0 0 4px 4px; box-shadow: 0 3px 3px #11111130; }
+#hdr { left: 310px; position: fixed; top: 0px; background: #fffffff0; padding: 10px; z-index: 99; border-radius: 0 0 4px 4px; box-shadow: 0 3px 3px #11111130; }
 #hdr .header { display: inline-block; }
 #hdr input.maininput { color: #e56524; font-size: 16px; box-sizing: border-box; }
 #hdr input.maininput:focus { outline: none; }
 #hdr .maininputPopupLink { background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path fill="gray" d="M 1302,839 V 939 c 0,19 -15,37 -36,37 H 993 v 277 c 0,19 -15,37 -36,37 H 856 c -20,0 -36,-15 -36,-37 V 977 H 546 c -20,0 -36,-15 -36,-37 V 839 c 0,-19 15,-37 36,-37 H 818 V 521 c 0,-19 15,-37 36,-37 h 97 c 20,0 36,15 36,37 V 798 H 1261 c 20,0 36,15 36,37 z M 1600,331 V 1447 c 0,83 -65,151 -148,151 H 360 C 277,1600 212,1532 212,1448 V 331 C 212,246 277,180 360,180 H 1450 c 81,0 147,66 147,151 z M 1450,1428 V 350 c 0,-8 -7,-17 -17,-17 H 379 c -9,0 -17,7 -17,17 V 1428 c 0,8 7,17 17,17 H 1431 c 9,0 17,-7 17,-17 z"/></svg>'); cursor: pointer; width: 22px; height: 22px; display: inline-block; }
+#hdr.header--hidden { -webkit-transform: translateY(-110%); -ms-transform: translateY(-110%); transform: translateY(-110%); }
 
-#errmsg { background: #e56524; color: #fff; font-size: 16px !important; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 0px; width: 100%; z-index: 99999; opacity: 0.8; }
+#errmsg { background: #e56524; border-bottom: 3px #fff solid; border-top: 3px #fff solid; color: #fff; font-size: 16px !important; font-weight: 700; left: 0; padding: 20px; position: fixed; top: 10px; width: 100%; z-index: 99999; opacity: 0.8; }
 #errmsg:after { content: ' !!!!'; }
 #errmsg:before { content: '!!!! '; }
 
@@ -40,8 +57,6 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 body { color: #e56524; }
 
 #logo { top: 0; right: 40px; }
-
-#hdr { position: absolute; top: 1em; }
 
 #menu { position: absolute; top: 0; right: 0; margin-right: 20px; margin-top: 140px; width: 260px; z-index: 9999; }
 #menu table { border-collapse: collapse; border-radius: 0; width: 100%; }
