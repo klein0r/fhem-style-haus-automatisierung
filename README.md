@@ -34,6 +34,7 @@ Du brauchst:
 
 - git [Doku](https://git-scm.com/book/de/v1/Los-geht%E2%80%99s-Git-installieren)
 - SASS [Doku](https://sass-lang.com/install)
+- Compass [Doku](http://compass-style.org/install/)
 
 Dann die aktuellen Dateien von GitHub holen (oder aus einem eigenen Fork):
 
@@ -57,7 +58,7 @@ SASS wartet auf Änderungen und baut bei Bedarf das CSS neu:
 
 ```
 cd /opt/fhem/fhem-style-haus-automatisierung
-sass sass/:www/pgm2 --sourcemap=none --watch
+compass watch
 ```
 
 Dann einfach die SCSS-Dateien bearbeiten.
