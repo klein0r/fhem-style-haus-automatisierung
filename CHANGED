@@ -1,7 +1,5 @@
 FHEM haus-automatisierung.com custom theme last changes:
-2021-01-21
-- Neuer Release
-- 2.17
+2021-03-10
 - Compass raus
 - Revert "added mobile preview image"
 - Revert "Compass is not necessary needed"
@@ -10,3 +8,5 @@ FHEM haus-automatisierung.com custom theme last changes:
 - Revert "Compass raus"
 - 2.18
 - Back to 2.16 style
+- Version 2.18
+- Removed attribute groups (since fhemweb adopted that feature)
