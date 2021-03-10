@@ -1,12 +1,12 @@
 FHEM haus-automatisierung.com custom theme last changes:
-2021-01-20
-- Merge pull request #137 from mackshot/klein0r/Issue130PR
-- Bugfix klein0r/Issue135
-- Merge pull request #138 from mackshot/klein0r/Issue135PR
-- Responsive design
+2021-03-10
 - Not sure about the indention of window scroll event. Lets keep things visible
 - Compass is not necessary needed
 - added mobile preview image
 - Merge pull request #143 from ole1986/responsive
 - 2021 - Version 2.17
 - Neuer Release
+- 2.17
+- Compass raus
+- Version 3 angefangen
+- 3.00
