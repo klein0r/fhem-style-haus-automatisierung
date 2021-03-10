@@ -1,5 +1,7 @@
 # FHEM Style: haus-automatisierung.com (v3)
 
+**IN ENTWICKLUNG - BITTE NICHT PRODUKTIV NUTZEN**
+
 Mit diesem Style wird die FHEM-Oberfläche etwas anschaulicher - "Look and Feel" sind dabei an das Webdesign der Seite [haus-automatisierung.com](https://haus-automatisierung.com/) angelehnt.
 
 ## Installation
